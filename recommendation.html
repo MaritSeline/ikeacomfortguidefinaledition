@@ -1,0 +1,89 @@
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/ovi6xjx.css">
+  <script type="text/javascript" src="recommendation.js"></script>
+  <link rel="stylesheet" href="recommendation.css">
+</head>
+
+<body>
+  <img class="fixed" src="images/navigatiebalk.png" width="100%" />
+  <div class="left">
+    <div class="backikea">
+      <a href="ikea.html">
+        <img src="images/back.jpg" width="30%" />
+      </a>
+    </div>
+  </div>
+  <div class="recomimg">
+    <h1 class="recomtext">OUR RECOMMENDATION </h1>
+    <p1 class="underrecom"> The pocket springs independently follow the contours and movements of your body. Additionally, the added thick layer of soft padding provides even more luxury and comfort. </p1>
+    <br>
+    <button class="detailbutton" onclick="document.getElementById('id01').style.display='block'">
+      <p1 class="detailtext"> View more product details</p1>
+    </button>
+    <div id="id01" class="modal">
+
+      <div class="modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="images/details.jpg" width="70%">
+        </div>
+
+        <div class="container">
+
+          <div class="modal-content animate" >
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <img src="images/recommendation.jpg" width="100%" />
+  </div>
+  <br>
+  <img src="images/rondje.png" class="open-button" id="openbutton1" width="4%"></img>
+  <div class="form-popup" id="myForm1">
+    <div class="form-container">
+      <div class="cardtitle">VENTILATING</div>
+      <div class="cardtext">The top layer of the mattress is<br>made of cotton, protecting you <br>from sweating and providing a cooler mattress. </div>
+
+    </div>
+  </div>
+  <img src="images/rondje.png" class="open-button" id="openbutton2" width="4%"></img>
+  <div class="form-popup" id="myForm2">
+    <div class="form-container">
+      <div class="cardtitle">SPRINGS</div>
+      <div class="cardtext">These springs are a well considered choice perfectly supporting your body type.</div>
+
+    </div>
+  </div>
+  <img src="images/rondje.png" class="open-button" id="openbutton3" width="4%"></img>
+  <div class="form-popup" id="myForm3">
+    <div class="form-container">
+      <div class="cardtitle">NATURAL MATERIALS</div>
+      <div class="cardtext">Natural materials like natural latex, coconut fiber, cotton and wool enhances the comfort and provides a pleasant sleeping environment</div>
+
+    </div>
+  </div>
+  <img src="images/rondje.png" class="open-button" id="openbutton4" width="4%"></img>
+  <div class="form-popup" id="myForm4">
+    <div class="form-container">
+      <div class="cardtitle">FOAM</div>
+      <div class="cardtext">The mattress supports the shoulders well due to the layer of foam which forms to your shoulders, this can help to recover your physical <br> pain at night. </div>
+
+    </div>
+  </div>
+
+  <div class="buttoncheck">
+    <a href="checkout.html">
+      <img src="images/donebutton.jpg" width="10%" />
+    </a>
+  </div>
+
+</html>

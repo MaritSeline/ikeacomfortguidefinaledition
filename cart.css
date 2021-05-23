@@ -1,0 +1,61 @@
+.fixed {
+  margin-left: 2%;
+  margin-right: 2%;
+  width:96%;
+  padding-bottom: 2%;
+  position: fixed;
+  z-index: 1;
+}
+
+
+.left {
+  width: 40%;
+  height: 100%;
+  background: white;
+  float: left;
+  padding: 2%;
+  margin-top: 7.5%;
+  position: fixed;
+}
+
+.right {
+  margin-left: 40%;
+  width: 60%;
+  height: 100%;
+  background: white;
+  position: fixed;
+  margin-top: 7.5%;
+}
+
+.backout{
+  margin-left: 11.25%;
+  text-align: left;
+  margin-top: 0;
+}
+
+.textcart{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  padding-top: 2.5%;
+  padding-bottom: 0;
+}
+
+.cartimg{
+  text-align: center;
+  margin-top: 15%;
+  padding:0;
+}
+
+.undercart{
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  font-style: normal;
+  text-align: center;
+  margin:0;
+  padding:0;
+}

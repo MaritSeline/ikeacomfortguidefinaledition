@@ -1,0 +1,413 @@
+.fixed {
+  margin-left: 2%;
+  margin-right: 2%;
+  width:96%;
+  padding-bottom: 2%;
+  position: fixed;
+  z-index: 1;
+}
+
+
+.left {
+  width: 50%;
+  height: 100%;
+  background: white;
+  float: left;
+  padding: 2%;
+  margin-top: 7.5%;
+}
+
+.right {
+  margin-left: 50%;
+  width: 50%;
+  height: 100%;
+  background: white;
+  position: fixed;
+  margin-top: 7.5%;
+}
+
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+div#divbedframe {
+display: block;
+}
+div#divbedbank{
+display: none;
+}
+div#divloftbed {
+display: none;
+}
+#flush-collapseOne{
+
+}
+
+.p1 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+}
+
+
+.p2{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.p3 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  overflow: hidden;
+  display: inline;
+  white-space: nowrap;
+  margin-left: 7.5%;
+  z-index: -1;
+}
+
+.div11 {
+  width: 30%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding: 0;
+  text-align: center;
+  margin-left:5%;
+}
+
+.div12 {
+  width: 30%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding: 0;
+  text-align: center;
+  margin:0;
+}
+
+.div13 {
+  width: 30%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding: 0;
+  text-align: center;
+  margin-right: 5%;
+}
+
+.div21 {
+  width: 30%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding: 0;
+  margin-left: 20%;
+  text-align: center;
+}
+
+.div22 {
+  width: 30%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding: 0px;
+  margin-right: 20%;
+  text-align: center;
+}
+
+.div31{
+  width: 22.5%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding: 0;
+  text-align: center;
+  margin-left:5%;
+}
+
+.div32{
+  width: 22.5%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding: 0px;
+  text-align: center;
+  margin: 0px;
+}
+
+.div33{
+  width: 22.5%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding: 0px;
+  text-align: center;
+  margin: 0px;
+}
+
+.div34{
+  width: 22.5%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding: 0px;
+  text-align: center;
+}
+
+.div41{
+  width: 22.5%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding: 0;
+  text-align: center;
+  margin-left: 27.5%;
+}
+
+.div42{
+  width: 22.5%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding: 0;
+  text-align: center;
+  margin-right: 27.5%;
+}
+
+.div51{
+  width: 22.5%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  text-align: center;
+  margin-left: 16.25%;
+  padding-top: 2%;
+}
+
+.div52{
+  width: 22.5%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  text-align: center;
+  margin: 0;
+  padding-top: 2%;
+}
+
+.div53{
+  width: 22.5%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  text-align: center;
+  margin-right: 16.25%;
+  padding-top: 2%;
+}
+
+.div61{
+  width: 90%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  text-align: center;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-top: 2%;
+}
+
+.divskip{
+  width: 90%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  text-align: center;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-top: 2%;
+}
+
+.donebutton {
+  text-align: right;
+  position: fixed;
+  bottom: 15%;
+  right: 1.5%;
+}
+
+.boxer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.boxertext{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  vertical-align: middle;
+  margin-top: 2px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* Hide the browser's default checkbox */
+.boxer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 25px;
+  background-color: transparant;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1.5px;
+}
+
+/* On mouse-over, add a grey background color */
+.boxer:hover input ~ .checkmark {
+  background-color: transparent;
+  border-color: #0058AB;
+  border-width: 2.1px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.boxer input:checked ~ .checkmark {
+  background-color: #0058AB;
+  border-color: #0058AB;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.boxer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.boxer .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 1.5px 1.5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.rangediv {
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding-top: 15px;
+  margin-left: 10%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 20px 0;
+  width: 100%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #c4c4c4;
+  border-radius: 25px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #0058AB;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #0058AB;
+}
+
+.range-wrap {
+  width: 500px;
+  position: relative;
+}
+
+.range-value {
+  position: absolute;
+  top: -50%;
+}
+
+.range-value span {
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #555555;
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  border-radius: 6px;
+}
+
+.range-value span:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 7px solid #555555;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -1px;
+}
