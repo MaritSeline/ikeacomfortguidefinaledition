@@ -9,7 +9,7 @@
 
 
 .left {
-  width: 50%;
+  width: 80%;
   height: 100%;
   background: white;
   float: left;
@@ -18,12 +18,24 @@
 }
 
 .right {
-  margin-left: 50%;
-  width: 50%;
+  margin-left: 80%;
+  width: 20%;
   height: 100%;
   background: white;
   position: fixed;
   margin-top: 7.5%;
+}
+
+.hiddenchapter{
+  display: none;
+}
+
+.buttonsbottom{
+
+}
+.buttonsbottom img{
+  height: 15px;
+  padding: 2px;
 }
 
 button {

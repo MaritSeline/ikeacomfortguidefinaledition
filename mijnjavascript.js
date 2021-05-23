@@ -138,6 +138,22 @@ function hiddenDiv(thisdiv) {
     x.style.display = "none";
   }
 }
+function loadonclickimage(thisbutton) {
+  var elementbutton = document.getElementById(thisbutton);
+  var cid = thisbutton.split('button')[0];
+  var chapterid = document.getElementById(cid);
+  var allchapters = document.getElementsByClassName("hiddenchapter");
+  for (var i = 0; i < allchapters.length; i++) {
+    allchapters[i].style.display = "none";
+  }
+  chapterid.style.display = "block";
+
+  var allbuttons = document.getElementsByClassName(elementbutton.className);
+  for (var i = 0; i < allbuttons.length; i++) {
+    allbuttons[i].src = "images/greydot.jpg";
+  }
+  elementbutton.src = "images/bluedot.jpg";
+}
 
 function scrollView(thisid) {
   var scroller = document.getElementById(thisid);
