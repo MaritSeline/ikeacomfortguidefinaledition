@@ -68,9 +68,10 @@ function donebutton() {
   document.getElementById("donebutton").innerHTML = "<a href='recommendation.html'> <img src='images/donebutton.jpg' width='10%' /> </a>";
 }
 
-function blueBorder(clicked_id) {
+function nextQuestion(clicked_id) {
   var cName = document.getElementById(clicked_id);
   var skip = false;
+  var chapterboolean = false;
   if(cName.className.includes("skip"))
   {
     classnaam = cName.className.split(" ", 1);
@@ -79,28 +80,12 @@ function blueBorder(clicked_id) {
   else {
     classnaam = cName.className;
   }
-  var all = document.getElementsByClassName(classnaam);
+  i
 
-  for (var i = 0; i < all.length; i++) {
-    all[i].style.border = "none";
-    all[i].style.borderRadius = "none";
-  }
-
-  document.getElementById(clicked_id).style.border = "3px solid #0058AB";
-  document.getElementById(clicked_id).style.borderRadius = "100%";
-  if (classnaam != "bedsizes") {
-    document.getElementById(classnaam).checked = true;
-  }
-  if (classnaam == "bedsizes" || classnaam == "important") {
-    document.getElementById(clicked_id).style.borderRadius = "0%";
-  }
-  if (classnaam == "typesize"){
+  if (classnaam == "chapter1"){
     document.getElementById("left").style.width = "70%";
     document.getElementById("right").style.width = "30%";
     document.getElementById("right").style.marginLeft = "70%";
-  }
-  if(skip){
-    document.getElementById(clicked_id).style.borderRadius= "13.5%/50%";
   }
 }
 
