@@ -94,6 +94,11 @@ function blueBorder(clicked_id) {
   if (classnaam == "bedsizes" || classnaam == "important") {
     document.getElementById(clicked_id).style.borderRadius = "0%";
   }
+  if (classnaam == "typesize"){
+    document.getElementById("left").style.width = "70%";
+    document.getElementById("right").style.width = "30%";
+    document.getElementById("right").style.marginLeft = "70%";
+  }
   if(skip){
     document.getElementById(clicked_id).style.borderRadius= "13.5%/50%";
   }

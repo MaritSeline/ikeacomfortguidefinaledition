@@ -9,7 +9,7 @@
 
 
 .left {
-  width: 80%;
+  width: 100%;
   height: 100%;
   background: white;
   float: left;
@@ -18,10 +18,10 @@
 }
 
 .right {
-  margin-left: 80%;
-  width: 20%;
+  margin-left: 70%;
+  width: 0%;
   height: 100%;
-  background: white;
+  background: red;
   position: fixed;
   margin-top: 7.5%;
 }
@@ -29,7 +29,9 @@
 .hiddenchapter{
   display: none;
 }
-
+.hiddenchapter#typesize{
+  display:block;
+}
 .buttonsbottom{
 
 }
@@ -37,6 +39,7 @@
   height: 15px;
   padding: 2px;
 }
+
 
 button {
     background-color: Transparent;
