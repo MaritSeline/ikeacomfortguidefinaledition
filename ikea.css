@@ -14,7 +14,6 @@
   background: white;
   float: left;
   padding: 2%;
-  margin-top: 7.5%;
 }
 
 .right {
@@ -23,7 +22,6 @@
   height: 100%;
   background: red;
   position: fixed;
-  margin-top: 7.5%;
 }
 
 .hiddenchapter{
