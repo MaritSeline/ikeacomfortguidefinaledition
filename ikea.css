@@ -14,13 +14,13 @@
   display: none;
 }
 
-.question{
-  width:100%;
+.question {
+  width: 100%;
   height: 50%;
   background: white;
 }
 
-.progressbar{
+.progressbar {
   width: 100%;
   bottom: 0%;
   background: white;
@@ -29,44 +29,44 @@
   text-align: center;
 }
 
-.mattressimg{
+.mattressimg {
   margin-top: 27.5%;
   text-align: center;
 }
 
-.bedtags{
+.bedtags {
   top: 64%;
 }
 
-.personaltags{
+.personaltags {
   top: 123.5%;
 }
 
-.hiddenchapter{
+.hiddenchapter {
   display: none;
   top: 20%;
 }
-.hiddenchapter#chapter1{
-  display:block;
-}
-.buttonsbottom{
+
+.hiddenchapter#chapter1 {
+  display: block;
 }
 
-.leftbutton{
+.buttonsbottom {}
+
+.leftbutton {
   margin-right: 6.5%;
   width: 10px;
 }
 
-.rightbutton{
+.rightbutton {
   margin-left: 6.5%;
   width: 10px;
 }
 
-.buttonsbottom .dot{
-  width:10px;
+.buttonsbottom .dot {
+  width: 10px;
   margin: 2%;
 }
-
 
 .chapter1:hover, .chapter2:hover, .chapter4:hover, .chapter5:hover,
 .chapter6:hover, .chapter7:hover, .chapter8:hover, .chapter9:hover {
@@ -76,35 +76,36 @@
   border-radius: 100%;
 }
 
-
 button {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
 }
 
 div#divbedframe {
-display: block;
+  display: block;
 }
-div#divbedbank{
-display: none;
+
+div#divbedbank {
+  display: none;
 }
+
 div#divloftbed {
-display: none;
-}
-#flush-collapseOne{
-
+  display: none;
 }
 
-.divtext1{
-  width:55%;
+#flush-collapseOne {}
+
+.divtext1 {
+  width: 55%;
   text-align: center;
   margin-left: 22.5%;
 }
-.divtext{
+
+.divtext {
   width: 55%;
   margin-left: 22.5%;
 }
@@ -117,8 +118,7 @@ display: none;
   text-align: center;
 }
 
-
-.p2{
+.p2 {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -126,6 +126,7 @@ display: none;
   text-align: center;
   padding: 0;
 }
+
 .p3 {
   font-family: futura-pt, sans-serif;
   font-weight: 400;
@@ -139,7 +140,7 @@ display: none;
   z-index: -1;
 }
 
-.pbed{
+.pbed {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -149,7 +150,7 @@ display: none;
   margin-top: 16%;
 }
 
-.psize{
+.psize {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -159,7 +160,7 @@ display: none;
   margin-top: 26.5%;
 }
 
-.pweight{
+.pweight {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -169,7 +170,7 @@ display: none;
   margin-top: 20%;
 }
 
-.pbody{
+.pbody {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -179,7 +180,7 @@ display: none;
   margin-top: 11.5%;
 }
 
-.pposition{
+.pposition {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -189,7 +190,7 @@ display: none;
   margin-top: 11.5%;
 }
 
-.pposition{
+.pposition {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -199,7 +200,7 @@ display: none;
   margin-top: 11.5%;
 }
 
-.ppain{
+.ppain {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -209,7 +210,7 @@ display: none;
   margin-top: 11%;
 }
 
-.ptemp{
+.ptemp {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -219,7 +220,7 @@ display: none;
   margin-top: 22%;
 }
 
-.pimportant{
+.pimportant {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -229,7 +230,7 @@ display: none;
   margin-top: 21.5%;
 }
 
-.pexclude{
+.pexclude {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -239,7 +240,7 @@ display: none;
   margin-top: 22%;
 }
 
-.pprice{
+.pprice {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -256,7 +257,7 @@ display: none;
   float: left;
   padding: 0;
   text-align: center;
-  margin-left:32.75%;
+  margin-left: 32.75%;
   margin-top: 10%;
 }
 
@@ -299,7 +300,7 @@ display: none;
   text-align: center;
 }
 
-.div31{
+.div31 {
   text-align: center;
   width: 48%;
   height: 100%;
@@ -336,8 +337,7 @@ display: none;
   text-align: center;
 }
 
-
-.divskip{
+.divskip {
   width: 16%;
   height: 100%;
   background: transparant;
@@ -364,7 +364,7 @@ display: none;
   user-select: none;
 }
 
-.boxertext{
+.boxertext {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -398,14 +398,14 @@ display: none;
 }
 
 /* On mouse-over, add a grey background color */
-.boxer:hover input ~ .checkmark {
+.boxer:hover input~.checkmark {
   background-color: transparent;
   border-color: #0058AB;
   border-width: 2.1px;
 }
 
 /* When the checkbox is checked, add a blue background */
-.boxer input:checked ~ .checkmark {
+.boxer input:checked~.checkmark {
   background-color: #0058AB;
   border-color: #0058AB;
 }
@@ -418,7 +418,7 @@ display: none;
 }
 
 /* Show the checkmark when checked */
-.boxer input:checked ~ .checkmark:after {
+.boxer input:checked~.checkmark:after {
   display: block;
 }
 
