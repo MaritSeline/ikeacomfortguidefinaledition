@@ -29,10 +29,10 @@
   padding: 2px;
 }
 
-.chapter1:hover, .chapter2:hover, .chapter3:hover, .chapter4:hover, .chapter5:hover,
-.chapter6:hover, .chapter7:hover, .chapter8:hover, .chapter9:hover{
+.chapter1:hover, .chapter3:hover, .chapter4:hover, .chapter5:hover,
+.chapter6:hover, .chapter7:hover, .chapter8:hover {
   border-style: solid;
-  border-color: blue;
+  border-color: #0058AB;
   border-width: 5px;
   border-radius: 100%;
 }
@@ -91,18 +91,18 @@ display: none;
 }
 
 .div11 {
-  width: 15%;
+  width: 11.5%;
   height: 100%;
   background: transparant;
   float: left;
   padding: 0;
   text-align: center;
-  margin-left:27.5%;
+  margin-left:32.75%;
   margin-top: 10%;
 }
 
 .div12 {
-  width: 15%;
+  width: 11.5%;
   height: 100%;
   background: transparant;
   float: left;
@@ -112,7 +112,7 @@ display: none;
 }
 
 .div13 {
-  width: 15%;
+  width: 11.5%;
   height: 100%;
   background: transparant;
   float: left;
@@ -122,115 +122,25 @@ display: none;
 }
 
 .div21 {
-  width: 22.5%;
+  width: 16%;
   height: 100%;
   background: transparant;
   float: left;
   padding: 0;
-  margin-left: 20%;
+  margin-left: 34%;
   text-align: center;
 }
 
 .div22 {
-  width: 22.5%;
+  width: 16%;
   height: 100%;
   background: transparant;
   float: left;
   padding: 0px;
-  margin-right: 20%;
   text-align: center;
 }
 
 .div31{
-  width: 22.5%;
-  height: 100%;
-  background: transparant;
-  float: left;
-  padding: 0;
-  text-align: center;
-  margin-left:5%;
-}
-
-.div32{
-  width: 22.5%;
-  height: 100%;
-  background: transparant;
-  float: left;
-  padding: 0px;
-  text-align: center;
-  margin: 0px;
-}
-
-.div33{
-  width: 22.5%;
-  height: 100%;
-  background: transparant;
-  float: left;
-  padding: 0px;
-  text-align: center;
-  margin: 0px;
-}
-
-.div34{
-  width: 22.5%;
-  height: 100%;
-  background: transparant;
-  float: left;
-  padding: 0px;
-  text-align: center;
-}
-
-.div41{
-  width: 22.5%;
-  height: 100%;
-  background: transparant;
-  float: left;
-  padding: 0;
-  text-align: center;
-  margin-left: 27.5%;
-}
-
-.div42{
-  width: 22.5%;
-  height: 100%;
-  background: transparant;
-  float: left;
-  padding: 0;
-  text-align: center;
-  margin-right: 27.5%;
-}
-
-.div51{
-  width: 22.5%;
-  height: 100%;
-  background: transparant;
-  float: left;
-  text-align: center;
-  margin-left: 16.25%;
-  padding-top: 2%;
-}
-
-.div52{
-  width: 22.5%;
-  height: 100%;
-  background: transparant;
-  float: left;
-  text-align: center;
-  margin: 0;
-  padding-top: 2%;
-}
-
-.div53{
-  width: 22.5%;
-  height: 100%;
-  background: transparant;
-  float: left;
-  text-align: center;
-  margin-right: 16.25%;
-  padding-top: 2%;
-}
-
-.div61{
   width: 90%;
   height: 100%;
   background: transparant;
@@ -241,18 +151,18 @@ display: none;
   padding-top: 2%;
 }
 
-.div71 {
-  width: 22.5%;
+.div41 {
+  width: 16%;
   height: 100%;
   background: transparant;
   float: left;
   padding: 0;
-  margin-left: 16.25%;
+  margin-left: 26%;
   text-align: center;
 }
 
-.div72 {
-  width: 22.5%;
+.div42 {
+  width: 16%;
   height: 100%;
   background: transparant;
   float: left;
@@ -261,8 +171,8 @@ display: none;
   text-align: center;
 }
 
-.div73 {
-  width: 22.5%;
+.div43 {
+  width: 16%;
   height: 100%;
   background: transparant;
   float: left;
@@ -273,7 +183,7 @@ display: none;
 
 
 .divskip{
-  width: 22.5%;
+  width: 16%;
   height: 100%;
   background: transparant;
   float: left;
