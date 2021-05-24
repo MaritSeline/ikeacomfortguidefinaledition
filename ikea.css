@@ -21,13 +21,20 @@
   display:block;
 }
 .buttonsbottom{
-  bottom: 20%;
+  bottom: 10%;
   position: fixed;
 }
-.buttonsbottom img{
-  height: 15px;
-  padding: 2px;
+
+.leftbutton{
+  margin-left: 16%;
+  margin-right: 9%;
 }
+
+.buttonsbottom img{
+  width:0.75%;
+  margin-left: 2.5%;
+}
+
 
 .chapter1:hover, .chapter3:hover, .chapter4:hover, .chapter5:hover,
 .chapter6:hover, .chapter7:hover, .chapter8:hover {
@@ -117,7 +124,7 @@ display: none;
   font-style: normal;
   text-align: center;
   padding: 0;
-  margin-top: 29%;
+  margin-top: 20%;
 }
 
 .pbody{
