@@ -46,8 +46,15 @@ function sliderFunction(clicked_id) {
       rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
       classnamen = cName.className.split(" ");
       sessionStorage.setItem(classnamen[0], range.value);
-      document.getElementById(classnamen[0]+"tag").innerHTML = range.value;
-    };
+      if(classnamen[0] == "weightslider")
+      {
+        document.getElementById(classnamen[0]+"tag").innerHTML = range.value + "KG";
+      }
+      else
+      {
+           document.getElementById(classnamen[0]+"tag").innerHTML = range.value;
+         }
+  };
   document.addEventListener("DOMContentLoaded", setValue);
   range.addEventListener('input', setValue);
 
