@@ -16,19 +16,21 @@
 
 .question{
   width:100%;
-  height: 80%;
+  height: 50%;
   background: white;
 }
 
 .progressbar{
   width: 100%;
-  margin-top: 80%;
+  bottom: 0%;
   background: white;
-  height: 20%;
+  height: 10%;
+  position: fixed;
 }
 
 .mattressimg{
-  top: 10%;
+  margin-top: 27.5%;
+  text-align: center;
 }
 
 .bedtags{
@@ -47,8 +49,6 @@
   display:block;
 }
 .buttonsbottom{
-  bottom: 10%;
-  position: relative;
 }
 
 .leftbutton{
