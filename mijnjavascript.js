@@ -17,9 +17,7 @@ function nextQuestion(clicked_id) {
 
   if (classnamen[1] == "chapter1"){
     document.getElementById("left").style.width = "70%";
-    document.getElementById("right").style.width = "30%";
-    document.getElementById("right").style.marginLeft = "70%";
-    document.getElementById("right").display = "block";
+    document.getElementById("right").style.display = "block";
   }
   classnamen = cName.className.split(" ");
   sessionStorage.setItem(classnamen[0], clicked_id);
