@@ -19,11 +19,13 @@ function nextQuestion(clicked_id) {
     document.getElementById("left").style.width = "70%";
     document.getElementById("right").style.width = "30%";
     document.getElementById("right").style.marginLeft = "70%";
+    document.getElementById("right").display = "block";
   }
   classnamen = cName.className.split(" ");
   sessionStorage.setItem(classnamen[0], clicked_id);
   var storage = sessionStorage.getItem(classnamen[0]);
   document.getElementById(classnamen[0]+"tag").innerHTML = storage;
+  savedtag = storage;
   otherChapter("rightbutton");
 }
 
@@ -90,8 +92,11 @@ function loadonclickimage(thisbutton) {
 function tagmouseover(this_id){
   var tagelement = document.getElementById(this_id);
   var elementnaam = tagelement.className.split(" ")[0];
-  document.getElementById(classnamen[0]+"tag").innerHTML = storage;
+  savedtag = document.getElementById(elementnaam + "tag").innerHTML;
+  document.getElementById(elementnaam + "tag").innerHTML = this_id;
 }
 function tagmouseout(this_id){
   var tagelement = document.getElementById(this_id);
+  var elementnaam = tagelement.className.split(" ")[0];
+  document.getElementById(elementnaam + "tag").innerHTML = savedtag;
 }
