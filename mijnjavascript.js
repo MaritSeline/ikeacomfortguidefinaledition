@@ -1,5 +1,5 @@
 var selectedChapter = "chapter1";
-
+var savedtag = "";
 
 function nextQuestion(clicked_id) {
   var cName = document.getElementById(clicked_id);
@@ -13,23 +13,22 @@ function nextQuestion(clicked_id) {
   else {
     classnaam = cName.className;
   }
-  classnamen = cName.className.split(" ");
+  var classnamen = cName.className.split(" ");
 
   if (classnamen[1] == "chapter1"){
     document.getElementById("left").style.width = "70%";
     document.getElementById("right").style.width = "30%";
     document.getElementById("right").style.marginLeft = "70%";
   }
+  classnamen = cName.className.split(" ");
   sessionStorage.setItem(classnamen[0], clicked_id);
   var storage = sessionStorage.getItem(classnamen[0]);
-  document.getElementById("right").innerHTML += "<p>" + storage + "</p>";
+  document.getElementById(classnamen[0]+"tag").innerHTML = storage;
   otherChapter("rightbutton");
 }
 
 function sliderFunction(clicked_id) {
   var cName = document.getElementById(clicked_id);
-  document.getElementById(cName.className).checked = true;
-
   const
     range = document.getElementById(clicked_id),
     rangeV = document.getElementById(clicked_id + 'v'),
@@ -86,4 +85,13 @@ function loadonclickimage(thisbutton) {
   elementbutton.src = "images/bluedot.jpg";
   var sChapter = cid.split("chapter")[1];
   selectedChapter = "chapter" + sChapter;
+}
+
+function tagmouseover(this_id){
+  var tagelement = document.getElementById(this_id);
+  var elementnaam = tagelement.className.split(" ")[0];
+  document.getElementById(classnamen[0]+"tag").innerHTML = storage;
+}
+function tagmouseout(this_id){
+  var tagelement = document.getElementById(this_id);
 }
