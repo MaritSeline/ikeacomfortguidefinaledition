@@ -24,6 +24,7 @@ function nextQuestion(clicked_id) {
   var storage = sessionStorage.getItem(classnamen[0]);
   document.getElementById(classnamen[0]+"tag").innerHTML = storage;
   savedtag = storage;
+  document.getElementById("imageresult").innerHTML = "<img src='images/mattress.png' alt='' class='' id='defaultimage'>";
   otherChapter("rightbutton");
 }
 
@@ -92,9 +93,13 @@ function tagmouseover(this_id){
   var elementnaam = tagelement.className.split(" ")[0];
   savedtag = document.getElementById(elementnaam + "tag").innerHTML;
   document.getElementById(elementnaam + "tag").innerHTML = this_id;
+  if(elementnaam != "typesize"){
+  document.getElementById("imageresult").innerHTML = "<img src='images/mattress_"+ this_id + ".png' alt='' class='' id='defaultimage'>";
+  }
 }
 function tagmouseout(this_id){
   var tagelement = document.getElementById(this_id);
   var elementnaam = tagelement.className.split(" ")[0];
   document.getElementById(elementnaam + "tag").innerHTML = savedtag;
+  document.getElementById("imageresult").innerHTML = "<img src='images/mattress.png' alt='' class='' id='defaultimage'>";
 }
