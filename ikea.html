@@ -17,9 +17,9 @@
 
   <div class="left" id="left">
     <div class="question">
-    <div class="hiddenchapter" id="chapter1">
-      <p class="pbed"> Select your bed type</p>
-      <p class="p1"> Choose the bed type you will use for your new mattress.
+      <div class="hiddenchapter" id="chapter1">
+        <p class="pbed"> Select your bed type</p>
+        <p class="p1"> Choose the bed type you will use for your new mattress.
         <div class="div11">
           <img id="bedframe" class="typesize chapter1" src="images/bedframe.svg" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
           <p class="p1">bedframe</p>
@@ -32,10 +32,10 @@
           <img id="loftbed" class="typesize chapter1" src="images/loft bed.svg" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
           <p class="p1">loftbed</p>
         </div>
-    </div>
-    <div class="hiddenchapter" id="chapter2">
-      <p class="pweight">What is your weight and length?
-        <p />
+      </div>
+      <div class="hiddenchapter" id="chapter2">
+        <p class="pweight">What is your weight and length?
+          <p />
         <p class="p1">The build of the body determines the amount of
           counter-pressure the mattress should provide. </p>
         <div class="rangediv">
@@ -181,11 +181,9 @@
         <img src="images/noimportant.jpg" class="important skip chapter7" id="skipimportant" width="50%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseover="tagmouseout(this.id);  " />
         </p>
       </div>
-      <p> &nbsp; </p>
-    </div>
-    <div class="hiddenchapter" id="chapter8">
-      <p class="pexclude">What kind of element do you NOT want in your mattress?
-        <p />
+      <div class="hiddenchapter" id="chapter8">
+        <p class="pexclude">What kind of element do you NOT want in your mattress?
+          <p />
         <p class="p1">This will make sure you will not get
           a recommendation with this element.</p>
         <div class="div21">
@@ -202,40 +200,42 @@
           <img src="images/noexclude.jpg" class="excludingresults skip chapter8" id="skipexclude" width="55%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseover="tagmouseout(this.id); " />
         </div>
         <p> &nbsp; </p>
-    </div>
-    <div class="hiddenchapter" id="chapter9">
-      <p class="pprice">Do you have a specific price in mind?</p>
-      <p class="p1">Please indicate the maximum price you would like to pay for your mattress.</p>
-      <div class="rangediv">
-        <div class="range-wrap">
-          <div class="range-value" id="rangepricev"></div>
-          <input id="rangeprice" class="pricerange chapter9" type="range" min="25" max="1000" value="1000" step="25" oninput="sliderFunction(this.id)">
+      </div>
+      <div class="hiddenchapter" id="chapter9">
+        <p class="pprice">Do you have a specific price in mind?</p>
+        <p class="p1">Please indicate the maximum price you would like to pay for your mattress.</p>
+        <div class="rangediv">
+          <div class="range-wrap">
+            <div class="range-value" id="rangepricev"></div>
+            <input id="rangeprice" class="pricerange chapter9" type="range" min="25" max="1000" value="1000" step="25" oninput="sliderFunction(this.id)">
+          </div>
+        </div>
+        <p class="p3">
+          €25 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maximum price &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+          &nbsp;
+          &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; €1000
+        </p>
+        <div class="divskip">
+          <br> <a href="recommendation.html">
+            <img src="images/noprice.jpg" class="pricerange skip chapter9" id="skipprice" width="70%" onclick="nextQuestion(this.id); tagmouseover(this.id); tagmouseout(this.id); " />
+          </a>
         </div>
       </div>
-      <p class="p3">
-        €25 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maximum price &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-        &nbsp;
-        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; €1000
-      </p>
-      <div class="divskip">
-        <br> <a href="recommendation.html">
-          <img src="images/noprice.jpg" class="pricerange skip chapter9" id="skipprice" width="70%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseover="tagmouseout(this.id); " />
-        </a>
+    </div>
+    <div class="progressbar">
+      <div class="buttonsbottom">
+        <img src="images/left.jpg" alt="" class="leftbutton" id="leftbutton" onclick="otherChapter(this.id)">
+        <img src="images/bluedot.jpg" alt="" id="chapter1button" onclick="loadonclickimage(this.id)" class="dot">
+        <img src="images/greydot.jpg" alt="" id="chapter2button" onclick="loadonclickimage(this.id)" class="dot">
+        <img src="images/greydot.jpg" alt="" id="chapter3button" onclick="loadonclickimage(this.id)" class="dot">
+        <img src="images/greydot.jpg" alt="" id="chapter4button" onclick="loadonclickimage(this.id)" class="dot">
+        <img src="images/greydot.jpg" alt="" id="chapter5button" onclick="loadonclickimage(this.id)" class="dot">
+        <img src="images/greydot.jpg" alt="" id="chapter6button" onclick="loadonclickimage(this.id)" class="dot">
+        <img src="images/greydot.jpg" alt="" id="chapter7button" onclick="loadonclickimage(this.id)" class="dot">
+        <img src="images/greydot.jpg" alt="" id="chapter8button" onclick="loadonclickimage(this.id)" class="dot">
+        <img src="images/greydot.jpg" alt="" id="chapter9button" onclick="loadonclickimage(this.id)" class="dot">
+        <img src="images/right.jpg" alt="" class="rightbutton" id="rightbutton" onclick="otherChapter(this.id)">
       </div>
-    </div>
-    </div>
-    <div class="buttonsbottom">
-      <img src="images/left.jpg" alt="" class="leftbutton" id="leftbutton" onclick="otherChapter(this.id)">
-      <img src="images/bluedot.jpg" alt="" id="chapter1button" onclick="loadonclickimage(this.id)" class="dot">
-      <img src="images/greydot.jpg" alt="" id="chapter2button" onclick="loadonclickimage(this.id)" class="dot">
-      <img src="images/greydot.jpg" alt="" id="chapter3button" onclick="loadonclickimage(this.id)" class="dot">
-      <img src="images/greydot.jpg" alt="" id="chapter4button" onclick="loadonclickimage(this.id)" class="dot">
-      <img src="images/greydot.jpg" alt="" id="chapter5button" onclick="loadonclickimage(this.id)" class="dot">
-      <img src="images/greydot.jpg" alt="" id="chapter6button" onclick="loadonclickimage(this.id)" class="dot">
-      <img src="images/greydot.jpg" alt="" id="chapter7button" onclick="loadonclickimage(this.id)" class="dot">
-      <img src="images/greydot.jpg" alt="" id="chapter8button" onclick="loadonclickimage(this.id)" class="dot">
-      <img src="images/greydot.jpg" alt="" id="chapter9button" onclick="loadonclickimage(this.id)" class="dot">
-      <img src="images/right.jpg" alt="" class="rightbutton" id="rightbutton" onclick="otherChapter(this.id)">
     </div>
   </div>
   <div class="right" id="right">
