@@ -7,7 +7,7 @@
 
 .right {
   margin-left: 70%;
-  width: 0%;
+  width: 30%;
   height: 100%;
   background: #F5F5F5;
   position: fixed;
@@ -24,7 +24,7 @@
   width: 100%;
   margin-top: 80%;
   background: white;
-  height: 20%; 
+  height: 20%;
 }
 
 .mattressimg{
