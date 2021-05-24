@@ -26,6 +26,7 @@
   background: white;
   height: 10%;
   position: fixed;
+  text-align: center;
 }
 
 .mattressimg{
@@ -52,12 +53,11 @@
 }
 
 .leftbutton{
-  margin-left: 16%;
-  margin-right: 9%;
+  margin-right: 6.5%;
 }
 
 .rightbutton{
-  margin-left: 9%;
+  margin-left: 6.5%;
 }
 
 .buttonsbottom img{
