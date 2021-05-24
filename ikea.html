@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> IKEA &#8211; www.gebrokenofgekneusd.online </title>
   <script type="text/javascript" src="mijnjavascript.js"></script>
-  <script type="text/javascript" src="sessionStorage.js"></script>
   <link rel="stylesheet" href="ikea.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -29,7 +28,7 @@
           <p class="p1">bedbank</p>
         </div>
         <div class="div13">
-          <img id="loftbed" class="typesize chapter1" src="images/loft bed .svg" width="90%" onclick="nextQuestion(this.id);  scoreCalc(this.id);" />
+          <img id="loftbed" class="typesize chapter1" src="images/loft bed.svg" width="90%" onclick="nextQuestion(this.id);  scoreCalc(this.id);" />
           <p class="p1">loftbed</p>
         </div>
     </div>
@@ -92,132 +91,133 @@
     </div>
     <div class="hiddenchapter" id="chapter4">
       <p class="p2">What is your prefered sleeping position?</p>
-            <p class="p1">Your sleeping position is an important factor in
-              determining the firmness of the mattress in order to prevent you from experiencing pain after a night of sleep. (If you’re unsure, select the position in which you either wake up or fall asleep.)</p>
-            <div class="div21">
-              <img src="images/side.svg" class="sleepingposition chapter4" id="side" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-              <p class="p1">side</p>
-            </div>
-            <div class="div22">
-              <img src="images/back.svg" class="sleepingposition chapter4" id="back" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-              <p class="p1">back</p>
-            </div>
-            <div class="div21">
-              <img src="images/belly.svg" class="sleepingposition chapter4" id="belly" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-              <p class="p1">belly</p>
-            </div>
-            <div class="div22">
-              <img src="images/mixed.svg" class="sleepingposition chapter4" id="mixed" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-              <p class="p1">mixed</p>
-            </div>
-            <p> &nbsp; </p>
+      <p class="p1">Your sleeping position is an important factor in
+        determining the firmness of the mattress in order to prevent you from experiencing pain after a night of sleep. (If you’re unsure, select the position in which you either wake up or fall asleep.)</p>
+      <div class="div21">
+        <img src="images/side.svg" class="sleepingposition chapter4" id="side" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+        <p class="p1">side</p>
+      </div>
+      <div class="div22">
+        <img src="images/back.svg" class="sleepingposition chapter4" id="back" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+        <p class="p1">back</p>
+      </div>
+      <div class="div21">
+        <img src="images/belly.svg" class="sleepingposition chapter4" id="belly" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+        <p class="p1">belly</p>
+      </div>
+      <div class="div22">
+        <img src="images/mixed.svg" class="sleepingposition chapter4" id="mixed" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+        <p class="p1">mixed</p>
+      </div>
+      <p> &nbsp; </p>
     </div>
     <div class="hiddenchapter" id="chapter5">
       <p class="p2">Do you experience any pain?</p>
-                  <p class="p1">If you experience some physical pain the mattress should
-                    support this part of your body, in order to make sure it gets enough rest at night.</p>
-                  <div class="div41">
-                    <img src="images/1 shoulder.svg" class="physicalpain chapter5" id="shoulders" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-                    <p class="p1">shoulder</p>
-                  </div>
-                  <div class="div42">
-                    <img src="images/1 lower back.svg" class="physicalpain chapter5" id="lowerback" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-                    <p class="p1">lower back</p>
-                  </div>
-                  <div class="div43">
-                    <img src="images/1 neck.svg" class="physicalpain chapter5" id="neck" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-                    <p class="p1">neck</p>
-                  </div>
-                  <div class="div21">
-                    <img src="images/1 breast.svg" class="physicalpain chapter5" id="breast" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-                    <p class="p1">breast</p>
-                  </div>
-                  <div class="div22">
-                    <img src="images/1 upper back .svg" class="physicalpain chapter5" id="upperback" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-                    <p class="p1">upper back</p>
-                  </div>
-                  <p> &nbsp; </p>
-                  <div class="divskip">
-                    <img src="images/skip.jpg" class="physicalpain skip chapter5" id="skiphealth" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id); " />
-                  </div>
-                  <p> &nbsp; </p>
+      <p class="p1">If you experience some physical pain the mattress should
+        support this part of your body, in order to make sure it gets enough rest at night.</p>
+      <div class="div41">
+        <img src="images/1 shoulder.svg" class="physicalpain chapter5" id="shoulders" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+        <p class="p1">shoulder</p>
+      </div>
+      <div class="div42">
+        <img src="images/1 lower back.svg" class="physicalpain chapter5" id="lowerback" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+        <p class="p1">lower back</p>
+      </div>
+      <div class="div43">
+        <img src="images/1 neck.svg" class="physicalpain chapter5" id="neck" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+        <p class="p1">neck</p>
+      </div>
+      <div class="div21">
+        <img src="images/1 breast.svg" class="physicalpain chapter5" id="breast" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+        <p class="p1">breast</p>
+      </div>
+      <div class="div22">
+        <img src="images/1 upper back .svg" class="physicalpain chapter5" id="upperback" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+        <p class="p1">upper back</p>
+      </div>
+      <p> &nbsp; </p>
+      <div class="divskip">
+        <img src="images/skip.jpg" class="physicalpain skip chapter5" id="skiphealth" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id); " />
+      </div>
+      <p> &nbsp; </p>
     </div>
     <div class="hiddenchapter" id="chapter6">
       <p class="p2">What kind of climate do you want your bed to have?</p>
-                  <p class="p1">The top layer of the mattress can be heat retaining or ventilating. So imagine you are just getting into your bed, do you prefer your bed to stay cool or do you want it to quickly become warm? </p>
-                  <div class="div41">
-                    <img src="images/cold.svg" class="temperature chapter6" id="cool" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-                    <p class="p1">cool</p>
-                  </div>
-                  <div class="div42">
-                    <img src="images/neutral.svg" class="temperature chapter6" id="normal" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-                    <p class="p1">either</p>
-                  </div>
-                  <div class="div43">
-                    <img src="images/hot.svg" class="temperature chapter6" id="warm" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-                    <p class="p1">warmer</p>
-                  </div>
-                  <p> &nbsp; </p>
+      <p class="p1">The top layer of the mattress can be heat retaining or ventilating. So imagine you are just getting into your bed, do you prefer your bed to stay cool or do you want it to quickly become warm? </p>
+      <div class="div41">
+        <img src="images/cold.svg" class="temperature chapter6" id="cool" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+        <p class="p1">cool</p>
+      </div>
+      <div class="div42">
+        <img src="images/neutral.svg" class="temperature chapter6" id="normal" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+        <p class="p1">either</p>
+      </div>
+      <div class="div43">
+        <img src="images/hot.svg" class="temperature chapter6" id="warm" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+        <p class="p1">warmer</p>
+      </div>
+      <p> &nbsp; </p>
     </div>
     <div class="hiddenchapter" id="chapter7">
       <p class="p2">Which factor do you consider especially important for your mattress?</p>
-                  <p class="p1">This will be taken into account when selecting the most comfortable mattress for you. </p>
-                  <div class="div41">
-                    <img src="images/natural.jpg" class="important chapter7" id="natural" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-                  </div>
-                  <div class="div42">
-                    <img src="images/recycle.jpg" class="important chapter7" id="recycle" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-                  </div>
-                  <div class="div43">
-                    <img src="images/clean.jpg" class="important chapter7" id="clean" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-                  </div>
-                  <div class="div31">
-                    <img src="images/combine.jpg" class="important chapter7" id="combine" width="97%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-                  </div>
-                  <p> &nbsp; </p>
-                  <div class="divskip">
-                    <img src="images/skip.jpg" class="important skip chapter7" id="skipimportant" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);  " />
-                    </p>
-                  </div>
-                  <p> &nbsp; </p>
+      <p class="p1">This will be taken into account when selecting the most comfortable mattress for you. </p>
+      <div class="div41">
+        <img src="images/natural.jpg" class="important chapter7" id="natural" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+      </div>
+      <div class="div42">
+        <img src="images/recycle.jpg" class="important chapter7" id="recycle" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+      </div>
+      <div class="div43">
+        <img src="images/clean.jpg" class="important chapter7" id="clean" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+      </div>
+      <div class="div31">
+        <img src="images/combine.jpg" class="important chapter7" id="combine" width="97%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+      </div>
+      <p> &nbsp; </p>
+      <div class="divskip">
+        <img src="images/skip.jpg" class="important skip chapter7" id="skipimportant" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);  " />
+        </p>
+      </div>
+      <p> &nbsp; </p>
     </div>
     <div class="hiddenchapter" id="chapter8">
       <p class="p2">What kind of element do you NOT want in your mattress?
-                    <p />
-                    <p class="p1">This will make sure you will not get
-                      a recommendation with this element.</p>
-                    <div class="div21">
-                      <img src="images/memory foam.svg" class="excludingresults chapter8" id="nomemoryfoam" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-                      <p class="p1">no memory foam</p>
-                    </div>
-                    <div class="div22">
-                      <img src="images/springs.svg" class="excludingresults chapter8" id="nosprings" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
-                      <p class="p1">no springs</p>
-                    </div>
-                    <p> &nbsp; </p>
-                    <div class="divskip">
-                      <img src="images/skip.jpg" class="excludingresults skip chapter8" id="skipexclude" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id); " />
-                    </div>
-                    <p> &nbsp; </p>
+        <p />
+        <p class="p1">This will make sure you will not get
+          a recommendation with this element.</p>
+        <div class="div21">
+          <img src="images/memory foam.svg" class="excludingresults chapter8" id="nomemoryfoam" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+          <p class="p1">no memory foam</p>
+        </div>
+        <div class="div22">
+          <img src="images/springs.svg" class="excludingresults chapter8" id="nosprings" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id);" />
+          <p class="p1">no springs</p>
+        </div>
+        <p> &nbsp; </p>
+        <div class="divskip">
+          <img src="images/skip.jpg" class="excludingresults skip chapter8" id="skipexclude" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id); " />
+        </div>
+        <p> &nbsp; </p>
     </div>
     <div class="hiddenchapter" id="chapter9">
       <p class="p2">Do you have a specific price in mind?</p>
-            <p class="p1">Please indicate the maximum price you would like to pay for your mattress.</p>
-            <div class="rangediv">
-              <div class="range-wrap">
-                <div class="range-value" id="rangepricev"></div>
-                <input id="rangeprice" class="pricerange chapter9" type="range" min="25" max="1000" value="1000" step="25" oninput="sliderFunction(this.id)">
-              </div>
-            </div>
-            <p class="p3">
-              €25 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maximum price &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-              &nbsp;
-              &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; €1000
-            </p>
-            <div class="divskip">
-              <br>
-              <img src="images/skip.jpg" class="pricerange skip chapter9" id="skipprice" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id); " />
-            </div>
+      <p class="p1">Please indicate the maximum price you would like to pay for your mattress.</p>
+      <div class="rangediv">
+        <div class="range-wrap">
+          <div class="range-value" id="rangepricev"></div>
+          <input id="rangeprice" class="pricerange chapter9" type="range" min="25" max="1000" value="1000" step="25" oninput="sliderFunction(this.id)">
+        </div>
+      </div>
+      <p class="p3">
+        €25 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maximum price &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+        &nbsp;
+        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; €1000
+      </p>
+      <div class="divskip">
+        <br> <a href="recommendation.html">
+          <img src="images/skip.jpg" class="pricerange skip chapter9" id="skipprice" width="90%" onclick="nextQuestion(this.id); scoreCalc(this.id); " />
+        </a>
+      </div>
     </div>
     <div class="buttonsbottom">
       <img src="images/left.jpg" alt="" class="leftbutton" id="leftbutton" onclick="otherChapter(this.id)">

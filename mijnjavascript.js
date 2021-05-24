@@ -13,14 +13,16 @@ function nextQuestion(clicked_id) {
   else {
     classnaam = cName.className;
   }
-  classnaam = cName.className.split("chapter")[1];
+  classnamen = cName.className.split(" ");
 
-  if (classnaam == "1"){
+  if (classnamen[1] == "chapter1"){
     document.getElementById("left").style.width = "70%";
     document.getElementById("right").style.width = "30%";
     document.getElementById("right").style.marginLeft = "70%";
   }
-  sessionStorage.setItem();
+  sessionStorage.setItem(classnamen[0], clicked_id);
+  var storage = sessionStorage.getItem(classnamen[0]);
+  document.getElementById("right").innerHTML += "<p>" + storage + "</p>";
   otherChapter("rightbutton");
 }
 
