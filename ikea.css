@@ -232,8 +232,39 @@ display: none;
   padding-top: 2%;
 }
 
+.div71 {
+  width: 22.5%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding: 0;
+  margin-left: 16.25%;
+  text-align: center;
+}
+
+.div72 {
+  width: 22.5%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.div73 {
+  width: 22.5%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+
 .divskip{
-  width: 90%;
+  width: 22.5%;
   height: 100%;
   background: transparant;
   float: left;
