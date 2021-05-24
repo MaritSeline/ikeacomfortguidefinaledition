@@ -25,6 +25,9 @@ function nextQuestion(clicked_id) {
     document.getElementById("right").style.display = "block";
     document.getElementById("progressbar").style.width = "70%";
     document.getElementById("imageresult").innerHTML = "<img src='images/mattress_shadow.png' alt='' class='' id='defaultimage' width='100%'>";
+    document.getElementById("div11").className = "div41";
+    document.getElementById("div12").className = "div42";
+    document.getElementById("div13").className = "div43";
 
   }
   otherChapter("rightbutton");
