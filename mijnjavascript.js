@@ -15,17 +15,18 @@ function nextQuestion(clicked_id) {
   }
   var classnamen = cName.className.split(" ");
 
-  if (classnamen[1] == "chapter1"){
-    document.getElementById("left").style.width = "70%";
-    document.getElementById("right").style.display = "block";
-    document.getElementById("progressbar").style.width = "70%";
-  }
-  classnamen = cName.className.split(" ");
   sessionStorage.setItem(classnamen[0], clicked_id);
   var storage = sessionStorage.getItem(classnamen[0]);
   document.getElementById(classnamen[0]+"tag").innerHTML = storage;
   savedtag = storage;
   document.getElementById("imageresult").innerHTML = "<img src='images/mattress.png' alt='' class='' id='defaultimage' width='100%'>";
+  if (classnamen[1] == "chapter1"){
+    document.getElementById("left").style.width = "70%";
+    document.getElementById("right").style.display = "block";
+    document.getElementById("progressbar").style.width = "70%";
+    document.getElementById("imageresult").innerHTML = "<img src='images/mattress_shadow.png' alt='' class='' id='defaultimage' width='100%'>";
+
+  }
   otherChapter("rightbutton");
 }
 
@@ -52,6 +53,10 @@ function sliderFunction(clicked_id) {
 
 function otherChapter(clickedbutton) {
   var sChapter = parseInt(selectedChapter.split("chapter")[1]);
+  if(sChapter != 1)
+  {
+    document.getElementById("imageresult").innerHTML = "<img src='images/mattress.png' alt='' class='' id='defaultimage' width='100%'>";
+  }
   if(clickedbutton == "leftbutton")
   { if(sChapter == 1){  }
     else if(sChapter >1 && sChapter<=10){
@@ -65,8 +70,8 @@ function otherChapter(clickedbutton) {
     }
   }
   selectedChapter = "chapter" + sChapter;
-  loadonclickimage("chapter" + sChapter + "button");
 
+  loadonclickimage("chapter" + sChapter + "button");
 
 }
 
@@ -87,6 +92,9 @@ function loadonclickimage(thisbutton) {
   elementbutton.src = "images/bluedot.jpg";
   var sChapter = cid.split("chapter")[1];
   selectedChapter = "chapter" + sChapter;
+  if(sChapter == "1"){
+    document.getElementById("imageresult").innerHTML = "<img src='images/mattress.png' alt='' class='' id='defaultimage' width='100%'>";
+  }
 }
 
 function tagmouseover(this_id){
@@ -102,5 +110,8 @@ function tagmouseout(this_id){
   var tagelement = document.getElementById(this_id);
   var elementnaam = tagelement.className.split(" ")[0];
   document.getElementById(elementnaam + "tag").innerHTML = savedtag;
-  document.getElementById("imageresult").innerHTML = "<img src='images/mattress.png' alt='' class='' id='defaultimage' width='100%'>";
+  if(elementnaam != "typesize"){
+    document.getElementById("imageresult").innerHTML = "<img src='images/mattress.png' alt='' class='' id='defaultimage' width='100%'>";
+
+  }
 }
