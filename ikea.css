@@ -13,6 +13,18 @@
   position: fixed;
 }
 
+.mattressimg{
+  top: 10%;
+}
+
+.bedtags{
+  top: 64%;
+}
+
+.personaltags{
+  top: 123.5%;
+}
+
 .hiddenchapter{
   display: none;
   top: 20%;
