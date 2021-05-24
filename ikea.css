@@ -68,8 +68,8 @@
 }
 
 
-.chapter1:hover, .chapter3:hover, .chapter4:hover, .chapter5:hover,
-.chapter6:hover, .chapter7:hover, .chapter8:hover {
+.chapter1:hover, .chapter2:hover, .chapter4:hover, .chapter5:hover,
+.chapter6:hover, .chapter7:hover, .chapter8:hover, .chapter9:hover {
   border-style: solid;
   border-color: #0058AB;
   border-width: 5px;

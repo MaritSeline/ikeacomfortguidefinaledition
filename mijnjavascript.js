@@ -54,13 +54,13 @@ function otherChapter(clickedbutton) {
   var sChapter = parseInt(selectedChapter.split("chapter")[1]);
   if(clickedbutton == "leftbutton")
   { if(sChapter == 1){  }
-    else if(sChapter >1 && sChapter<=9){
+    else if(sChapter >1 && sChapter<=10){
       sChapter = sChapter - 1;
     }
   }
   else if(clickedbutton == "rightbutton")
-  { if(sChapter == 9){  }
-    else if(sChapter >=1 && sChapter<9){
+  { if(sChapter == 10){  }
+    else if(sChapter >=1 && sChapter<10){
       sChapter = sChapter + 1;
     }
   }
