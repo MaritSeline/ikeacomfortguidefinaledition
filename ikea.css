@@ -24,7 +24,7 @@
   width: 100%;
   bottom: 0%;
   background: white;
-  height: 10%;
+  height: 12.5%;
   position: fixed;
   text-align: center;
 }
@@ -54,15 +54,17 @@
 
 .leftbutton{
   margin-right: 6.5%;
+  width: 10px;
 }
 
 .rightbutton{
   margin-left: 6.5%;
+  width: 10px;
 }
 
-.buttonsbottom img{
-  width:0.75%;
-  margin-left: 2.5%;
+.buttonsbottom .dot{
+  width:10px;
+  margin: 2%;
 }
 
 
@@ -95,6 +97,10 @@ display: none;
 }
 #flush-collapseOne{
 
+}
+
+.divtext{
+  width: 55%;
 }
 
 .p1 {
@@ -333,10 +339,7 @@ display: none;
   width: 16%;
   height: 100%;
   background: transparant;
-  float: left;
   text-align: center;
-  margin-right: 5%;
-  margin-left: 5%;
   padding-top: 2%;
 }
 
