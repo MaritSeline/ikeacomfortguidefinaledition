@@ -40,15 +40,15 @@ function sliderFunction(clicked_id) {
         newPosition = 10 - (newValue * 0.2);
       rangeV.innerHTML = `<span>${range.value}</span>`;
       rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
+      classnamen = cName.className.split(" ");
+      sessionStorage.setItem(classnamen[0], range.value);
+      document.getElementById(classnamen[0]+"tag").innerHTML = range.value;
     };
   document.addEventListener("DOMContentLoaded", setValue);
   range.addEventListener('input', setValue);
 
-  var image = score.indexOf(Math.max(...score));
-  if(clicked_id=="rangelength"){
-  document.getElementById("right").innerHTML = "<img src='images/" + names[image] + "lengte.jpg' style='max-width:100%; max-height:100%;'/>";
 }
-}
+
 
 function otherChapter(clickedbutton) {
   var sChapter = parseInt(selectedChapter.split("chapter")[1]);
