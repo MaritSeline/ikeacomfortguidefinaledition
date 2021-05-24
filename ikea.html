@@ -20,15 +20,15 @@
       <p class="p2"> Select your bed type</p>
       <p class="p1"> Choose the bed type you will use for your new mattress.
         <div class="div11">
-          <img id="bedframe" class="typesize chapter1" src="images/bedframe.svg" width="90%" onclick="nextQuestion(this.id); hiddenDiv(this.id); scoreCalc(this.id);" />
+          <img id="bedframe" class="typesize chapter1" src="images/bedframe.svg" width="90%" onclick="nextQuestion(this.id);  scoreCalc(this.id);" />
           <p class="p1">bedframe</p>
         </div>
         <div class="div12">
-          <img id="bedbank" class="typesize chapter1" src="images/bedbank.svg" width="90%" onclick="nextQuestion(this.id); hiddenDiv(this.id); scoreCalc(this.id); donebutton();" />
+          <img id="bedbank" class="typesize chapter1" src="images/bedbank.svg" width="90%" onclick="nextQuestion(this.id);  scoreCalc(this.id);" />
           <p class="p1">bedbank</p>
         </div>
         <div class="div13">
-          <img id="loftbed" class="typesize chapter1" src="images/loft bed .svg" width="90%" onclick="nextQuestion(this.id); hiddenDiv(this.id); scoreCalc(this.id);" />
+          <img id="loftbed" class="typesize chapter1" src="images/loft bed .svg" width="90%" onclick="nextQuestion(this.id);  scoreCalc(this.id);" />
           <p class="p1">loftbed</p>
         </div>
     </div>
@@ -219,7 +219,7 @@
             </div>
     </div>
     <div class="buttonsbottom">
-      <img src="images/left.jpg" alt="" class="">
+      <img src="images/left.jpg" alt="" class="leftbutton" id="leftbutton" onclick="otherChapter(this.id)">
       <img src="images/bluedot.jpg" alt="" id="chapter1button" onclick="loadonclickimage(this.id)" class="dot">
       <img src="images/greydot.jpg" alt="" id="chapter2button" onclick="loadonclickimage(this.id)" class="dot">
       <img src="images/greydot.jpg" alt="" id="chapter3button" onclick="loadonclickimage(this.id)" class="dot">
@@ -229,7 +229,7 @@
       <img src="images/greydot.jpg" alt="" id="chapter7button" onclick="loadonclickimage(this.id)" class="dot">
       <img src="images/greydot.jpg" alt="" id="chapter8button" onclick="loadonclickimage(this.id)" class="dot">
       <img src="images/greydot.jpg" alt="" id="chapter9button" onclick="loadonclickimage(this.id)" class="dot">
-      <img src="images/right.jpg" alt="" class="">
+      <img src="images/right.jpg" alt="" class="rightbutton" id="rightbutton" onclick="otherChapter(this.id)">
     </div>
   </div>
   <div class="right" id="right">

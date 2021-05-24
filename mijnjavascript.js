@@ -35,7 +35,7 @@ let names = ["HOVAG", "MALFORS", "MYRBACKA", "VATNESTROM", "HAFSLO", "HAMARVIK",
 var score = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var old = [];
 
-
+var selectedChapter = "chapter1";
 
 function scoreCalc(clicked_id) {
   var sName = document.getElementById(clicked_id);
@@ -64,9 +64,9 @@ function scoreCalc(clicked_id) {
   }
 }
 
-function donebutton() {
-  document.getElementById("donebutton").innerHTML = "<a href='recommendation.html'> <img src='images/donebutton.jpg' width='10%' /> </a>";
-}
+//function donebutton() {
+//  document.getElementById("donebutton").innerHTML = "<a href='recommendation.html'> <img src='images/donebutton.jpg' width='10%' /> </a>";
+//}
 
 function nextQuestion(clicked_id) {
   var cName = document.getElementById(clicked_id);
@@ -80,13 +80,14 @@ function nextQuestion(clicked_id) {
   else {
     classnaam = cName.className;
   }
-  i
+  classnaam = cName.className.split(" ")[1];
 
   if (classnaam == "chapter1"){
     document.getElementById("left").style.width = "70%";
     document.getElementById("right").style.width = "30%";
     document.getElementById("right").style.marginLeft = "70%";
   }
+  otherChapter("rightbutton");
 }
 
 function sliderFunction(clicked_id) {
@@ -112,22 +113,41 @@ function sliderFunction(clicked_id) {
 }
 }
 
-
-
-function hiddenDiv(thisdiv) {
-  var x = document.getElementById("div" + thisdiv);
-
-  var all = document.getElementsByClassName(x.className);
-
-  for (var i = 0; i < all.length; i++) {
-    all[i].style.display = "none";
+function otherChapter(clickedbutton) {
+  var sChapter = parseInt(selectedChapter.split("chapter")[1]);
+  if(clickedbutton == "leftbutton")
+  { if(sChapter == 1){  }
+    else if(sChapter >1 && sChapter<=9){
+      sChapter = sChapter - 1;
+    }
   }
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
+  else if(clickedbutton == "rightbutton")
+  { if(sChapter == 9){  }
+    else if(sChapter >=1 && sChapter<9){
+      sChapter = sChapter + 1;
+    }
   }
+  selectedChapter = "chapter" + sChapter;
+  loadonclickimage("chapter" + sChapter + "button");
+
+
 }
+
+// function hiddenDiv(thisdiv) {
+//   var x = document.getElementById("div" + thisdiv);
+//
+//   var all = document.getElementsByClassName(x.className);
+//
+//   for (var i = 0; i < all.length; i++) {
+//     all[i].style.display = "none";
+//   }
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
+// }
+
 function loadonclickimage(thisbutton) {
   var elementbutton = document.getElementById(thisbutton);
   var cid = thisbutton.split('button')[0];
@@ -143,9 +163,11 @@ function loadonclickimage(thisbutton) {
     allbuttons[i].src = "images/greydot.jpg";
   }
   elementbutton.src = "images/bluedot.jpg";
+  var sChapter = cid.split("chapter")[1];
+  selectedChapter = "chapter" + sChapter;
 }
 
-function scrollView(thisid) {
-  var scroller = document.getElementById(thisid);
-  scroller.scrollIntoView(false);
-}
+  // function scrollView(thisid) {
+  //   var scroller = document.getElementById(thisid);
+  //   scroller.scrollIntoView(false);
+  // }
