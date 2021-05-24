@@ -15,17 +15,26 @@
 
 .hiddenchapter{
   display: none;
-  margin-top: 10%;
+  top: 20%;
 }
 .hiddenchapter#chapter1{
   display:block;
 }
 .buttonsbottom{
-
+  bottom: 20%;
+  position: fixed;
 }
 .buttonsbottom img{
   height: 15px;
   padding: 2px;
+}
+
+.chapter1:hover, .chapter2:hover, .chapter3:hover, .chapter4:hover, .chapter5:hover,
+.chapter6:hover, .chapter7:hover, .chapter8:hover, .chapter9:hover{
+  border-style: solid;
+  border-color: blue;
+  border-width: 5px;
+  border-radius: 100%;
 }
 
 
