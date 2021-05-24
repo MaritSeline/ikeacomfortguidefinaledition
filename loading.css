@@ -1,0 +1,39 @@
+.welcome {
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 62px;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.subtitle{
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+  text-align: center;
+  margin:0;
+  padding:0;
+}
+
+.starthead {
+    width: 100%;
+    height: 10%;
+    background: transparant;
+    float: left;
+    padding: 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+.startimg {
+    width: 100%;
+    height: 40%;
+    background: transparant;
+    float: left;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    vertical-align: middle;
+}
