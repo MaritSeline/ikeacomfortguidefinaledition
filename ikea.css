@@ -90,6 +90,116 @@ display: none;
   z-index: -1;
 }
 
+.pbed{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  padding: 0;
+  margin-top: 16%;
+}
+
+.psize{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  padding: 0;
+  margin-top: 26.5%;
+}
+
+.pweight{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  padding: 0;
+  margin-top: 29%;
+}
+
+.pbody{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  padding: 0;
+  margin-top: 11.5%;
+}
+
+.pposition{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  padding: 0;
+  margin-top: 11.5%;
+}
+
+.pposition{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  padding: 0;
+  margin-top: 11.5%;
+}
+
+.ppain{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  padding: 0;
+  margin-top: 11%;
+}
+
+.ptemp{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  padding: 0;
+  margin-top: 22%;
+}
+
+.pimportant{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  padding: 0;
+  margin-top: 21.5%;
+}
+
+.pexclude{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  padding: 0;
+  margin-top: 22%;
+}
+
+.pprice{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  padding: 0;
+  margin-top: 21.5%;
+}
+
 .div11 {
   width: 11.5%;
   height: 100%;
