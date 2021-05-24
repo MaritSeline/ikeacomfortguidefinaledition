@@ -18,6 +18,7 @@ function nextQuestion(clicked_id) {
   if (classnamen[1] == "chapter1"){
     document.getElementById("left").style.width = "70%";
     document.getElementById("right").style.display = "block";
+    document.getElementById("progressbar").style.width = "70%";
   }
   classnamen = cName.className.split(" ");
   sessionStorage.setItem(classnamen[0], clicked_id);
