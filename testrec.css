@@ -1,0 +1,66 @@
+.bigrec{
+  width: 70%;
+  background: white;
+}
+
+.alternative{
+  width: 30%;
+  margin-left: 70%;
+  background: white;
+}
+
+.recomtext{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  font-style: normal;
+  text-align: left;
+  margin-left: 10%;
+  padding-top: 2.5%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.underrecom{
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  text-align: left;
+  margin-left: 10%;
+  padding: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.bluebeam{
+  width: 82.5%;
+  background: #0058AB;
+  text-align: center;
+  color: white;
+  margin-left: 10%;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  vertical-align: middle;
+}
+
+.recomimg{
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 7.5%;
+  position: relative;
+}
+
+.requirement{
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  text-align: left;
+  width: 82.5%;
+  margin-left: 10%;
+  border-style: none none solid none;
+  border-width: thin;
+}

@@ -8,6 +8,17 @@
   top: 0;
 }
 
+.bigrec{
+  width: 70%;
+  background:white;
+  margin-left: 0%;
+}
+
+.alternative{
+  width: 30%;
+  margin-left: 70%;
+  background: white;
+}
 .left {
   width: 20%;
   height: 100%;
