@@ -34,7 +34,6 @@
   text-align: center;
 }
 .tags{
-  margin-left: 10%;
   width: fit-content;
   border-radius: 20px;
   text-align: center;
@@ -44,6 +43,7 @@
   padding-bottom: 5px;
   background-color:white;
   font-family: futura-pt, sans-serif;
+  display: inline;
 }
 
 .tagstitle{
@@ -53,10 +53,12 @@
 
 .bedtags {
   top: 64%;
+  margin-left: 10%;
 }
 
 .personaltags {
   top: 123.5%;
+  margin-left: 10%;
 }
 
 .hiddenchapter {
