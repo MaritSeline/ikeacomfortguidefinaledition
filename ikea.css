@@ -48,7 +48,7 @@
 }
 
 .tagstitle{
-  margin-left: 3%;
+  margin-left: 10%;
   font-family: futura-pt, sans-serif;
 }
 
@@ -358,9 +358,29 @@ div#divloftbed {
 }
 
 .divskip {
+  display: block;
+  margin: auto;
   width: 16%;
   height: 100%;
   padding-top: 2%;
+}
+
+#skiphealth {
+  display: block;
+  margin: auto;
+}
+
+#skipimportant {
+  display: block;
+  margin: auto;
+}
+#skipexclude {
+  display: block;
+  margin: auto;
+}
+#skipprice {
+  display: block;
+  margin: auto;
 }
 
 .donebutton {
