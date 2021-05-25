@@ -1,6 +1,7 @@
 var selectedChapter = "chapter1";
 var savedtag = "";
 
+//go to next question + skip question
 function nextQuestion(clicked_id) {
   var cName = document.getElementById(clicked_id);
   var skip = false;
@@ -13,8 +14,12 @@ function nextQuestion(clicked_id) {
   }
   var classnamen = cName.className.split(" ");
 
+//set default image + if first question is answered show side with tags
   sessionStorage.setItem(classnamen[0], clicked_id);
   var storage = sessionStorage.getItem(classnamen[0]);
+  if (classnamen[0]=="bedsizes") {
+    storage=storage + "*200";
+  }
   document.getElementById(classnamen[0] + "tag").innerHTML = storage;
   savedtag = storage;
   document.getElementById("imageresult").innerHTML = "<img src='images/mattress.png' alt='' class='' id='defaultimage' width='100%'>";
@@ -31,6 +36,7 @@ function nextQuestion(clicked_id) {
   otherChapter("rightbutton");
 }
 
+//sliders
 function sliderFunction(clicked_id) {
   var cName = document.getElementById(clicked_id);
   const
@@ -44,8 +50,10 @@ function sliderFunction(clicked_id) {
       rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
       classnamen = cName.className.split(" ");
       sessionStorage.setItem(classnamen[0], range.value);
+
+      //add text to tags
       if (classnamen[0] == "weightslider") {
-        document.getElementById(classnamen[0] + "tag").innerHTML = range.value + "KG";
+        document.getElementById(classnamen[0] + "tag").innerHTML = range.value + "kg";
       } else {
         document.getElementById(classnamen[0] + "tag").innerHTML = range.value;
       }
@@ -55,7 +63,7 @@ function sliderFunction(clicked_id) {
 
 }
 
-
+//arrows of progressbar working
 function otherChapter(clickedbutton) {
   var sChapter = parseInt(selectedChapter.split("chapter")[1]);
   if (sChapter != 1) {
@@ -76,6 +84,7 @@ function otherChapter(clickedbutton) {
 
 }
 
+//go to next question when previous one is answered
 function loadonclickimage(thisbutton) {
   var elementbutton = document.getElementById(thisbutton);
   var cid = thisbutton.split('button')[0];
@@ -86,6 +95,7 @@ function loadonclickimage(thisbutton) {
   }
   chapterid.style.display = "block";
 
+//show blue dot for question you are on
   var allbuttons = document.getElementsByClassName(elementbutton.className);
   for (var i = 0; i < allbuttons.length; i++) {
     allbuttons[i].src = "images/greydot.jpg";
@@ -98,16 +108,22 @@ function loadonclickimage(thisbutton) {
   }
 }
 
+//show tag and image when you hover over answer
 function tagmouseover(this_id) {
+  var thisid = this_id;
   var tagelement = document.getElementById(this_id);
   var elementnaam = tagelement.className.split(" ")[0];
   savedtag = document.getElementById(elementnaam + "tag").innerHTML;
-  document.getElementById(elementnaam + "tag").innerHTML = this_id;
+  if (elementnaam=="bedsizes") {
+    thisid = thisid + "*200";
+  }
+  document.getElementById(elementnaam + "tag").innerHTML = thisid;
   if (elementnaam != "typesize") {
     document.getElementById("imageresult").innerHTML = "<img src='images/mattress_" + this_id + ".png' alt='' class='' id='defaultimage' width='100%'>";
   }
 }
 
+//don't show tag when mouse has left area
 function tagmouseout(this_id) {
   var tagelement = document.getElementById(this_id);
   var elementnaam = tagelement.className.split(" ")[0];
