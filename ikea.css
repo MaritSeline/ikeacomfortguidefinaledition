@@ -48,8 +48,9 @@
 }
 
 .tagstitle{
-  margin-left: 10%;
+  margin-left: 3%;
   font-family: futura-pt, sans-serif;
+  font-weight: 700;
 }
 
 .bedtags {
@@ -358,8 +359,6 @@ div#divloftbed {
 }
 
 .divskip {
-  display: block;
-  margin: auto;
   width: 16%;
   height: 100%;
   padding-top: 2%;
