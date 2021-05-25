@@ -43,7 +43,6 @@
   padding-bottom: 5px;
   background-color:white;
   font-family: futura-pt, sans-serif;
-  display: inline;
 }
 
 .tagstitle{
@@ -52,13 +51,13 @@
 }
 
 .bedtags {
-  top: 64%;
   margin-left: 10%;
+  top: 64%;
 }
 
 .personaltags {
-  top: 123.5%;
   margin-left: 10%;
+  top: 123.5%;
 }
 
 .hiddenchapter {
@@ -357,8 +356,6 @@ div#divloftbed {
 }
 
 .divskip {
-  margin: auto;
-  align-items: center;
   width: 16%;
   height: 100%;
   padding-top: 2%;
