@@ -17,8 +17,30 @@ function nextQuestion(clicked_id) {
 //set default image + if first question is answered show side with tags
   sessionStorage.setItem(classnamen[0], clicked_id);
   var storage = sessionStorage.getItem(classnamen[0]);
+  if (classnamen[0]=="typesize") {
+    storage=storage;
+  }
   if (classnamen[0]=="bedsizes") {
-    storage=storage + "*200";
+    storage=storage + "*200 cm";
+  }
+  if (classnamen[0]=="bodytype") {
+    storage="Good for a " + storage + " bodyshape";
+  }
+  if (classnamen[0]=="sleepingposition") {
+    storage= "Fit for " + storage + " sleeping";
+  }
+  if (classnamen[0]=="physicalpain") {
+    storage= storage;
+  }
+  if (classnamen[0]=="temperature") {
+    storage=storage;
+  }
+  if (classnamen[0]=="important") {
+    storage=storage;
+  }
+
+  if (classnamen[0]=="excludingresults") {
+    storage= "No " + storage;
   }
   document.getElementById(classnamen[0] + "tag").innerHTML = storage;
   savedtag = storage;
@@ -114,9 +136,32 @@ function tagmouseover(this_id) {
   var tagelement = document.getElementById(this_id);
   var elementnaam = tagelement.className.split(" ")[0];
   savedtag = document.getElementById(elementnaam + "tag").innerHTML;
+
+  if (elementnaam=="typesize") {
+      thisid=thisid;
+    }
   if (elementnaam=="bedsizes") {
-    thisid = thisid + "*200";
-  }
+      thisid=thisid + "*200 cm";
+    }
+  if (elementnaam=="bodytype") {
+      thisid="Good for a " + thisid + " bodyshape";
+    }
+  if (elementnaam=="sleepingposition") {
+      thisid= "Fit for " + thisid + " sleeping";
+    }
+  if (elementnaam=="physicalpain") {
+      thisid= thisid;
+    }
+  if (elementnaam=="temperature") {
+      thisid=thisid;
+    }
+  if (elementnaam=="important") {
+      thisid=thisid;
+    }
+
+    if (classnamen[0]=="excludingresults") {
+      thisid= thisid;
+    }
   document.getElementById(elementnaam + "tag").innerHTML = thisid;
   if (elementnaam != "typesize") {
     document.getElementById("imageresult").innerHTML = "<img src='images/mattress_" + this_id + ".png' alt='' class='' id='defaultimage' width='100%'>";
