@@ -34,28 +34,30 @@
 }
 
 .textcart{
+  margin-left: 60%;
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-size: 30px;
   font-style: normal;
-  text-align: center;
+  text-align: left;
   margin: 0;
   padding-top: 2.5%;
   padding-bottom: 0;
 }
 
 .cartimg{
-  text-align: center;
+  text-align: left;
   margin-top: 15%;
   padding:0;
 }
 
 .undercart{
+  margin-left: 60%;
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-size: 25px;
   font-style: normal;
-  text-align: center;
+  text-align: left;
   margin:0;
   padding:0;
 }
