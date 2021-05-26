@@ -35,7 +35,7 @@
 }
 .tags{
   margin-left: 3%;
-  display: inline-block;
+  display: none;
   width: fit-content;
   border-radius: 20px;
   text-align: center;
@@ -45,6 +45,12 @@
   padding-bottom: 5px;
   background-color:white;
   font-family: futura-pt, sans-serif;
+}
+.tags:hover {
+  border-style: solid !important;
+  border-color: #0058AB !important;
+  border-width: 5px !important;
+  border-radius: 13.5%/50% !important;
 }
 
 .tagstitle{
@@ -89,15 +95,15 @@
   margin: 2%;
 }
 
-.chapter1:hover, .chapter4:hover, .chapter5:hover,
-.chapter6:hover, .chapter7:hover, .chapter9:hover {
+.hiddenchapter .chapter1:hover, .hiddenchapter .chapter4:hover, .hiddenchapter .chapter5:hover,
+.hiddenchapter .chapter6:hover, .hiddenchapter .chapter7:hover, .hiddenchapter .chapter9:hover {
   border-style: solid;
   border-color: #0058AB;
   border-width: 5px;
   border-radius: 100%;
 }
 
-.chapter2:hover, .chapter8:hover{
+.hiddenchapter .chapter2:hover, .hiddenchapter .chapter8:hover{
   border-style: solid;
   border-color: #0058AB;
   border-width: 5px;

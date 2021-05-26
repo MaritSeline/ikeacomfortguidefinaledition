@@ -4,14 +4,6 @@ var savedtag = "";
 //go to next question + skip question
 function nextQuestion(clicked_id) {
   var cName = document.getElementById(clicked_id);
-  var skip = false;
-  var chapterboolean = false;
-  if (cName.className.includes("skip")) {
-    classnaam = cName.className.split(" ", 1);
-    skip = true;
-  } else {
-    classnaam = cName.className;
-  }
   var classnamen = cName.className.split(" ");
 
 //set default image + if first question is answered show side with tags
@@ -30,7 +22,7 @@ function nextQuestion(clicked_id) {
     storage= "Fit for " + storage + " sleeping";
   }
   if (classnamen[0]=="physicalpain") {
-    storage= storage;
+    storage= "Supports " + storage + " pain";
   }
   if (classnamen[0]=="temperature") {
     storage=storage;
@@ -43,6 +35,7 @@ function nextQuestion(clicked_id) {
     storage= "No " + storage;
   }
   document.getElementById(classnamen[0] + "tag").innerHTML = storage;
+  document.getElementById(classnamen[0] + "tag").style.display = "inline-block";
   savedtag = storage;
   document.getElementById("imageresult").innerHTML = "<img src='images/mattress.png' alt='' class='' id='defaultimage' width='100%'>";
   if (classnamen[1] == "chapter1") {
@@ -76,6 +69,7 @@ function sliderFunction(clicked_id) {
       //add text to tags
       if (classnamen[0] == "weightslider") {
         document.getElementById(classnamen[0] + "tag").innerHTML = range.value + " kg";
+
       }
       else if (classnamen[0] == "lengthslider") {
         document.getElementById(classnamen[0] + "tag").innerHTML = range.value + " cm";
@@ -86,6 +80,7 @@ function sliderFunction(clicked_id) {
        else {
         document.getElementById(classnamen[0] + "tag").innerHTML = range.value;
       }
+      document.getElementById(classnamen[0] + "tag").style.display = "inline-block";
     };
   document.addEventListener("DOMContentLoaded", setValue);
   range.addEventListener('input', setValue);
@@ -157,7 +152,7 @@ function tagmouseover(this_id) {
       thisid= "Fit for " + thisid + " sleeping";
     }
   if (elementnaam=="physicalpain") {
-      thisid= thisid;
+      thisid= "Supports " + thisid + " pain";
     }
   if (elementnaam=="temperature") {
       thisid=thisid;
@@ -166,10 +161,14 @@ function tagmouseover(this_id) {
       thisid=thisid;
     }
 
-    if (classnamen[0]=="excludingresults") {
+    if (elementnaam=="excludingresults") {
       thisid= thisid;
     }
   document.getElementById(elementnaam + "tag").innerHTML = thisid;
+  document.getElementById(elementnaam + "tag").style.display = "inline-block";
+  document.getElementById(elementnaam + "tag").style.border = "3px solid #0058AB";
+  document.getElementById(elementnaam + "tag").style.borderRadius = "13.5%/50%";
+
   if (elementnaam != "typesize") {
     document.getElementById("imageresult").innerHTML = "<img src='images/mattress_" + this_id + ".png' alt='' class='' id='defaultimage' width='100%'>";
   }
@@ -180,8 +179,27 @@ function tagmouseout(this_id) {
   var tagelement = document.getElementById(this_id);
   var elementnaam = tagelement.className.split(" ")[0];
   document.getElementById(elementnaam + "tag").innerHTML = savedtag;
+  document.getElementById(elementnaam + "tag").style.border = "3px none #0058AB";
   if (elementnaam != "typesize") {
     document.getElementById("imageresult").innerHTML = "<img src='images/mattress.png' alt='' class='' id='defaultimage' width='100%'>";
 
   }
+}
+
+function goToChapter(this_id) {
+  var thistag = document.getElementById(this_id);
+  var klasnaam = thistag.className.split(" ")[1];
+  var chapterid = document.getElementById(klasnaam);
+  var allchapters = document.getElementsByClassName("hiddenchapter");
+  for (var i = 0; i < allchapters.length; i++) {
+    allchapters[i].style.display = "none";
+  }
+  chapterid.style.display = "block";
+  selectedChapter = klasnaam;
+  var elementbutton = document.getElementById(klasnaam + "button");
+  var allbuttons = document.getElementsByClassName(elementbutton.className);
+  for (var i = 0; i < allbuttons.length; i++) {
+    allbuttons[i].src = "images/greydot.jpg";
+  }
+  elementbutton.src = "images/bluedot.jpg";
 }
