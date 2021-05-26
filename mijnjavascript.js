@@ -75,8 +75,15 @@ function sliderFunction(clicked_id) {
 
       //add text to tags
       if (classnamen[0] == "weightslider") {
-        document.getElementById(classnamen[0] + "tag").innerHTML = range.value + "kg";
-      } else {
+        document.getElementById(classnamen[0] + "tag").innerHTML = range.value + " kg";
+      }
+      else if (classnamen[0] == "lengthslider") {
+        document.getElementById(classnamen[0] + "tag").innerHTML = range.value + " cm";
+      }
+      else if (classnamen[0] == "priceslider") {
+        document.getElementById(classnamen[0] + "tag").innerHTML = "€" + range.value;
+      }
+       else {
         document.getElementById(classnamen[0] + "tag").innerHTML = range.value;
       }
     };
