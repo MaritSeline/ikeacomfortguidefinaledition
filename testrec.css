@@ -50,6 +50,7 @@
 .bluebeam{
   width: 82.5%;
   background: #0058AB;
+  border-radius: 5px; 
   text-align: center;
   color: white;
   margin-left: 10%;
