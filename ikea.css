@@ -96,7 +96,7 @@
 }
 
 .hiddenchapter .chapter1:hover, .hiddenchapter .chapter4:hover, .hiddenchapter .chapter5:hover,
-.hiddenchapter .chapter6:hover, .hiddenchapter .chapter7:hover, .hiddenchapter .chapter9:hover {
+.hiddenchapter .chapter6:hover{
   border-style: solid;
   border-color: #0058AB;
   border-width: 5px;

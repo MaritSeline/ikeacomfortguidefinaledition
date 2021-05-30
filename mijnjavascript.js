@@ -94,11 +94,11 @@ function otherChapter(clickedbutton) {
     document.getElementById("imageresult").innerHTML = "<img src='images/mattress.png' alt='' class='' id='defaultimage' width='100%'>";
   }
   if (clickedbutton == "leftbutton") {
-    if (sChapter == 1) {} else if (sChapter > 1 && sChapter <= 10) {
+    if (sChapter == 1) {} else if (sChapter > 1 && sChapter <= 8) {
       sChapter = sChapter - 1;
     }
   } else if (clickedbutton == "rightbutton") {
-    if (sChapter == 10) {} else if (sChapter >= 1 && sChapter < 10) {
+    if (sChapter == 8) {} else if (sChapter >= 1 && sChapter < 8) {
       sChapter = sChapter + 1;
     }
   }
