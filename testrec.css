@@ -1,12 +1,14 @@
 .bigrec{
   width: 70%;
   background: white;
+  height: 100%;
 }
 
 .alternative{
   width: 30%;
   margin-left: 70%;
   background: white;
+  height: 100%;
 }
 
 .text{
@@ -50,12 +52,12 @@
 .bluebeam{
   width: 82.5%;
   background: #0058AB;
-  border-radius: 5px; 
+  border-radius: 5px;
   text-align: center;
   color: white;
   margin-left: 10%;
   font-family: futura-pt, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   font-style: normal;
   vertical-align: middle;
@@ -93,4 +95,35 @@
   background-color:#F5F5F5;
   margin-left: 10%;
   font-family: futura-pt, sans-serif;
+}
+
+.startalternative{
+  text-align: center;
+  margin-top: 10%;
+  width: 100%;
+}
+.alternativemattress{
+  height: 45%;
+  text-align: center;
+}
+
+.alternativebeam{
+  width: 82.5%;
+  background: #F5F5F5;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  margin-left: 10%;
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  font-style: normal;
+  vertical-align: middle;
+}
+
+.alternativeimg{
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 7.5%;
+  z-index: -1;
 }

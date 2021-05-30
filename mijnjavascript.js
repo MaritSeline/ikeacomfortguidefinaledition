@@ -203,3 +203,7 @@ function goToChapter(this_id) {
   }
   elementbutton.src = "images/bluedot.jpg";
 }
+
+function donebutton() {
+  document.getElementById("donebutton").innerHTML = "<a href='testrec.html'> <img src='images/donebutton.jpg' width='10%' /> </a>";
+}
