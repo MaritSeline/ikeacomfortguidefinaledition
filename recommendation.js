@@ -38,7 +38,8 @@ window.onload = function() {
     var key = sessionStorage.key(i);
     var item = sessionStorage.getItem(key);
     document.getElementById(key+"tag").innerHTML = item;
-    if(key == "weightslider"  key == "priceslider" || key == "lengthslider")
+
+    if(key == "weightslider")
     {
 
     }
