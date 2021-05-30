@@ -397,8 +397,10 @@ div#divloftbed {
 .donebutton {
   text-align: right;
   position: fixed;
-  bottom: 15%;
+  bottom: 7.5%;
   right: 1.5%;
+  margin-left: 80%;
+  width: 8.5%;
 }
 
 .rangediv {
@@ -480,12 +482,4 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   left: 50%;
   margin-left: -5px;
   margin-top: -1px;
-}
-
-.donebutton {
-  text-align: right;
-  position: fixed;
-  bottom: 7.5%;
-  right: 1.5%;
-  width: 85%;
 }
