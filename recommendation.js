@@ -45,7 +45,7 @@ window.onload = function() {
   for (var i = 0; i < sessionStorage.length; i++){
     var key = sessionStorage.key(i);
     var item = sessionStorage.getItem(key);
-    document.getElementById(key+"tag").innerHTML = item;
+    document.getElementById(key+"tag").innerHTML = item.replaceAll("_"," ");
 
     if(key == "weightslider")
     { wlcounter++;
@@ -56,7 +56,7 @@ window.onload = function() {
       lenght = item;
     }
     else if (key == "priceslider") {
-      
+
     }
     else {
       var currentscore = eval(item.toLowerCase());
