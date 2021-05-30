@@ -99,15 +99,17 @@
 .hiddenchapter .chapter6:hover{
   border-style: solid;
   border-color: #0058AB;
-  border-width: 5px;
+  border-width: 3px;
   border-radius: 100%;
+  box-sizing: border-box;
 }
 
 .hiddenchapter .chapter2:hover, .hiddenchapter .chapter8:hover{
   border-style: solid;
   border-color: #0058AB;
-  border-width: 5px;
+  border-width: 3px;
   border-radius: 0%;
+  box-sizing: border-box;
 }
 
 .slideralign{
