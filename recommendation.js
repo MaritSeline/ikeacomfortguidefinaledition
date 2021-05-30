@@ -34,7 +34,7 @@ var old = [];
 
 window.onload = function() {
   for (var i = 0; i < sessionStorage.length; i++){
-    var key = sessionStorage.key(i);
+    var key = sessionStorage.key(i).toLowerCase();
     alert(key);
     document.getElementById(key+"tag").innerHTML = sessionStorage.getItem(key);
     var currentscore = eval(sessionStorage.getItem(key));

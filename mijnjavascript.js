@@ -8,7 +8,7 @@ function nextQuestion(clicked_id) {
 
 //set default image + if first question is answered show side with tags
   sessionStorage.setItem(classnamen[0], clicked_id);
-  var storage = sessionStorage.getItem(classnamen[0]);
+  var storage = sessionStorage.getItem(classnamen[0]).replace("_"," ");
   if (classnamen[0]=="typesize") {
     storage=storage;
   }
@@ -134,7 +134,7 @@ function loadonclickimage(thisbutton) {
 
 //show tag and image when you hover over answer
 function tagmouseover(this_id) {
-  var thisid = this_id;
+  var thisid = this_id.replace("_"," ");
   var tagelement = document.getElementById(this_id);
   var elementnaam = tagelement.className.split(" ")[0];
   savedtag = document.getElementById(elementnaam + "tag").innerHTML;
