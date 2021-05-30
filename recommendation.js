@@ -36,10 +36,17 @@ window.onload = function() {
 
   for (var i = 0; i < sessionStorage.length; i++){
     var key = sessionStorage.key(i);
-    document.getElementById(key+"tag").innerHTML = sessionStorage.getItem(key);
-    var currentscore = eval(sessionStorage.getItem(key).toLowerCase());
-    for (var j = 0; j < score.length; j++) {
-      score[j] = score[j] + currentscore[j];
+    var item = sessionStorage.getItem(key);
+    document.getElementById(key+"tag").innerHTML = item;
+    if(key == "weightslider" || key == "priceslider" || key == "lengthslider")
+    {
+
+    }
+    else {
+      var currentscore = eval(item.toLowerCase());
+      for (var j = 0; j < score.length; j++) {
+        score[j] = score[j] + currentscore[j];
+      }
     }
   }
   var imagescore = score.indexOf(Math.max(...score));
