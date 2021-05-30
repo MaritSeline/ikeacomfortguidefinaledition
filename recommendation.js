@@ -33,11 +33,11 @@ var old = [];
 
 
 window.onload = function() {
+
   for (var i = 0; i < sessionStorage.length; i++){
-    var key = sessionStorage.key(i).toLowerCase();
-    alert(key);
+    var key = sessionStorage.key(i);
     document.getElementById(key+"tag").innerHTML = sessionStorage.getItem(key);
-    var currentscore = eval(sessionStorage.getItem(key));
+    var currentscore = eval(sessionStorage.getItem(key).toLowerCase());
     for (var j = 0; j < score.length; j++) {
       score[j] = score[j] + currentscore[j];
     }
