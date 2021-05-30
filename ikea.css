@@ -483,6 +483,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .donebutton {
   text-align: right;
   position: fixed;
-  bottom: 15%;
+  bottom: 7.5%;
   right: 1.5%;
+  width: 85%;
 }

@@ -205,5 +205,5 @@ function goToChapter(this_id) {
 }
 
 function donebutton() {
-  document.getElementById("donebutton").innerHTML = "<a href='testrec.html'> <img src='images/donebutton.png' width='10%' /> </a>";
+  document.getElementById("donebutton").innerHTML = "<a href='loading.html'> <img src='images/donebutton.png' width='10%' /> </a>";
 }
