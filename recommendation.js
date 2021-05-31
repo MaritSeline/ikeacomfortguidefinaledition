@@ -14,11 +14,11 @@ let side = [0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1];
 let back = [1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1];
 let belly = [1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0];
 let mixed = [0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0];
-let shoulders = [0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1];
-let lowerback = [0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1];
+let shoulder = [0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1];
+let lowerback = [0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1];
 let neck = [0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1];
 let breast = [1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1];
-let upperback = [0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0];
+let upperback = [0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0];
 let ventilating = [1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1];
 let neutral_temperature = [1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1];
 let heat_retaining = [0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0];
@@ -27,9 +27,9 @@ let adjustable_bedframe = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0];
 let recyclable_materials = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0];
 let natural_materials = [0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1];
 let no_pain = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-let no_important_factors = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-let skipprice = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-let skiphealth = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let no_additional_requirements = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let no_specific_price = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let rangeprice= [100,100,300,175,200,100,200,400,150,300,50,475]
 
 let names = ["HAFSLO", "HAMARVIK", "HOKKASEN", "HOVAG", "HYLLESTAD", "MALVIK", "MATRAND", "MAUSUND", "MORGEDAL", "MYRBACKA", "VADSO", "VATNESTROM"];
 
