@@ -1,14 +1,16 @@
 .bigrec{
   width: 70%;
-  background: white;
   height: 100%;
+  background: white;
+  float: left;
 }
 
 .alternative{
-  width: 30%;
   margin-left: 70%;
-  background: white;
+  width: 30%;
   height: 100%;
+  background: white;
+  position: absolute;
 }
 
 .text{
@@ -20,7 +22,7 @@
   height: 25%;
   margin-top: 10%;
 }
-
+ 
 .tags{
   height: 10%;
   margin-top: 20%;
@@ -47,6 +49,11 @@
   padding: 0;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.bigmattress{
+  width: 100%;
+  height: 100%;
 }
 
 .bluebeam{

@@ -1,39 +1,39 @@
-let bedframe = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-let bedbank = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-let loftbed = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-let _90 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-let _120 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-let _140 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-let _160 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-let _180 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-let ondergewicht = [0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0];
-let normaal = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-let overgewicht = [1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1];
-let obesitas = [1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1];
-let side = [0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1];
-let back = [1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1];
-let belly = [1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0];
-let mixed = [0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0];
-let shoulder = [0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1];
-let lowerback = [0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1];
-let neck = [0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1];
-let breast = [1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1];
-let upperback = [0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0];
-let ventilating = [1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1];
-let neutral_temperature = [1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1];
-let heat_retaining = [0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0];
-let easy_to_clean = [0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0];
-let adjustable_bedframe = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0];
-let recyclable_materials = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0];
-let natural_materials = [0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1];
-let no_pain = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-let no_additional_requirements = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-let no_specific_price = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-let rangeprice= [100,100,300,175,200,100,200,400,150,300,50,475]
+let bedframe =                    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let bedbank =                     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let loftbed =                     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let _90 =                         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let _120 =                        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let _140 =                        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let _160 =                        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let _180 =                        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let ondergewicht =                [0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0];
+let normaal =                     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let overgewicht =                 [1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1];
+let obesitas =                    [1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1];
+let side =                        [0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1];
+let back =                        [1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1];
+let belly =                       [1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0];
+let mixed =                       [0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0];
+let shoulder =                    [0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1];
+let lowerback =                   [0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1];
+let neck =                        [0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1];
+let breast =                      [1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1];
+let upperback =                   [0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0];
+let ventilating =                 [1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1];
+let neutral_temperature =         [1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1];
+let heat_retaining =              [0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0];
+let easy_to_clean =               [0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0];
+let adjustable_bedframe =         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0];
+let recyclable_materials =        [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0];
+let natural_materials =           [0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1];
+let no_pain =                     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let no_additional_requirements =  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let no_specific_price =           [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let rangeprice =                  [100,100,300,175,200,100,200,400,150,300,50,475];
 
 let names = ["HAFSLO", "HAMARVIK", "HOKKASEN", "HOVAG", "HYLLESTAD", "MALVIK", "MATRAND", "MAUSUND", "MORGEDAL", "MYRBACKA", "VADSO", "VATNESTROM"];
 
-var score = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var score =                       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var old = [];
 
 var weight;
@@ -42,6 +42,35 @@ var wlcounter = -2;
 
 window.onload = function() {
 
+  calcScore();
+
+  var maxScore = Math.max(...score);
+  var imagescore = score.indexOf(maxScore);
+  var imagename = names[imagescore];
+  document.getElementById("bestbed").src = "images/" + imagename + "_section.png";
+  score.splice(imagescore, 1, 0);
+  maxScore = Math.max(...score);
+  imagescore = score.indexOf(maxScore);
+  imagename = names[imagescore];
+  document.getElementById("firstalternative").src = "images/" + imagename + "_section.png";
+  score.splice(imagescore, 1, 0);
+  maxScore = Math.max(...score);
+  imagescore = score.indexOf(maxScore);
+  imagename = names[imagescore];
+  document.getElementById("secondalternative").src = "images/" + imagename + "_section.png";
+  score.splice(imagescore, 1, 0);
+  maxScore = Math.max(...score);
+  imagescore = score.indexOf(maxScore);
+  imagename = names[imagescore];
+  document.getElementById("thirdalternative").src = "images/" + imagename + "_section.png";
+  score.splice(imagescore, 1, 0);
+  maxScore = Math.max(...score);
+  imagescore = score.indexOf(maxScore);
+  imagename = names[imagescore];
+  document.getElementById("fourthalternative").src = "images/" + imagename + "_section.png";
+}
+
+function calcScore() {
   for (var i = 0; i < sessionStorage.length; i++){
     var key = sessionStorage.key(i);
     var item = sessionStorage.getItem(key);
@@ -56,7 +85,12 @@ window.onload = function() {
       lenght = item;
     }
     else if (key == "priceslider") {
-
+      for (var j = 0; j < score.length; j++) {
+        if(rangeprice[j] <= item)
+        {
+          score[j] = score[j] + 1;
+        }
+      }
     }
     else {
       var currentscore = eval(item.toLowerCase());
@@ -89,8 +123,4 @@ window.onload = function() {
       }
     }
   }
-  var imagescore = score.indexOf(Math.max(...score));
-  var imagename = names[imagescore];
-  document.getElementById("bestbed").src = "images/" + imagename + "_section.png";
-
 }
