@@ -6,15 +6,14 @@
 }
 
 .alternative{
-  margin-left: 70%;
   width: 30%;
   height: 100%;
   background: white;
-  position: absolute;
+  float: left;
 }
 
 .divback{
-  margin-top: 5%;
+  margin-top: 6.5%;
   width: 8.75%;
   margin-left: 0;
   height: 100%;
@@ -24,15 +23,13 @@
 .divrec{
   margin-top: 5%;
   width: 82.5%;
-  margin-left: 8.75%;
   height: 100%;
   float: left;
 }
 
 .divright{
   margin-top: 5%;
-  width: 8.75%;
-  margin-left: 91.25%;
+  width: 8.5%;
   height: 100%;
   float: left;
 }
@@ -41,13 +38,10 @@
 }
 
 .img{
-  height: 25%;
   margin-top: 10%;
 }
 
 .tags{
-  height: 10%;
-  margin-top: 20%;
 }
 
 .back{
@@ -88,7 +82,6 @@
   border-radius: 5px;
   text-align: center;
   color: white;
-  margin-left: 10%;
   font-family: futura-pt, sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -98,7 +91,6 @@
 
 .recomimg{
   text-align: center;
-  margin-left: 10%;
   margin-top: 7.5%;
   z-index: -1;
 }
@@ -109,15 +101,14 @@
   font-size: 20px;
   font-style: normal;
   text-align: left;
-  width: 82.5%;
-  margin-left: 10%;
+  width: 100%;
   border-style: none none solid none;
   border-width: thin;
 }
 
 .taglayout{
   display: inline-block;
-  margin-left: 3%;
+  margin-right: 3%;
   width: fit-content;
   border-radius: 13.5%/50%;
   text-align: center;
