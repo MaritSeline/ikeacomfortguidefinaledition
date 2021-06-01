@@ -24,3 +24,7 @@ function updateScale() {
 }
 
 $(window).resize(updateScale);
+
+
+// Get the modal
+var modal = document.getElementById('id01');

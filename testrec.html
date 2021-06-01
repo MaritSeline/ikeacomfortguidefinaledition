@@ -7,85 +7,127 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="frame.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.typekit.net/ovi6xjx.css">
   <script type="text/javascript" src="recommendation.js"></script>
   <link rel="stylesheet" href="testrec.css">
+  <link rel="stylesheet" href="frame.css">
 
 </head>
 
-<body>
-  <div class="bigrec">
-    <div class="divback">
-      <div class="back">
-        <a href="ikea.html">
-          <img src="images/goback.jpg" width="35%" />
-        </a>
+<body style="background-color:#BABABA;">
+  <div id="layout">
+    <div class="bigrec">
+      <div class="divback">
+        <div class="back">
+          <a href="ikea.html">
+            <img src="images/goback.jpg" width="35%" />
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="divrec">
-      <div class="text">
-        <h1 class="recomtext">OUR RECOMMENDATION </h1>
-        <p1 class="underrecom"> According to our calculations this is the best fitting mattress to your needs.</p1>
-      </div>
-      <br> <br>
-      <div class="bigmattress">
-        <p class="bluebeam" id="bestbluebeam">best match</p>
-        <div class="img">
-          <div class="recomimg" id="bestbeddiv">
-            <img id="bestbed" src="images/white_image.png" width="80%" />
+      <div class="divrec">
+        <div class="text">
+          <h1 class="recomtext">OUR RECOMMENDATION </h1>
+          <p1 class="underrecom"> According to our calculations this is the best fitting mattress to your needs.</p1>
+        </div>
+        <div class="bigmattress">
+          <p class="bluebeam" id="bestbluebeam">best match</p>
+          <div class="img">
+            <div class="recomimg" id="bestbeddiv">
+              <img id="bestbed" src="images/white_image.png" width="110%" />
+              <div class="divimgtext">
+                <div class="name">
+                  HOVAG
+                </div>
+                <div class="match">
+                  10/10
+                </div>
+              </div>
+              <div class="matchedreq">
+                <img src="images/matched_requirements.jpg" width="6%"/>
+              </div>
+              <div class="price">
+                <div class="mattressprice">
+                  €239
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tags">
+          <p class="requirement">Requirements</p>
+          <div id="results" class="">
+            <p id="typesizetag" class="taglayout"></p>
+            <p id="bedsizestag" class="taglayout"></p>
+            <p id="weightslidertag" class="taglayout"></p>
+            <p id="lengthslidertag" class="taglayout"></p>
+            <p id="sleepingpositiontag" class="taglayout"></p>
+            <p id="physicalpaintag" class="taglayout"></p>
+            <p id="temperaturetag" class="taglayout"></p>
+            <p id="importanttag" class="taglayout"></p>
+            <p id="priceslidertag" class="taglayout"></p>
+          </div>
+        </div>
+        <div class="donebutton" id="donebutton">
+          <a href="checkout.html">
+            <img src="images/donebutton.png" width="35%" />
+          </a>
+        </div>
+        <button class="detailbutton" onclick="document.getElementById('id01').style.display='block'">
+          <p1 class="detailtext"> View more product information</p1>
+        </button>
+        <div id="id01" class="modal">
 
+          <div class="modal-content animate">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" width="150%" title="Close Modal">&times;</span>
+              <img src="images/HOVAG_info.jpg" width="70%">
+            </div>
+
+            <div class="container">
+
+              <div class="modal-content animate">
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
-      <div class="tags">
-        <p class="requirement">Requirements</p>
-        <div id="results" class="">
-          <p id="typesizetag" class="taglayout"></p>
-          <p id="bedsizestag" class="taglayout"></p>
-          <p id="weightslidertag" class="taglayout"></p>
-          <p id="lengthslidertag" class="taglayout"></p>
-          <p id="sleepingpositiontag" class="taglayout"></p>
-          <p id="physicalpaintag" class="taglayout"></p>
-          <p id="temperaturetag" class="taglayout"></p>
-          <p id="importanttag" class="taglayout"></p>
-          <p id="priceslidertag" class="taglayout"></p>
-        </div>
+      <div class="divright">
       </div>
     </div>
-    <div class="divright">
-    </div>
-  </div>
-  <div class="alternative">
-    <div class="startalternative">
-      <div class="alternativemattress" id="nonshow">
-        <p class="alternativebeam" id="bestalternativebeam" onclick="showthisdiv(this.id);">best match</p>
-        <div class="alternativeimg" id="bestalternativesection">
-          <img id="bestalternative" src="images/white_image.png" width="100%" />
+    <div class="alternative">
+      <div class="startalternative">
+        <div class="alternativemattress" id="nonshow">
+          <p class="alternativebeam" id="bestalternativebeam" onclick="showthisdiv(this.id);">best match</p>
+          <div class="alternativeimg" id="bestalternativesection">
+            <img id="bestalternative" src="images/white_image.png" width="100%" />
+          </div>
         </div>
-      </div>
-      <div class="alternativemattress">
-        <p class="alternativebeam" id="firstalternativebeam" onclick="showthisdiv(this.id);">first alternative</p>
-        <div class="alternativeimg" id="firstalternativesection">
-          <img id="firstalternative" src="images/MYRBACKA_section.png" width="100%" />
+        <div class="alternativemattress">
+          <p class="alternativebeam" id="firstalternativebeam" onclick="showthisdiv(this.id);">first alternative</p>
+          <div class="alternativeimg" id="firstalternativesection">
+            <img id="firstalternative" src="images/MYRBACKA_section.png" width="100%" />
+          </div>
         </div>
-      </div>
-      <div class="alternativemattress">
-        <p class="alternativebeam" id="secondalternativebeam" onclick="showthisdiv(this.id);">second alternative</p>
-        <div class="alternativeimg" id="secondalternativesection">
-          <img id="secondalternative" src="images/MYRBACKA_section.png" width="100%" />
+        <div class="alternativemattress">
+          <p class="alternativebeam" id="secondalternativebeam" onclick="showthisdiv(this.id);">second alternative</p>
+          <div class="alternativeimg" id="secondalternativesection">
+            <img id="secondalternative" src="images/MYRBACKA_section.png" width="100%" />
+          </div>
         </div>
-      </div>
-      <div class="alternativemattress">
-        <p class="alternativebeam" id="thirdalternativebeam" onclick="showthisdiv(this.id);">third alternative</p>
-        <div class="alternativeimg" id="thirdalternativesection">
-          <img id="thirdalternative" src="images/MYRBACKA_section.png" width="100%" />
+        <div class="alternativemattress">
+          <p class="alternativebeam" id="thirdalternativebeam" onclick="showthisdiv(this.id);">third alternative</p>
+          <div class="alternativeimg" id="thirdalternativesection">
+            <img id="thirdalternative" src="images/MYRBACKA_section.png" width="100%" />
+          </div>
         </div>
-      </div>
-      <div class="alternativemattress">
-        <p class="alternativebeam" id="fourthalternativebeam" onclick="showthisdiv(this.id);">fourth alternative</p>
-        <div class="alternativeimg" id="fourthalternativesection">
-          <img id="fourthalternative" src="images/MYRBACKA_section.png" width="100%" />
+        <div class="alternativemattress">
+          <p class="alternativebeam" id="fourthalternativebeam" onclick="showthisdiv(this.id);">fourth alternative</p>
+          <div class="alternativeimg" id="fourthalternativesection">
+            <img id="fourthalternative" src="images/MYRBACKA_section.png" width="100%" />
+          </div>
         </div>
       </div>
     </div>
