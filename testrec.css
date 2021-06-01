@@ -13,9 +13,31 @@
   position: absolute;
 }
 
+.divback{
+  margin-top: 5%;
+  width: 8.75%;
+  margin-left: 0;
+  height: 100%;
+  float: left;
+}
+
+.divrec{
+  margin-top: 5%;
+  width: 82.5%;
+  margin-left: 8.75%;
+  height: 100%;
+  float: left;
+}
+
+.divright{
+  margin-top: 5%;
+  width: 8.75%;
+  margin-left: 91.25%;
+  height: 100%;
+  float: left;
+}
 .text{
   height: 10%;
-  margin-top: 5%;
 }
 
 .img{
@@ -28,13 +50,18 @@
   margin-top: 20%;
 }
 
+.back{
+  margin-right: 0;
+  text-align: center;
+}
+
 .recomtext{
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-size: 50px;
   font-style: normal;
   text-align: left;
-  margin-left: 10%;
+  margin-left: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -45,7 +72,6 @@
   font-size: 18px;
   font-style: normal;
   text-align: left;
-  margin-left: 10%;
   padding: 0;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -57,7 +83,7 @@
 }
 
 .bluebeam{
-  width: 82.5%;
+  width: 100%;
   background: #0058AB;
   border-radius: 5px;
   text-align: center;
