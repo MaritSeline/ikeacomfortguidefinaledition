@@ -1,12 +1,12 @@
 .welcome {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 30px;
   font-style: normal;
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-top: 10%
+
 }
 .subtitle{
   font-family: futura-pt, sans-serif;
@@ -25,7 +25,7 @@
     float: left;
     padding: 0;
     text-align: center;
-    margin-top: 0;
+    margin-top: 5%;
 }
 
 .startimg {
@@ -36,5 +36,6 @@
     padding: 0;
     text-align: center;
     margin: 0;
-    vertical-align: middle;
+    margin-top: 0;
+
 }
