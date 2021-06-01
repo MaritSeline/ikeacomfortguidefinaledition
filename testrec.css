@@ -22,7 +22,7 @@
   height: 25%;
   margin-top: 10%;
 }
- 
+
 .tags{
   height: 10%;
   margin-top: 20%;
@@ -101,6 +101,22 @@
   padding-bottom: 1.5%;
   background-color:#F5F5F5;
   font-family: futura-pt, sans-serif;
+}
+
+.tagcrossed{
+  display: inline-block;
+  margin-left: 3%;
+  width: fit-content;
+  border-radius: 13.5%/50%;
+  text-align: center;
+  padding-left: 4.5%;
+  padding-right: 4.5%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  background-color:#F9F9F9;
+  color:#828282;
+  font-family: futura-pt, sans-serif;
+  text-decoration: line-through;
 }
 
 .startalternative{
