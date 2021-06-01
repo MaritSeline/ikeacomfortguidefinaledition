@@ -36,10 +36,6 @@ let names = ["HAFSLO", "HAMARVIK", "HOKKASEN", "HOVAG", "HYLLESTAD", "MALVIK", "
 var score =                       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var old = [];
 
-var weight;
-var length;
-var wlcounter = -2;
-
 window.onload = function() {
 
   calcScore();
@@ -47,6 +43,8 @@ window.onload = function() {
   var maxScore = Math.max(...score);
   var imagescore = score.indexOf(maxScore);
   var imagename = names[imagescore];
+  calcTags(imagename);
+
   document.getElementById("bestbed").src = "images/" + imagename + "_section.png";
   document.getElementById("bestalternative").src = "images/" + imagename + "_section.png";
   score.splice(imagescore, 1, 0);
@@ -72,6 +70,10 @@ window.onload = function() {
 }
 
 function calcScore() {
+  var weight;
+  var length;
+  var wlcounter = -2;
+
   for (var i = 0; i < sessionStorage.length; i++){
     var key = sessionStorage.key(i);
     var item = sessionStorage.getItem(key);
@@ -83,7 +85,7 @@ function calcScore() {
     }
     else if (key == "lengthslider") {
       wlcounter++;
-      lenght = item;
+      length = item;
     }
     else if (key == "priceslider") {
       for (var j = 0; j < score.length; j++) {
@@ -126,7 +128,6 @@ function calcScore() {
   }
 }
 
-
 function showthisdiv(thisid){
   var allAlternative = document.getElementsByClassName("alternativemattress");
   for (var i = allAlternative.length; i--;)
@@ -147,10 +148,76 @@ function showthisdiv(thisid){
     bluebeam.style.background = "#F5F5F5";
     bluebeam.style.color = "black";
   }
+  var bed = document.getElementById(imageElement).src;
+  bed = bed.split("images/")[1];
+  bed = bed.split("_section.png")[0];
 
+  calcTags(bed);
 
+}
 
+function calcTags(bedname){
+  var indexbed = names.indexOf(bedname);
+  alert(score);
+  alert(score[indexbed]);
+  var wlcounter = -2;
+  for (var i = 0; i < sessionStorage.length; i++){
+    var key = sessionStorage.key(i);
+    var item = sessionStorage.getItem(key);
+    document.getElementById(key+"tag").innerHTML = item.replaceAll("_"," ");
+    if(key == "weightslider")
+    { wlcounter++;
+      weight = item;
+    }
+    else if (key == "lengthslider") {
+      wlcounter++;
+      length = item;
+    }
+    else if (key == "priceslider") {
 
+        if(rangeprice[indexbed] > item){
+          document.getElementById(key+"tag").className = "tagcrossed";
+        }
+        else {
+          document.getElementById(key+"tag").className = "taglayout";
+        }
 
-
+    }
+    else {
+      var checkscore = eval(item.toLowerCase());
+        if(checkscore[indexbed] == 0){
+          document.getElementById(key+"tag").className = "tagcrossed";
+        }
+        else {
+          document.getElementById(key+"tag").className = "taglayout";
+        }
+    }
+    if (wlcounter == 0)
+    {
+      var bmi = weight/(length*length);
+      var currentscore;
+      if (bmi < 18.5)
+      {
+        checkscore = eval("ondergewicht");
+      }
+      else if (bmi >= 18.5 && bmi <= 25)
+      {
+        checkscore = eval("normaal");
+      }
+      else if (bmi > 25 && bmi <= 30)
+      {
+        checkscore = eval("overgewicht");
+      }
+      else if (bmi > 30)
+      {
+        checkscore = eval("obesitas");
+      }
+      if(checkscore[indexbed] == 0){
+        document.getElementById(key+"tag").className = "tagcrossed";
+      }
+      else {
+        document.getElementById(key+"tag").className = "taglayout";
+      }
+    }
+  }
 }
