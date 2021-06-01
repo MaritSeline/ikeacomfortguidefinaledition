@@ -1,267 +1,271 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> IKEA &#8211; www.gebrokenofgekneusd.online </title>
   <script type="text/javascript" src="mijnjavascript.js"></script>
+  <script type="text/javascript" src="frame.js"></script>
   <link rel="stylesheet" href="ikea.css">
+  <link rel="stylesheet" href="frame.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.typekit.net/ovi6xjx.css">
 </head>
 
-<body>
+<body style="background-color:#BABABA;">
+  <div id="layout">
 
-  <div class="left" id="left">
-    <div class="question">
-      <div class="hiddenchapter" id="chapter1">
-        <div class="divtext1">
-          <p class="pbed"> Select your bed type</p>
-          <p class="p1"> Choose the bed type you will use for your new mattress.</p>
-        </div>
-        <div class="div11" id="div11">
-          <img id="Bedframe" class="typesize chapter1" src="images/bedframe.jpg" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-          <p class="p1">Bedframe</p>
-        </div>
-        <div class="div12" id="div12">
-          <img id="Bedbank" class="typesize chapter1" src="images/daybed.jpg" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-          <p class="p1">Bedbank</p>
-        </div>
-        <div class="div13" id="div13">
-          <img id="Loftbed" class="typesize chapter1" src="images/loftbed.jpg" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-          <p class="p1">Loftbed</p>
-        </div>
-      </div>
-      <div class="hiddenchapter" id="chapter2">
-        <div class="divtext">
-          <p class="psize"> Select your bed size</p>
-          <p class="p1"> Choose the bed size you want for your new mattress.</p>
-        </div>
-        <div class="div41">
-          <img src="images/90.jpg" class="bedsizes chapter2" id="_90" alt="" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);">
-        </div>
-        <div class="div42">
-          <img src="images/120.jpg" class="bedsizes chapter2" id="_120" alt="" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);">
-        </div>
-        <div class="div43">
-          <img src="images/140.jpg" class="bedsizes chapter2" id="_140" alt="" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);">
-        </div>
-        <br><br>
-        <div class="div41">
-          <img src="images/160.jpg" class="bedsizes chapter2" id="_160" alt="" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);">
-        </div>
-        <div class="div42">
-          <img src="images/180.jpg" class="bedsizes chapter2" id="_180" alt="" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);">
-        </div>
-      </div>
-
-      <div class="hiddenchapter" id="chapter3">
-        <div class="divtext">
-          <p class="pweight">What is your weight and length?</p>
-          <p class="p1">The build of the body determines the amount of
-            counter-pressure the mattress should provide. </p>
-        </div>
-        <div class="slideralign">
-          <div class="rangediv">
-            <div class="range-wrap">
-              <div class="range-value" id="rangeweightv"></div>
-              <input id="rangeweight" class="weightslider chapter3" type="range" min="50" max="100" value="75" step="5" oninput="sliderFunction(this.id)">
-            </div>
+    <div class="left" id="left">
+      <div class="question">
+        <div class="hiddenchapter" id="chapter1">
+          <div class="divtext1">
+            <p class="pbed"> Select your bed type</p>
+            <p class="p1"> Choose the bed type you will use for your new mattress.</p>
+          </div>
+          <div class="div11" id="div11">
+            <img id="Bedframe" class="typesize chapter1" src="images/bedframe.jpg" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+            <p class="p1">Bedframe</p>
+          </div>
+          <div class="div12" id="div12">
+            <img id="Bedbank" class="typesize chapter1" src="images/daybed.jpg" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+            <p class="p1">Bedbank</p>
+          </div>
+          <div class="div13" id="div13">
+            <img id="Loftbed" class="typesize chapter1" src="images/loftbed.jpg" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+            <p class="p1">Loftbed</p>
           </div>
         </div>
-        <br>
-        <br>
-        <div class="slideralign">
-          <p class="p3">
-            < 50kg &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; weight &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 100kg>
-          </p>
-        </div>
-        <br> <br>
-        <div class="slideralign">
-          <div class="rangediv">
-            <div class="range-wrap">
-              <div class="range-value" id="rangelengthv"></div>
-              <input id="rangelength" class="lengthslider chapter3" type="range" min="150" max="200" value="175" step="5" oninput="sliderFunction(this.id)">
-            </div>
+        <div class="hiddenchapter" id="chapter2">
+          <div class="divtext">
+            <p class="psize"> Select your bed size</p>
+            <p class="p1"> Choose the bed size you want for your new mattress.</p>
+          </div>
+          <div class="div41">
+            <img src="images/90.jpg" class="bedsizes chapter2" id="_90" alt="" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);">
+          </div>
+          <div class="div42">
+            <img src="images/120.jpg" class="bedsizes chapter2" id="_120" alt="" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);">
+          </div>
+          <div class="div43">
+            <img src="images/140.jpg" class="bedsizes chapter2" id="_140" alt="" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);">
+          </div>
+          <br><br>
+          <div class="div41">
+            <img src="images/160.jpg" class="bedsizes chapter2" id="_160" alt="" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);">
+          </div>
+          <div class="div42">
+            <img src="images/180.jpg" class="bedsizes chapter2" id="_180" alt="" width="90%" onclick="nextQuestion(this.id); " onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);">
           </div>
         </div>
-        <br>
-        <div class="slideralign">
-          <p class="p3">
-            < 150cm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; length &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;200cm>
-          </p>
+
+        <div class="hiddenchapter" id="chapter3">
+          <div class="divtext">
+            <p class="pweight">What is your weight and length?</p>
+            <p class="p1">The build of the body determines the amount of
+              counter-pressure the mattress should provide. </p>
+          </div>
+          <div class="slideralign">
+            <div class="rangediv">
+              <div class="range-wrap">
+                <div class="range-value" id="rangeweightv"></div>
+                <input id="rangeweight" class="weightslider chapter3" type="range" min="50" max="100" value="75" step="5" oninput="sliderFunction(this.id)">
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="slideralign">
+            <p class="p3">
+              < 50kg  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; weight &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; 100kg>
+            </p>
+          </div>
+          <br> <br>
+          <div class="slideralign">
+            <div class="rangediv">
+              <div class="range-wrap">
+                <div class="range-value" id="rangelengthv"></div>
+                <input id="rangelength" class="lengthslider chapter3" type="range" min="150" max="200" value="175" step="5" oninput="sliderFunction(this.id)">
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="slideralign">
+            <p class="p3">
+              < 150cm &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; length &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;200cm>
+            </p>
+            <p> &nbsp; </p>
+          </div>
+        </div>
+        <div class="hiddenchapter" id="chapter4">
+          <div class="divtext">
+            <p class="pposition">What is your prefered sleeping position?</p>
+            <p class="p1">Your sleeping position is an important factor in determining the firmness of the mattress in order to prevent you from experiencing pain after a night of sleep. (If you’re unsure, select the position in which you either wake
+              up or fall asleep.)</p>
+          </div>
+          <div class="div21">
+            <img src="images/side.jpg" class="sleepingposition chapter4" id="side" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+            <p class="p1">Side</p>
+          </div>
+          <div class="div22">
+            <img src="images/back.jpg" class="sleepingposition chapter4" id="back" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+            <p class="p1">Back</p>
+          </div>
+          <div class="div21">
+            <img src="images/belly.jpg" class="sleepingposition chapter4" id="belly" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+            <p class="p1">Belly</p>
+          </div>
+          <div class="div22">
+            <img src="images/mixed.jpg" class="sleepingposition chapter4" id="mixed" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+            <p class="p1">Mixed</p>
+          </div>
           <p> &nbsp; </p>
         </div>
-      </div>
-      <div class="hiddenchapter" id="chapter4">
-        <div class="divtext">
-          <p class="pposition">What is your prefered sleeping position?</p>
-          <p class="p1">Your sleeping position is an important factor in determining the firmness of the mattress in order to prevent you from experiencing pain after a night of sleep. (If you’re unsure, select the position in which you either wake up or fall asleep.)</p>
+        <div class="hiddenchapter" id="chapter5">
+          <div class="divtext">
+            <p class="ppain">Do you experience any pain?</p>
+            <p class="p1">If you experience some physical pain the mattress should
+              support this part of your body, in order to make sure it gets enough rest at night.</p>
+          </div>
+          <div class="div41">
+            <img src="images/shoulders.jpg" class="physicalpain chapter5" id="shoulder" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+            <p class="p1">Shoulder</p>
+          </div>
+          <div class="div42">
+            <img src="images/lowerback.jpg" class="physicalpain chapter5" id="lowerback" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+            <p class="p1">Lower back</p>
+          </div>
+          <div class="div43">
+            <img src="images/neck.jpg" class="physicalpain chapter5" id="neck" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+            <p class="p1">Neck</p>
+          </div>
+          <div class="div21">
+            <img src="images/breast.jpg" class="physicalpain chapter5" id="breast" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+            <p class="p1">Breast</p>
+          </div>
+          <div class="div22">
+            <img src="images/upperback.jpg" class="physicalpain chapter5" id="upperback" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+            <p class="p1">Upper back</p>
+          </div>
+          <div class="divskip">
+            <img src="images/nopain.jpg" class="physicalpain chapter5 skip" id="no_pain" width="130%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id); " />
+          </div>
+          <p> &nbsp; </p>
         </div>
-        <div class="div21">
-          <img src="images/side.jpg" class="sleepingposition chapter4" id="side" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-          <p class="p1">Side</p>
+        <div class="hiddenchapter" id="chapter6">
+          <div class="divtext">
+            <p class="ptemp">What kind of climate do you want your bed to have?</p>
+            <p class="p1">The top layer of the mattress can be heat retaining or ventilating. So imagine you are just getting into your bed, do you prefer your bed to stay cool or do you want it to quickly become warm? </p>
+          </div>
+          <div class="div41">
+            <img src="images/ventilating.jpg" class="temperature chapter6" id="Ventilating" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+            <p class="p1">Ventilating</p>
+          </div>
+          <div class="div42">
+            <img src="images/neutraal.jpg" class="temperature chapter6" id="Neutral_temperature" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+            <p class="p1">Either</p>
+          </div>
+          <div class="div43">
+            <img src="images/heat.jpg" class="temperature chapter6" id="Heat_retaining" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+            <p class="p1">Heat retaining</p>
+          </div>
+          <p> &nbsp; </p>
         </div>
-        <div class="div22">
-          <img src="images/back.jpg" class="sleepingposition chapter4" id="back" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-          <p class="p1">Back</p>
-        </div>
-        <div class="div21">
-          <img src="images/belly.jpg" class="sleepingposition chapter4" id="belly" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-          <p class="p1">Belly</p>
-        </div>
-        <div class="div22">
-          <img src="images/mixed.jpg" class="sleepingposition chapter4" id="mixed" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-          <p class="p1">Mixed</p>
-        </div>
-        <p> &nbsp; </p>
-      </div>
-      <div class="hiddenchapter" id="chapter5">
-        <div class="divtext">
-          <p class="ppain">Do you experience any pain?</p>
-          <p class="p1">If you experience some physical pain the mattress should
-            support this part of your body, in order to make sure it gets enough rest at night.</p>
-        </div>
-        <div class="div41">
-          <img src="images/shoulders.jpg" class="physicalpain chapter5" id="shoulder" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-          <p class="p1">Shoulder</p>
-        </div>
-        <div class="div42">
-          <img src="images/lowerback.jpg" class="physicalpain chapter5" id="lowerback" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-          <p class="p1">Lower back</p>
-        </div>
-        <div class="div43">
-          <img src="images/neck.jpg" class="physicalpain chapter5" id="neck" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-          <p class="p1">Neck</p>
-        </div>
-        <div class="div21">
-          <img src="images/breast.jpg" class="physicalpain chapter5" id="breast" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-          <p class="p1">Breast</p>
-        </div>
-        <div class="div22">
-          <img src="images/upperback.jpg" class="physicalpain chapter5" id="upperback" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-          <p class="p1">Upper back</p>
-        </div>
-        <p> &nbsp; </p>
-        <br>
-        <div class="divskip">
-          <img src="images/nopain.jpg" class="physicalpain chapter5 skip" id="no_pain" width="130%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id); " />
-        </div>
-        <p> &nbsp; </p>
-      </div>
-      <div class="hiddenchapter" id="chapter6">
-        <div class="divtext">
-          <p class="ptemp">What kind of climate do you want your bed to have?</p>
-          <p class="p1">The top layer of the mattress can be heat retaining or ventilating. So imagine you are just getting into your bed, do you prefer your bed to stay cool or do you want it to quickly become warm? </p>
-        </div>
-        <div class="div41">
-          <img src="images/ventilating.jpg" class="temperature chapter6" id="Ventilating" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-          <p class="p1">Ventilating</p>
-        </div>
-        <div class="div42">
-          <img src="images/neutraal.jpg" class="temperature chapter6" id="Neutral_temperature" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-          <p class="p1">Either</p>
-        </div>
-        <div class="div43">
-          <img src="images/heat.jpg" class="temperature chapter6" id="Heat_retaining" width="90%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-          <p class="p1">Heat retaining</p>
-        </div>
-        <p> &nbsp; </p>
-      </div>
-      <div class="hiddenchapter" id="chapter7">
-        <div class="divtext">
-          <p class="pprice">Do you have a specific price in mind?</p>
-          <p class="p1">Please indicate the maximum price you would like to pay for your mattress.</p>
-        </div>
-        <div class="slideralign">
-          <div class="rangediv">
-            <div class="range-wrap">
-              <div class="range-value" id="rangepricev"></div>
-              <input id="rangeprice" class="priceslider chapter7" type="range" min="25" max="1000" value="1000" step="25" oninput="sliderFunction(this.id);">
+        <div class="hiddenchapter" id="chapter7">
+          <div class="divtext">
+            <p class="pprice">Do you have a specific price in mind?</p>
+            <p class="p1">Please indicate the maximum price you would like to pay for your mattress.</p>
+          </div>
+          <div class="slideralign">
+            <div class="rangediv">
+              <div class="range-wrap">
+                <div class="range-value" id="rangepricev"></div>
+                <input id="rangeprice" class="priceslider chapter7" type="range" min="25" max="1000" value="1000" step="25" oninput="sliderFunction(this.id);">
+              </div>
             </div>
           </div>
+          <div class="slideralign">
+            <p class="p3">
+              €25 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maximum price &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+              &nbsp;
+              &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; €1000
+            </p>
+          </div>
+          <div class="divskip">
+            <br>
+            <img src="images/noprice.jpg" class="priceslider chapter7 skip" id="No_specific_price" width="130%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+          </div>
         </div>
-        <div class="slideralign">
-          <p class="p3">
-            €25 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maximum price &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-            &nbsp;
-            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; €1000
-          </p>
-        </div>
-        <div class="divskip">
+        <div class="hiddenchapter" id="chapter8">
+          <div class="divtext">
+            <p class="pimportant">Do you have any additional requirements for your mattress? </p>
+            <p class="p1">This will be taken into account when selecting the most comfortable mattress for you. </p>
+          </div>
+          <div class="div41">
+            <img src="images/natural.jpg" class="important chapter8" id="Natural_materials" width="90%" onclick="nextQuestion(this.id);  donebutton();" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+          </div>
+          <div class="div42">
+            <img src="images/recycle.jpg" class="important chapter8" id="Recyclable_materials" width="90%" onclick="nextQuestion(this.id);  donebutton();" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+          </div>
+          <div class="div43">
+            <img src="images/clean.jpg" class="important chapter8" id="Easy_to_clean" width="90%" onclick="nextQuestion(this.id);  donebutton();" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+          </div>
+          <div class="div31">
+            <img src="images/combine.jpg" class="important chapter8" id="Adjustable_bedframe" width="97%" onclick="nextQuestion(this.id);  donebutton();" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);" />
+          </div>
+          <p> &nbsp; </p>
           <br>
-            <img src="images/noprice.jpg" class="priceslider chapter7 skip" id="No_specific_price" width="130%" onclick="nextQuestion(this.id);" onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);"/>
+          <div class="divskip">
+            <img src="images/noimportant.jpg" class="important chapter8 skip" id="No_additional_requirements" width="130%" onclick="nextQuestion(this.id);  donebutton();" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);  " />
+            </p>
+          </div>
         </div>
       </div>
-      <div class="hiddenchapter" id="chapter8">
-        <div class="divtext">
-          <p class="pimportant">Do you have any additional requirements for your mattress? </p>
-          <p class="p1">This will be taken into account when selecting the most comfortable mattress for you. </p>
+      <div class="progressbar" id="progressbar">
+        <div class="buttonsbottom">
+          <img src="images/left.jpg" alt="" class="leftbutton" id="leftbutton" onclick="otherChapter(this.id)">
+          <img src="images/bluedot.jpg" alt="" id="chapter1button" onclick="loadonclickimage(this.id)" class="dot">
+          <img src="images/greydot.jpg" alt="" id="chapter2button" onclick="loadonclickimage(this.id)" class="dot">
+          <img src="images/greydot.jpg" alt="" id="chapter3button" onclick="loadonclickimage(this.id)" class="dot">
+          <img src="images/greydot.jpg" alt="" id="chapter4button" onclick="loadonclickimage(this.id)" class="dot">
+          <img src="images/greydot.jpg" alt="" id="chapter5button" onclick="loadonclickimage(this.id)" class="dot">
+          <img src="images/greydot.jpg" alt="" id="chapter6button" onclick="loadonclickimage(this.id)" class="dot">
+          <img src="images/greydot.jpg" alt="" id="chapter7button" onclick="loadonclickimage(this.id)" class="dot">
+          <img src="images/greydot.jpg" alt="" id="chapter8button" onclick="loadonclickimage(this.id)" class="dot">
+          <img src="images/right.jpg" alt="" class="rightbutton" id="rightbutton" onclick="otherChapter(this.id)">
         </div>
-        <div class="div41">
-          <img src="images/natural.jpg" class="important chapter8" id="Natural_materials" width="90%" onclick="nextQuestion(this.id);  donebutton();"  onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-        </div>
-        <div class="div42">
-          <img src="images/recycle.jpg" class="important chapter8" id="Recyclable_materials" width="90%" onclick="nextQuestion(this.id);  donebutton();" onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-        </div>
-        <div class="div43">
-          <img src="images/clean.jpg" class="important chapter8" id="Easy_to_clean" width="90%" onclick="nextQuestion(this.id);  donebutton();" onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-        </div>
-        <div class="div31">
-          <img src="images/combine.jpg" class="important chapter8" id="Adjustable_bedframe" width="97%" onclick="nextQuestion(this.id);  donebutton();" onmouseover="tagmouseover(this.id); "  onmouseout="tagmouseout(this.id);" />
-        </div>
-        <p> &nbsp; </p>
-        <br>
-        <div class="divskip">
-          <img src="images/noimportant.jpg" class="important chapter8 skip" id="No_additional_requirements" width="130%" onclick="nextQuestion(this.id);  donebutton();" onmouseover="tagmouseover(this.id); " onmouseout="tagmouseout(this.id);  " />
+      </div>
+    </div>
+    <div class="right" id="right">
+      <div class="mattressimg" id="imageresult">
+        <img src="images/mattress_shadow.png" alt="" class="" id="defaultimage" width="100%">
+      </div>
+      <div class="" id="result">
+        <div class="bedtags" id="">
+          <p class="tagstitle"> Bed information
           </p>
+          <p id="typesizetag" class="tags chapter1" onclick="goToChapter(this.id)"></p>
+          <p id="bedsizestag" class="tags chapter2" onclick="goToChapter(this.id)"></p>
+        </div>
+        <div class="personaltags" id="">
+          <p class="tagstitle"> Personal information
+          </p>
+          <p id="weightslidertag" class="tags chapter3" onclick="goToChapter(this.id)"></p>
+          <p id="lengthslidertag" class="tags chapter3" onclick="goToChapter(this.id)"></p>
+          <p id="sleepingpositiontag" class="tags chapter4" onclick="goToChapter(this.id)"></p>
+          <p id="physicalpaintag" class="tags chapter5" onclick="goToChapter(this.id)"></p>
+          <p id="temperaturetag" class="tags chapter6" onclick="goToChapter(this.id)"></p>
+          <p id="priceslidertag" class="tags chapter7" onclick="goToChapter(this.id)"></p>
+          <p id="importanttag" class="tags chapter8" onclick="goToChapter(this.id)"></p>
         </div>
       </div>
-    </div>
-    <div class="progressbar" id="progressbar">
-      <div class="buttonsbottom">
-        <img src="images/left.jpg" alt="" class="leftbutton" id="leftbutton" onclick="otherChapter(this.id)">
-        <img src="images/bluedot.jpg" alt="" id="chapter1button" onclick="loadonclickimage(this.id)" class="dot">
-        <img src="images/greydot.jpg" alt="" id="chapter2button" onclick="loadonclickimage(this.id)" class="dot">
-        <img src="images/greydot.jpg" alt="" id="chapter3button" onclick="loadonclickimage(this.id)" class="dot">
-        <img src="images/greydot.jpg" alt="" id="chapter4button" onclick="loadonclickimage(this.id)" class="dot">
-        <img src="images/greydot.jpg" alt="" id="chapter5button" onclick="loadonclickimage(this.id)" class="dot">
-        <img src="images/greydot.jpg" alt="" id="chapter6button" onclick="loadonclickimage(this.id)" class="dot">
-        <img src="images/greydot.jpg" alt="" id="chapter7button" onclick="loadonclickimage(this.id)" class="dot">
-        <img src="images/greydot.jpg" alt="" id="chapter8button" onclick="loadonclickimage(this.id)" class="dot">
-        <img src="images/right.jpg" alt="" class="rightbutton" id="rightbutton" onclick="otherChapter(this.id)">
+      <div class="donebutton" id="donebutton">
       </div>
     </div>
-  </div>
-  <div class="right" id="right">
-    <div class="mattressimg" id="imageresult">
-      <img src="images/mattress_shadow.png" alt="" class="" id="defaultimage" width="100%">
-    </div>
-    <div class="" id="result">
-      <div class="bedtags" id="">
-        <p class="tagstitle"> Bed information
-        </p>
-        <p id="typesizetag" class="tags chapter1" onclick="goToChapter(this.id)"></p>
-        <p id="bedsizestag" class="tags chapter2" onclick="goToChapter(this.id)"></p>
-      </div>
-      <div class="personaltags" id="">
-        <p class="tagstitle"> Personal information
-        </p>
-        <p id="weightslidertag" class="tags chapter3" onclick="goToChapter(this.id)"></p>
-        <p id="lengthslidertag" class="tags chapter3" onclick="goToChapter(this.id)"></p>
-        <p id="sleepingpositiontag" class="tags chapter4" onclick="goToChapter(this.id)"></p>
-        <p id="physicalpaintag" class="tags chapter5" onclick="goToChapter(this.id)"></p>
-        <p id="temperaturetag" class="tags chapter6" onclick="goToChapter(this.id)"></p>
-        <p id="priceslidertag" class="tags chapter7" onclick="goToChapter(this.id)"></p>
-        <p id="importanttag" class="tags chapter8" onclick="goToChapter(this.id)"></p>
-      </div>
-    </div>
-    <div class="donebutton" id="donebutton">
-  </div>
 </body>
 
 </html>
