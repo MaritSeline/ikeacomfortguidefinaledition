@@ -39,32 +39,33 @@ var old = [];
 window.onload = function() {
 
   calcScore();
+  var uscore = score.slice();
 
-  var maxScore = Math.max(...score);
-  var imagescore = score.indexOf(maxScore);
+  var maxScore = Math.max(...uscore);
+  var imagescore = uscore.indexOf(maxScore);
   var imagename = names[imagescore];
   calcTags(imagename);
 
   document.getElementById("bestbed").src = "images/" + imagename + "_section.png";
   document.getElementById("bestalternative").src = "images/" + imagename + "_section.png";
-  score.splice(imagescore, 1, 0);
-  maxScore = Math.max(...score);
-  imagescore = score.indexOf(maxScore);
+  uscore.splice(imagescore, 1, 0);
+  maxScore = Math.max(...uscore);
+  imagescore = uscore.indexOf(maxScore);
   imagename = names[imagescore];
   document.getElementById("firstalternative").src = "images/" + imagename + "_section.png";
-  score.splice(imagescore, 1, 0);
-  maxScore = Math.max(...score);
-  imagescore = score.indexOf(maxScore);
+  uscore.splice(imagescore, 1, 0);
+  maxScore = Math.max(...uscore);
+  imagescore = uscore.indexOf(maxScore);
   imagename = names[imagescore];
   document.getElementById("secondalternative").src = "images/" + imagename + "_section.png";
-  score.splice(imagescore, 1, 0);
-  maxScore = Math.max(...score);
-  imagescore = score.indexOf(maxScore);
+  uscore.splice(imagescore, 1, 0);
+  maxScore = Math.max(...uscore);
+  imagescore = uscore.indexOf(maxScore);
   imagename = names[imagescore];
   document.getElementById("thirdalternative").src = "images/" + imagename + "_section.png";
-  score.splice(imagescore, 1, 0);
-  maxScore = Math.max(...score);
-  imagescore = score.indexOf(maxScore);
+  uscore.splice(imagescore, 1, 0);
+  maxScore = Math.max(...uscore);
+  imagescore = uscore.indexOf(maxScore);
   imagename = names[imagescore];
   document.getElementById("fourthalternative").src = "images/" + imagename + "_section.png";
 }
@@ -158,8 +159,8 @@ function showthisdiv(thisid){
 
 function calcTags(bedname){
   var indexbed = names.indexOf(bedname);
-  alert(score);
   alert(score[indexbed]);
+  alert(indexbed);
   var wlcounter = -2;
   for (var i = 0; i < sessionStorage.length; i++){
     var key = sessionStorage.key(i);
@@ -169,11 +170,11 @@ function calcTags(bedname){
     { wlcounter++;
       weight = item;
     }
-    else if (key == "lengthslider") {
+    else if(key == "lengthslider") {
       wlcounter++;
       length = item;
     }
-    else if (key == "priceslider") {
+    else if(key == "priceslider") {
 
         if(rangeprice[indexbed] > item){
           document.getElementById(key+"tag").className = "tagcrossed";
@@ -195,7 +196,7 @@ function calcTags(bedname){
     if (wlcounter == 0)
     {
       var bmi = weight/(length*length);
-      var currentscore;
+      var checkscore;
       if (bmi < 18.5)
       {
         checkscore = eval("ondergewicht");
