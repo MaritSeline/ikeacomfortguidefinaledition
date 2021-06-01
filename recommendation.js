@@ -48,6 +48,7 @@ window.onload = function() {
   var imagescore = score.indexOf(maxScore);
   var imagename = names[imagescore];
   document.getElementById("bestbed").src = "images/" + imagename + "_section.png";
+  document.getElementById("bestalternative").src = "images/" + imagename + "_section.png";
   score.splice(imagescore, 1, 0);
   maxScore = Math.max(...score);
   imagescore = score.indexOf(maxScore);
@@ -123,4 +124,33 @@ function calcScore() {
       }
     }
   }
+}
+
+
+function showthisdiv(thisid){
+  var allAlternative = document.getElementsByClassName("alternativemattress");
+  for (var i = allAlternative.length; i--;)
+    {allAlternative[i].style.display = "block";}
+  var thisElement = document.getElementById(thisid);
+  thisElement.parentNode.style.display="none";
+
+  var bluebeam = document.getElementById("bestbluebeam");
+  bluebeam.textContent = thisElement.textContent;
+  var imageElement = thisid.split("beam")[0];
+  document.getElementById("bestbed").src = document.getElementById(imageElement).src;
+
+  if(thisid == "bestalternativebeam"){
+    bluebeam.style.background = "#0058AB";
+    bluebeam.style.color = "white";
+  }
+  else {
+    bluebeam.style.background = "#F5F5F5";
+    bluebeam.style.color = "black";
+  }
+
+
+
+
+
+
 }

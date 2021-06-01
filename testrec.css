@@ -73,7 +73,6 @@
 
 .bigmattress{
   width: 100%;
-  height: 100%;
 }
 
 .bluebeam{
@@ -159,10 +158,19 @@
   font-style: normal;
   vertical-align: middle;
 }
+#bestalternativebeam{
+  background: #0058AB;
+  color: white;
+}
+
 
 .alternativeimg{
   text-align: center;
   margin-left: 10%;
   margin-top: 7.5%;
   z-index: -1;
+}
+
+#nonshow{
+  display: none;
 }
