@@ -1,8 +1,8 @@
 var $win = $(window);
 var $lay = $('#layout');
 var baseSize = {
-    w: 99%,
-    h: 99%
+    w: 960,
+    h: 600
 }
 
 function updateScale() {

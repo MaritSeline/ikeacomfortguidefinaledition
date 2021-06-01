@@ -6,10 +6,10 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -712px;
-    margin-top: -405px;
-    width: 99%;
-    height: 99%;
+    margin-left: -480px;
+    margin-top: -300px;
+    width: 960px;
+    height: 600px;
     background: white;
     transform-origin: 50% 50%;
     text-align: center;
