@@ -58,7 +58,6 @@ window.onload = function() {
   document.getElementById("bestalternativename").textContent = imagename;
   document.getElementById("bestalternativematch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
   document.getElementById("bestalternativeprice").textContent = "€" + bedprices[imagescore] + ",-";
-  alternativeTitle(imagename, "bestalternativebeam");
   uscore.splice(imagescore, 1, 0);
   maxScore = Math.max(...uscore);
   imagescore = uscore.indexOf(maxScore);
