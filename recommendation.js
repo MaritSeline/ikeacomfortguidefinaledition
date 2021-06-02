@@ -6,10 +6,10 @@ let _120 =                        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 let _140 =                        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 let _160 =                        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 let _180 =                        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-let ondergewicht =                [0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0];
-let normaal =                     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-let overgewicht =                 [1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1];
-let obesitas =                    [1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1];
+let ondergewicht =                [0, 2, 2, 0, 0, 2, 2, 2, 0, 2, 0, 0];
+let normaal =                     [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2];
+let overgewicht =                 [2, 0, 0, 2, 2, 0, 2, 0, 2, 2, 2, 2];
+let obesitas =                    [2, 0, 0, 2, 2, 0, 0, 0, 0, 0, 2, 2];
 let side =                        [0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1];
 let back =                        [1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1];
 let belly =                       [1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0];
@@ -78,6 +78,7 @@ function calcScore() {
   for (var i = 0; i < sessionStorage.length; i++){
     var key = sessionStorage.key(i);
     var item = sessionStorage.getItem(key);
+
     document.getElementById(key+"tag").innerHTML = item.replaceAll("_"," ");
 
     if(key == "weightslider")
@@ -125,6 +126,7 @@ function calcScore() {
       for (var j = 0; j < score.length; j++) {
         score[j] = score[j] + currentscore[j];
       }
+      wlcounter = -1;
     }
   }
 }
@@ -140,6 +142,7 @@ function showthisdiv(thisid){
   bluebeam.textContent = thisElement.textContent;
   var imageElement = thisid.split("beam")[0];
   document.getElementById("bestbed").src = document.getElementById(imageElement).src;
+  document.getElementById("bestbedname").src = document.getElementById(imageElement).src.toUpperCase();
 
   if(thisid == "bestalternativebeam"){
     bluebeam.style.background = "#0058AB";
@@ -159,8 +162,6 @@ function showthisdiv(thisid){
 
 function calcTags(bedname){
   var indexbed = names.indexOf(bedname);
-  alert(score[indexbed]);
-  alert(indexbed);
   var wlcounter = -2;
   for (var i = 0; i < sessionStorage.length; i++){
     var key = sessionStorage.key(i);
@@ -219,6 +220,7 @@ function calcTags(bedname){
       else {
         document.getElementById(key+"tag").className = "taglayout";
       }
+      wlcounter = -1;
     }
   }
 }
