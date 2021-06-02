@@ -78,10 +78,10 @@
 .namealternative{
   font-family: futura-pt, sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 15px;
   font-style: normal;
   text-align: left;
-  margin-left: 3%;
+  margin-left: 0;
   margin-bottom: 0;
   padding-bottom: 0;
   float: left;
@@ -100,14 +100,14 @@
   padding-bottom: 0;
   color: #0058AB;
   float: left;
-  margin-top: 25px;
-  margin-left: -45px;
+  margin-top: 28px;
+  margin-left: -57px;
 }
 
 .pricealternative{
   font-family: futura-pt, sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 15px;
   font-style: normal;
   text-align: left;
   float: right;
@@ -118,7 +118,6 @@
 .reqalternative{
   float: right;
   display: inline;
-  margin-right: -10px;
   margin-top: -37px;
 }
 
