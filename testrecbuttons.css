@@ -1,0 +1,25 @@
+.allButtons {
+  display: block;
+}
+
+#openbutton1:hover+div.form-popup#myForm1{
+  display: block;
+}
+#openbutton2:hover+div.form-popup#myForm2{
+  display: block;
+}
+#openbutton3:hover+div.form-popup#myForm3{
+  display: block;
+}
+#openbutton4:hover+div.form-popup#myForm4{
+  display: block;
+}
+div.form-popup:hover{
+  display: block;
+}
+
+#openbutton1 {
+  position: fixed;
+  bottom: 27.5%;
+  right: 70%;
+}
