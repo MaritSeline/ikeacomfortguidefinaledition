@@ -38,7 +38,7 @@
   margin-right:3%;
   display: none;
   width: fit-content;
-  border-radius: 20px;
+  border-radius: 13.5%/50%;
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
@@ -65,13 +65,19 @@
 }
 
 .bedtags {
-  margin-left: 2%;
+  margin-left: 12px;
   top: 64%;
+  float: left;
+  text-align: left;
+  width: 100%;
 }
 
 .personaltags {
-  margin-left: 2%;
+  margin-left: 12px;
   top: 123.5%;
+  float: left;
+  text-align: left;
+  width: 100%;
 }
 
 .hiddenchapter {
