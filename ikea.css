@@ -385,6 +385,17 @@ div#divloftbed {
   text-align: center;
 }
 
+.div51 {
+  width: 16%;
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding: 0;
+  margin-left: 20%;
+  margin-right: 6%;
+  text-align: center;
+}
+
 .div42 {
   width: 16%;
   height: 100%;
