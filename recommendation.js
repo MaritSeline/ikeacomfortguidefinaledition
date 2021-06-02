@@ -323,7 +323,6 @@ function borderTags(thisid) {
     var allBorders = allButtons[buttonNumber].id;
     var arrayBorders = allBorders.split("_");
     for (var i = 1; i < arrayBorders.length; i++) {
-      document.getElementById(arrayBorders[i] + "tag").style.display = "inline-block";
       document.getElementById(arrayBorders[i] + "tag").style.border = "3px solid #0058AB";
       document.getElementById(arrayBorders[i] + "tag").style.borderRadius = "13.5%/50%";
     }
@@ -332,7 +331,6 @@ function borderTags(thisid) {
     var allBorders = thisid;
     var arrayBorders = allBorders.split("_");
     for (var i = 1; i < arrayBorders.length; i++) {
-      document.getElementById(arrayBorders[i] + "tag").style.display = "inline-block";
       document.getElementById(arrayBorders[i] + "tag").style.border = "3px solid #0058AB";
       document.getElementById(arrayBorders[i] + "tag").style.borderRadius = "13.5%/50%";
     }

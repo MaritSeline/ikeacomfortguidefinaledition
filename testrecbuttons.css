@@ -1,5 +1,8 @@
-.allButtons {
-  display: block;
+.open-button {
+  display: none;
+}
+.form-popup {
+  display: none;
 }
 
 #openbutton1:hover+div.form-popup#myForm1{
@@ -12,6 +15,78 @@
   display: block;
 }
 #openbutton4:hover+div.form-popup#myForm4{
+  display: block;
+}
+#openbutton5:hover+div.form-popup#myForm5{
+  display: block;
+}
+#openbutton6:hover+div.form-popup#myForm6{
+  display: block;
+}
+#openbutton7:hover+div.form-popup#myForm7{
+  display: block;
+}
+#openbutton8:hover+div.form-popup#myForm8{
+  display: block;
+}
+#openbutton9:hover+div.form-popup#myForm9{
+  display: block;
+}
+#openbutton10:hover+div.form-popup#myForm10{
+  display: block;
+}
+#openbutton11:hover+div.form-popup#myForm11{
+  display: block;
+}
+#openbutton12:hover+div.form-popup#myForm12{
+  display: block;
+}
+#openbutton13:hover+div.form-popup#myForm13{
+  display: block;
+}
+#openbutton14:hover+div.form-popup#myForm14{
+  display: block;
+}
+#openbutton15:hover+div.form-popup#myForm15{
+  display: block;
+}
+#openbutton16:hover+div.form-popup#myForm16{
+  display: block;
+}
+#openbutton17:hover+div.form-popup#myForm17{
+  display: block;
+}
+#openbutton18:hover+div.form-popup#myForm18{
+  display: block;
+}
+#openbutton19:hover+div.form-popup#myForm19{
+  display: block;
+}
+#openbutton20:hover+div.form-popup#myForm20{
+  display: block;
+}
+#openbutton21:hover+div.form-popup#myForm21{
+  display: block;
+}
+#openbutton22:hover+div.form-popup#myForm22{
+  display: block;
+}
+#openbutton23:hover+div.form-popup#myForm23{
+  display: block;
+}
+#openbutton24:hover+div.form-popup#myForm24{
+  display: block;
+}
+#openbutton25:hover+div.form-popup#myForm25{
+  display: block;
+}
+#openbutton26:hover+div.form-popup#myForm26{
+  display: block;
+}
+#openbutton27:hover+div.form-popup#myForm27{
+  display: block;
+}
+#openbutton28:hover+div.form-popup#myForm28{
   display: block;
 }
 div.form-popup:hover{
