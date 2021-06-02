@@ -47,7 +47,6 @@ window.onload = function() {
   var imagescore = uscore.indexOf(maxScore);
   var imagename = names[imagescore];
   calcTags(imagename);
-  alert(imagename);
   showButtons(imagename);
   document.getElementById("bestbed").src = "images/" + imagename + "_section.png";
   document.getElementById("bestbedname").textContent = imagename;
@@ -211,7 +210,6 @@ function showthisdiv(thisid) {
   bed = bed.split("images/")[1];
   bed = bed.split("_section.png")[0];
 
-  alert(bed);
   showButtons(bed);
   calcTags(bed);
 
@@ -326,16 +324,18 @@ function borderTags(thisid) {
     var allBorders = allButtons[buttonNumber].id;
     var arrayBorders = allBorders.split("_");
     for (var i = 1; i < arrayBorders.length; i++) {
-      document.getElementById(arrayBorders[i] + "tag").style.border = "3px solid #0058AB";
-      document.getElementById(arrayBorders[i] + "tag").style.borderRadius = "13.5%/50%";
+      if(!document.getElementById(arrayBorders[i] + "tag").className.includes("tagcrossed"))
+      {document.getElementById(arrayBorders[i] + "tag").style.border = "3px solid #0058AB";
+      document.getElementById(arrayBorders[i] + "tag").style.borderRadius = "13.5%/50%";}
     }
   }
   else{
     var allBorders = thisid;
     var arrayBorders = allBorders.split("_");
     for (var i = 1; i < arrayBorders.length; i++) {
-      document.getElementById(arrayBorders[i] + "tag").style.border = "3px solid #0058AB";
-      document.getElementById(arrayBorders[i] + "tag").style.borderRadius = "13.5%/50%";
+      if(!document.getElementById(arrayBorders[i] + "tag").className.includes("tagcrossed"))
+      {document.getElementById(arrayBorders[i] + "tag").style.border = "3px solid #0058AB";
+      document.getElementById(arrayBorders[i] + "tag").style.borderRadius = "13.5%/50%";}
     }
   }
 }
