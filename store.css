@@ -78,3 +78,60 @@
   margin: 0;
   padding: 2.5%;
 }
+
+.name{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  font-style: normal;
+  text-align: left;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  float: left;
+  display: inline;
+  margin-top: 5%;
+  margin-left: 25px;
+}
+
+.match{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  text-align: center;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: #0058AB;
+  float: left;
+  margin-top: 32px;
+  margin-left: -70px;
+}
+
+.price{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  font-style: normal;
+  text-align: left;
+  float: right;
+  margin-right: 25px;
+  margin-top: 5%;
+}
+
+.reqrec{
+  margin-top: 34px;
+  margin-left: -5px;
+}
+
+.bedinfo{
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  font-style: normal;
+  text-align: left;
+  padding-left: 27px;
+  padding-right: 27px;
+  display: none;
+}
