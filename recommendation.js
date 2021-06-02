@@ -26,9 +26,9 @@ let easy_to_clean =               [0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0];
 let adjustable_bedframe =         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0];
 let recyclable_materials =        [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0];
 let natural_materials =           [0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1];
-let no_pain =                     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-let no_additional_requirements =  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-let no_specific_price =           [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let no_pain =                     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let no_additional_requirements =  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let no_specific_price =           [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 let rangeprice =                  [100,100,300,175,200,100,200,400,150,300,50,475];
 let bedprices =                   [80,100,299,159,199,100,199,399,139,299,49,459];
 
