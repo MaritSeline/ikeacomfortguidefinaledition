@@ -125,6 +125,7 @@ function calcScore() {
     } else {
       document.getElementById(key + "tag").innerHTML = item.replaceAll("_", " ");
     }
+    document.getElementById(key + "tag").style.display = "inline-block";
     if (key == "weightslider") {
       wlcounter++;
       weight = item;
