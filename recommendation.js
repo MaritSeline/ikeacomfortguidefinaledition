@@ -105,8 +105,31 @@ function calcScore() {
     var key = sessionStorage.key(i);
     var item = sessionStorage.getItem(key);
 
-    document.getElementById(key+"tag").innerHTML = item.replaceAll("_"," ");
-
+    if(key == "bedsizes")
+    {
+      document.getElementById(key+"tag").innerHTML = item.replaceAll("_"," ") + "*200 cm";
+    }
+    else if (key == "weightslider") {
+      document.getElementById(key+"tag").innerHTML = item.replaceAll("_"," ") + " kg";
+    }
+    else if (key == "lengthslider") {
+      document.getElementById(key+"tag").innerHTML = item.replaceAll("_"," ") + " cm";
+    }
+    else if (key == "physicalpain") {
+      if(item == "no_pain"){
+        document.getElementById(key+"tag").innerHTML =  "Experiences " + item.replaceAll("_"," ");
+      }
+      else{
+        document.getElementById(key+"tag").innerHTML =  "Supports " + item.replaceAll("_"," ") + " pain";
+      }
+    }
+    else if (key == "sleepingposition") {
+      document.getElementById(key+"tag").innerHTML = "Fit for " + item.replaceAll("_"," ") + " sleeping";
+    }
+    else
+    {
+      document.getElementById(key+"tag").innerHTML = item.replaceAll("_"," ");
+    }
     if(key == "weightslider")
     { wlcounter++;
       weight = item;
@@ -116,10 +139,18 @@ function calcScore() {
       length = item;
     }
     else if (key == "priceslider") {
-      for (var j = 0; j < score.length; j++) {
-        if(rangeprice[j] <= item)
-        {
-          score[j] = score[j] + 1;
+      if(item.toLowerCase() == "no_specific_price")
+      {
+        for (var j = 0; j < score.length; j++) {
+            score[j] = score[j] + 1;
+        }
+      }
+      else {
+        for (var j = 0; j < score.length; j++) {
+          if(rangeprice[j] <= item)
+          {
+            score[j] = score[j] + 1;
+          }
         }
       }
     }
@@ -196,7 +227,31 @@ function calcTags(bedname){
   for (var i = 0; i < sessionStorage.length; i++){
     var key = sessionStorage.key(i);
     var item = sessionStorage.getItem(key);
-    document.getElementById(key+"tag").innerHTML = item.replaceAll("_"," ");
+    if(key == "bedsizes")
+    {
+      document.getElementById(key+"tag").innerHTML = item.replaceAll("_"," ") + "*200 cm";
+    }
+    else if (key == "weightslider") {
+      document.getElementById(key+"tag").innerHTML = item.replaceAll("_"," ") + " kg";
+    }
+    else if (key == "lengthslider") {
+      document.getElementById(key+"tag").innerHTML = item.replaceAll("_"," ") + " cm";
+    }
+    else if (key == "physicalpain") {
+      if(item == "no_pain"){
+        document.getElementById(key+"tag").innerHTML =  "Experiences " + item.replaceAll("_"," ");
+      }
+      else{
+        document.getElementById(key+"tag").innerHTML =  "Supports " + item.replaceAll("_"," ") + " pain";
+      }
+    }
+    else if (key == "sleepingposition") {
+      document.getElementById(key+"tag").innerHTML = "Fit for " + item.replaceAll("_"," ") + " sleeping";
+    }
+    else
+    {
+      document.getElementById(key+"tag").innerHTML = item.replaceAll("_"," ");
+    }
     if(key == "weightslider")
     { wlcounter++;
       weight = item;
@@ -245,7 +300,8 @@ function calcTags(bedname){
         checkscore = eval("obesitas");
       }
       if(checkscore[indexbed] == 0){
-        document.getElementById(key+"tag").className = "tagcrossed";
+        document.getElementById("weightslidertag").className = "tagcrossed";
+        document.getElementById("lengthslidertag").className = "tagcrossed";
       }
       else {
         document.getElementById(key+"tag").className = "taglayout";
