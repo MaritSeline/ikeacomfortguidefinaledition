@@ -1,6 +1,20 @@
 var selectedChapter = "chapter1";
 var savedtag = "";
 
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '37') {
+        otherChapter("leftbutton");
+    }
+    else if (e.keyCode == '39') {
+      otherChapter("rightbutton");
+    }
+}
+
 //go to next question + skip question
 function nextQuestion(clicked_id) {
   var cName = document.getElementById(clicked_id);

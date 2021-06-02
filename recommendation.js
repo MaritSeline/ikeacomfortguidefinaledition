@@ -52,6 +52,7 @@ window.onload = function() {
   document.getElementById("bestbedname").textContent = imagename;
   document.getElementById("bestbedmatch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
   document.getElementById("bestbedprice").textContent = "€" + bedprices[imagescore] + ",-";
+  document.getElementById("info").src = "images/" + imagename + "_info.jpg";
 
   document.getElementById("bestalternative").src = "images/" + imagename + "_section.png";
   document.getElementById("bestalternativename").textContent = imagename;
@@ -169,10 +170,10 @@ function showthisdiv(thisid){
   var bedname = document.getElementById(imageElement + "name").textContent;
   var indexbed = names.indexOf(bedname);
   document.getElementById("bestbed").src = document.getElementById(imageElement).src;
-  document.getElementById("bestbedname").src = bedname;
+  document.getElementById("bestbedname").textContent = bedname;
   document.getElementById("bestbedmatch").textContent = score[indexbed] + "/" + sessionStorage.length;
   document.getElementById("bestbedprice").textContent = "€" + bedprices[indexbed] + ",-";
-
+  document.getElementById("info").src = "images/" + bedname + "_info.jpg";
   if(thisid == "bestalternativebeam"){
     bluebeam.style.background = "#0058AB";
     bluebeam.style.color = "white";
