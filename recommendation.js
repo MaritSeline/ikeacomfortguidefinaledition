@@ -182,16 +182,23 @@ function calcScore() {
 }
 
 function showthisdiv(thisid) {
+  var this_id;
+  if(!thisid.includes("beam")){
+    this_id = thisid + "beam";
+  }
+  else {
+    this_id = thisid;
+  }
   var allAlternative = document.getElementsByClassName("alternativemattress");
   for (var i = 0; i < allAlternative.length; i++) {
     allAlternative[i].style.display = "block";
   }
-  var thisElement = document.getElementById(thisid);
+  var thisElement = document.getElementById(this_id);
   thisElement.parentNode.style.display = "none";
 
   var bluebeam = document.getElementById("bestbluebeam");
   bluebeam.textContent = thisElement.textContent;
-  var imageElement = thisid.split("beam")[0];
+  var imageElement = this_id.split("beam")[0];
   var bedname = document.getElementById(imageElement + "name").textContent;
   var indexbed = names.indexOf(bedname);
   document.getElementById("bestbed").src = document.getElementById(imageElement).src;
@@ -199,7 +206,7 @@ function showthisdiv(thisid) {
   document.getElementById("bestbedmatch").textContent = score[indexbed] + "/" + sessionStorage.length;
   document.getElementById("bestbedprice").textContent = "€" + bedprices[indexbed] + ",-";
   document.getElementById("info").src = "images/" + bedname + "_info.jpg";
-  if (thisid == "bestalternativebeam") {
+  if (this_id == "bestalternativebeam") {
     bluebeam.style.background = "#0058AB";
     bluebeam.style.color = "white";
   } else {
