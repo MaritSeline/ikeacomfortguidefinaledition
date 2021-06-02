@@ -211,7 +211,7 @@
 }
 
 .taglayout{
-  display: inline-block;
+  display: none;
   margin-right: 1%;
   margin-bottom: 1%;
   width: fit-content;
