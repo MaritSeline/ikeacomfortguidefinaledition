@@ -20,12 +20,11 @@ function updateScale() {
 
     $lay.css('transform', 'scale(' + newScale + ',' +  newScale + ')');
 
-    console.log(newScale);
 }
 
 $(window).resize(updateScale);
 
- 
+
 // Get the modal
 var modal = document.getElementById('id01');
 

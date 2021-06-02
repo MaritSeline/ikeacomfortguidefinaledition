@@ -254,3 +254,9 @@ function calcTags(bedname){
     }
   }
 }
+
+function checkOut(){
+  localStorage.setItem("name", document.getElementById("bestbedname").textContent);
+  localStorage.setItem("price", document.getElementById("bestbedprice").textContent);
+  localStorage.setItem("tags", document.getElementById("bestbedmatch").textContent);
+}
