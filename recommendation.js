@@ -47,7 +47,6 @@ window.onload = function() {
   var imagescore = uscore.indexOf(maxScore);
   var imagename = names[imagescore];
   calcTags(imagename);
-  alert(imagename);
   showButtons(imagename);
   document.getElementById("bestbed").src = "images/" + imagename + "_section.png";
   document.getElementById("bestbedname").textContent = imagename;
@@ -183,16 +182,23 @@ function calcScore() {
 }
 
 function showthisdiv(thisid) {
+  var this_id;
+  if(!thisid.includes("beam")){
+    this_id = thisid + "beam";
+  }
+  else {
+    this_id = thisid;
+  }
   var allAlternative = document.getElementsByClassName("alternativemattress");
   for (var i = 0; i < allAlternative.length; i++) {
     allAlternative[i].style.display = "block";
   }
-  var thisElement = document.getElementById(thisid);
+  var thisElement = document.getElementById(this_id);
   thisElement.parentNode.style.display = "none";
 
   var bluebeam = document.getElementById("bestbluebeam");
   bluebeam.textContent = thisElement.textContent;
-  var imageElement = thisid.split("beam")[0];
+  var imageElement = this_id.split("beam")[0];
   var bedname = document.getElementById(imageElement + "name").textContent;
   var indexbed = names.indexOf(bedname);
   document.getElementById("bestbed").src = document.getElementById(imageElement).src;
@@ -200,7 +206,7 @@ function showthisdiv(thisid) {
   document.getElementById("bestbedmatch").textContent = score[indexbed] + "/" + sessionStorage.length;
   document.getElementById("bestbedprice").textContent = "€" + bedprices[indexbed] + ",-";
   document.getElementById("info").src = "images/" + bedname + "_info.jpg";
-  if (thisid == "bestalternativebeam") {
+  if (this_id == "bestalternativebeam") {
     bluebeam.style.background = "#0058AB";
     bluebeam.style.color = "white";
   } else {
@@ -211,7 +217,6 @@ function showthisdiv(thisid) {
   bed = bed.split("images/")[1];
   bed = bed.split("_section.png")[0];
 
-  alert(bed);
   showButtons(bed);
   calcTags(bed);
 
@@ -326,16 +331,18 @@ function borderTags(thisid) {
     var allBorders = allButtons[buttonNumber].id;
     var arrayBorders = allBorders.split("_");
     for (var i = 1; i < arrayBorders.length; i++) {
-      document.getElementById(arrayBorders[i] + "tag").style.border = "3px solid #0058AB";
-      document.getElementById(arrayBorders[i] + "tag").style.borderRadius = "13.5%/50%";
+      if(!document.getElementById(arrayBorders[i] + "tag").className.includes("tagcrossed"))
+      {document.getElementById(arrayBorders[i] + "tag").style.border = "3px solid #0058AB";
+      document.getElementById(arrayBorders[i] + "tag").style.borderRadius = "13.5%/50%";}
     }
   }
   else{
     var allBorders = thisid;
     var arrayBorders = allBorders.split("_");
     for (var i = 1; i < arrayBorders.length; i++) {
-      document.getElementById(arrayBorders[i] + "tag").style.border = "3px solid #0058AB";
-      document.getElementById(arrayBorders[i] + "tag").style.borderRadius = "13.5%/50%";
+      if(!document.getElementById(arrayBorders[i] + "tag").className.includes("tagcrossed"))
+      {document.getElementById(arrayBorders[i] + "tag").style.border = "3px solid #0058AB";
+      document.getElementById(arrayBorders[i] + "tag").style.borderRadius = "13.5%/50%";}
     }
   }
 }
