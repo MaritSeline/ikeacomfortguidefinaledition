@@ -89,10 +89,13 @@
 #openbutton28:hover+div.form-popup#myForm28{
   display: block;
 }
+#openbutton29:hover+div.form-popup#myForm29{
+  display: block;
+}
 div.form-popup:hover{
   display: block;
 }
-
+/* Hafslo */
 #openbutton1 {
   position: absolute;
   bottom: 250px;
@@ -101,44 +104,384 @@ div.form-popup:hover{
 
 #openbutton2 {
   position: absolute;
-  bottom: 300px;
-  right: 450px;
-}
-
-#openbutton3 {
-  position: absolute;
-  bottom: 360px;
-  right: 200px;
-}
-
-#openbutton4 {
-  position: absolute;
-  bottom: 220px;
-  right: 350px;
+  bottom: 250px;
+  right: 260px;
 }
 
 #myForm1{
   position: absolute;
-  bottom: 170px;
-  right: 110px;
-  margin: 0;
-  padding: 0;
+  bottom: 280px;
+  right: 300px;
+  z-index: 999;
 }
 
 #myForm2{
   position: absolute;
   bottom: 220px;
   right: 300px;
+  z-index: 999;
+}
+
+/* HAMARVIK */
+#openbutton3 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#openbutton4 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
 }
 
 #myForm3{
   position: absolute;
   bottom: 280px;
-  right: 50px;
+  right: 300px;
+  z-index: 999;
 }
 
 #myForm4{
   position: absolute;
+  bottom: 220px;
+  right: 300px;
+  z-index: 999;
+}
+
+/* HOKKASEN */
+#openbutton5 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#openbutton6 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#openbutton7 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#myForm5{
+  position: absolute;
+  bottom: 280px;
+  right: 300px;
+  z-index: 999;
+}
+
+#myForm6{
+  position: absolute;
+  bottom: 220px;
+  right: 300px;
+  z-index: 999;
+}
+
+#myForm7{
+  position: absolute;
+  bottom: 220px;
+  right: 300px;
+  z-index: 999;
+}
+
+/* HOVAG */
+#openbutton8 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#openbutton9 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#myForm8{
+  position: absolute;
+  bottom: 280px;
+  right: 300px;
+  z-index: 999;
+}
+
+#myForm9{
+  position: absolute;
+  bottom: 220px;
+  right: 300px;
+  z-index: 999;
+}
+
+/* HYLLESTAD */
+#openbutton10 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#openbutton11 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#myForm10{
+  position: absolute;
+  bottom: 280px;
+  right: 300px;
+  z-index: 999;
+}
+
+#myForm11{
+  position: absolute;
+  bottom: 220px;
+  right: 300px;
+  z-index: 999;
+}
+
+/* MALVIK */
+#openbutton12 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#openbutton13 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#myForm12{
+  position: absolute;
+  bottom: 280px;
+  right: 300px;
+  z-index: 999;
+}
+
+#myForm13{
+  position: absolute;
+  bottom: 220px;
+  right: 300px;
+  z-index: 999;
+}
+
+/* MATRAND */
+#openbutton14 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#openbutton15 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#myForm14{
+  position: absolute;
+  bottom: 280px;
+  right: 300px;
+  z-index: 999;
+}
+
+#myForm15{
+  position: absolute;
+  bottom: 220px;
+  right: 300px;
+  z-index: 999;
+}
+
+/* MAUSUND */
+#openbutton16 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#openbutton17 {
+  position: absolute;
+  bottom: 300px;
+  right: 450px;
+}
+
+#openbutton18 {
+  position: absolute;
+  bottom: 360px;
+  right: 200px;
+}
+
+#openbutton19 {
+  position: absolute;
+  bottom: 220px;
+  right: 350px;
+}
+
+#myForm16{
+  position: absolute;
+  bottom: 170px;
+  right: 110px;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+}
+
+#myForm17{
+  position: absolute;
+  bottom: 220px;
+  right: 300px;
+  z-index: 999;
+}
+
+#myForm18{
+  position: absolute;
+  bottom: 280px;
+  right: 50px;
+  z-index: 999;
+}
+
+#myForm19{
+  position: absolute;
   bottom: 140px;
   right: 200px;
+  z-index: 999;
+}
+
+/* MORGEDAL */
+#openbutton20 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#openbutton21 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#openbutton22 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#myForm20{
+  position: absolute;
+  bottom: 280px;
+  right: 300px;
+  z-index: 999;
+}
+
+#myForm21{
+  position: absolute;
+  bottom: 220px;
+  right: 300px;
+  z-index: 999;
+}
+
+#myForm22{
+  position: absolute;
+  bottom: 220px;
+  right: 300px;
+  z-index: 999;
+}
+
+/* MYRBACKA */
+#openbutton23 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#openbutton24 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#openbutton25 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#myForm23{
+  position: absolute;
+  bottom: 280px;
+  right: 300px;
+  z-index: 999;
+}
+
+#myForm24{
+  position: absolute;
+  bottom: 220px;
+  right: 300px;
+  z-index: 999;
+}
+
+#myForm25{
+  position: absolute;
+  bottom: 220px;
+  right: 300px;
+  z-index: 999;
+}
+
+/* VADSO */
+#openbutton26 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#openbutton27 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#myForm26{
+  position: absolute;
+  bottom: 280px;
+  right: 300px;
+  z-index: 999;
+}
+
+#myForm27{
+  position: absolute;
+  bottom: 220px;
+  right: 300px;
+  z-index: 999;
+}
+
+/* VATNESTROM */
+#openbutton28 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#openbutton29 {
+  position: absolute;
+  bottom: 250px;
+  right: 260px;
+}
+
+#myForm28{
+  position: absolute;
+  bottom: 280px;
+  right: 300px;
+  z-index: 999;
+}
+
+#myForm29{
+  position: absolute;
+  bottom: 220px;
+  right: 300px;
+  z-index: 999;
 }
