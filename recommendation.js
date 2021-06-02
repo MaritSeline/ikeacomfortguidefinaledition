@@ -47,6 +47,7 @@ window.onload = function() {
   var imagescore = uscore.indexOf(maxScore);
   var imagename = names[imagescore];
   calcTags(imagename);
+  alert(imagename);
   showButtons(imagename);
   document.getElementById("bestbed").src = "images/" + imagename + "_section.png";
   document.getElementById("bestbedname").textContent = imagename;
@@ -211,6 +212,7 @@ function showthisdiv(thisid) {
   bed = bed.split("images/")[1];
   bed = bed.split("_section.png")[0];
 
+  alert(bed);
   showButtons(bed);
   calcTags(bed);
 
@@ -295,16 +297,11 @@ function alternativeTitle(thisbed, thisid) {
 }
 
 function hideButtons() {
-  for (var i = 0; i < names.length; i++) {
-    var allButtons = document.getElementsByClassName(names[i]);
-    for (var i = 0; i < allButtons.length; i++) {
-      allButtons[i].style.display = "none";
-    }
-  }
+  document.getElementsByClassName("allButtons")[0].style.display = "none";
 }
 
 function showButtons(bedname) {
-  var allButtons = document.getElementsByClassName(bedname);
+  var allButtons = document.querySelectorAll("." + bedname);
   for (var i = 0; i < allButtons.length; i++) {
     allButtons[i].style.display = "block";
   }
