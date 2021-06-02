@@ -37,20 +37,20 @@
             <div class="recomimg" id="bestbeddiv">
               <img id="bestbed" src="images/white_image.png" width="110%" />
               <div class="divimgtext">
-                <div class="name">
+                <p class="name" id="bestbedname">
                   HOVAG
-                </div>
-                <div class="match">
+                </p>
+                <p class="match" id="bestbedmatch">
                   10/10
-                </div>
+                </p>
               </div>
               <div class="matchedreq">
                 <img src="images/matched_requirements.jpg" width="6%"/>
               </div>
               <div class="price">
-                <div class="mattressprice">
+                <p class="mattressprice" id="bestbedprice">
                   €239
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@
           </div>
         </div>
         <div class="donebutton" id="donebutton">
-          <a href="checkout.html">
+          <a href="checkout.html" onclick="checkOut()">
             <img src="images/donebutton.png" width="35%" />
           </a>
         </div>
@@ -82,7 +82,7 @@
           <div class="modal-content animate">
             <div class="imgcontainer">
               <span onclick="document.getElementById('id01').style.display='none'" class="close" width="150%" title="Close Modal">&times;</span>
-              <img src="images/HOVAG_info.jpg" width="70%">
+              <img id="info" src="images/HOVAG_info.jpg" width="70%">
             </div>
 
             <div class="container">
@@ -103,30 +103,105 @@
           <p class="alternativebeam" id="bestalternativebeam" onclick="showthisdiv(this.id);">best match</p>
           <div class="alternativeimg" id="bestalternativesection">
             <img id="bestalternative" src="images/white_image.png" width="100%" />
+            <br>
+            <p class="namealternative" id="bestalternativename">
+              HOVAG
+            </p>
+            <p class="pricealternative" id="bestalternativeprice">
+              €239
+            </p>
+            <div>
+            <p class="matchalternative" id="bestalternativematch">
+              10/10
+            </p>
+            <div class="reqalternative">
+              <img src="images/matched_requirements.jpg" width="22%"/>
+            </div>
+          </div>
           </div>
         </div>
         <div class="alternativemattress">
           <p class="alternativebeam" id="firstalternativebeam" onclick="showthisdiv(this.id);">first alternative</p>
           <div class="alternativeimg" id="firstalternativesection">
             <img id="firstalternative" src="images/MYRBACKA_section.png" width="100%" />
+            <br>
+            <p class="namealternative" id="firstalternativename">
+              HOVAG
+            </p>
+            <p class="pricealternative" id="firstalternativeprice">
+              €239
+            </p>
+            <div>
+            <p class="matchalternative" id="firstalternativematch">
+              10/10
+            </p>
+            <div class="reqalternative">
+              <img src="images/matched_requirements.jpg" width="22%"/>
+            </div>
+          </div>
           </div>
         </div>
         <div class="alternativemattress">
           <p class="alternativebeam" id="secondalternativebeam" onclick="showthisdiv(this.id);">second alternative</p>
           <div class="alternativeimg" id="secondalternativesection">
             <img id="secondalternative" src="images/MYRBACKA_section.png" width="100%" />
+            <br>
+            <p class="namealternative" id="secondalternativename">
+              HOVAG
+            </p>
+            <p class="pricealternative" id="secondalternativeprice">
+              €239
+            </p>
+            <div>
+            <p class="matchalternative" id="secondalternativematch">
+              10/10
+            </p>
+            <div class="reqalternative">
+              <img src="images/matched_requirements.jpg" width="22%"/>
+            </div>
+          </div>
           </div>
         </div>
         <div class="alternativemattress">
           <p class="alternativebeam" id="thirdalternativebeam" onclick="showthisdiv(this.id);">third alternative</p>
           <div class="alternativeimg" id="thirdalternativesection">
             <img id="thirdalternative" src="images/MYRBACKA_section.png" width="100%" />
+            <br>
+            <p class="namealternative" id="thirdalternativename">
+              HOVAG
+            </p>
+            <p class="pricealternative" id="thirdalternativeprice">
+              €239
+            </p>
+            <div>
+            <p class="matchalternative" id="thirdalternativematch">
+              10/10
+            </p>
+            <div class="reqalternative">
+              <img src="images/matched_requirements.jpg" width="22%"/>
+            </div>
+          </div>
           </div>
         </div>
         <div class="alternativemattress">
           <p class="alternativebeam" id="fourthalternativebeam" onclick="showthisdiv(this.id);">fourth alternative</p>
           <div class="alternativeimg" id="fourthalternativesection">
             <img id="fourthalternative" src="images/MYRBACKA_section.png" width="100%" />
+            <br>
+            <p class="namealternative" id="fourthalternativename">
+              HOVAG
+            </p>
+            <p class="pricealternative" id="fourthalternativeprice">
+              €239
+            </p>
+            <div>
+            <p class="matchalternative" id="fourthalternativematch">
+              10/10
+            </p>
+            <div class="reqalternative">
+              <img src="images/matched_requirements.jpg" width="22%"/>
+            </div>
+          </div>
           </div>
         </div>
       </div>

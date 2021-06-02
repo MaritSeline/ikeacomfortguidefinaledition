@@ -6,10 +6,10 @@ let _120 =                        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 let _140 =                        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 let _160 =                        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 let _180 =                        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-let ondergewicht =                [0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0];
-let normaal =                     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-let overgewicht =                 [1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1];
-let obesitas =                    [1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1];
+let ondergewicht =                [0, 2, 2, 0, 0, 2, 2, 2, 0, 2, 0, 0];
+let normaal =                     [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2];
+let overgewicht =                 [2, 0, 0, 2, 2, 0, 2, 0, 2, 2, 2, 2];
+let obesitas =                    [2, 0, 0, 2, 2, 0, 0, 0, 0, 0, 2, 2];
 let side =                        [0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1];
 let back =                        [1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1];
 let belly =                       [1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0];
@@ -23,13 +23,15 @@ let ventilating =                 [1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1];
 let neutral_temperature =         [1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1];
 let heat_retaining =              [0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0];
 let easy_to_clean =               [0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0];
-let adjustable_bedframe =         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0];
+let adjustable_bedframe =         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0];
 let recyclable_materials =        [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0];
 let natural_materials =           [0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1];
-let no_pain =                     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-let no_additional_requirements =  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-let no_specific_price =           [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let no_pain =                     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let no_additional_requirements =  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let no_specific_price =           [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 let rangeprice =                  [100,100,300,175,200,100,200,400,150,300,50,475];
+let bedprices =                   [80,100,299,159,199,100,199,399,139,299,49,459];
+
 
 let names = ["HAFSLO", "HAMARVIK", "HOKKASEN", "HOVAG", "HYLLESTAD", "MALVIK", "MATRAND", "MAUSUND", "MORGEDAL", "MYRBACKA", "VADSO", "VATNESTROM"];
 
@@ -47,27 +49,51 @@ window.onload = function() {
   calcTags(imagename);
 
   document.getElementById("bestbed").src = "images/" + imagename + "_section.png";
+  document.getElementById("bestbedname").textContent = imagename;
+  document.getElementById("bestbedmatch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
+  document.getElementById("bestbedprice").textContent = "€" + bedprices[imagescore] + ",-";
+  document.getElementById("info").src = "images/" + imagename + "_info.jpg";
+
   document.getElementById("bestalternative").src = "images/" + imagename + "_section.png";
+  document.getElementById("bestalternativename").textContent = imagename;
+  document.getElementById("bestalternativematch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
+  document.getElementById("bestalternativeprice").textContent = "€" + bedprices[imagescore] + ",-";
+
   uscore.splice(imagescore, 1, 0);
   maxScore = Math.max(...uscore);
   imagescore = uscore.indexOf(maxScore);
   imagename = names[imagescore];
   document.getElementById("firstalternative").src = "images/" + imagename + "_section.png";
+  document.getElementById("firstalternativename").textContent = imagename;
+  document.getElementById("firstalternativematch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
+  document.getElementById("firstalternativeprice").textContent = "€" + bedprices[imagescore] + ",-";
+
   uscore.splice(imagescore, 1, 0);
   maxScore = Math.max(...uscore);
   imagescore = uscore.indexOf(maxScore);
   imagename = names[imagescore];
   document.getElementById("secondalternative").src = "images/" + imagename + "_section.png";
+  document.getElementById("secondalternativename").textContent = imagename;
+  document.getElementById("secondalternativematch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
+  document.getElementById("secondalternativeprice").textContent = "€" + bedprices[imagescore] + ",-";
+
   uscore.splice(imagescore, 1, 0);
   maxScore = Math.max(...uscore);
   imagescore = uscore.indexOf(maxScore);
   imagename = names[imagescore];
   document.getElementById("thirdalternative").src = "images/" + imagename + "_section.png";
+  document.getElementById("thirdalternativename").textContent = imagename;
+  document.getElementById("thirdalternativematch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
+  document.getElementById("thirdalternativeprice").textContent = "€" + bedprices[imagescore] + ",-";
+
   uscore.splice(imagescore, 1, 0);
   maxScore = Math.max(...uscore);
   imagescore = uscore.indexOf(maxScore);
   imagename = names[imagescore];
   document.getElementById("fourthalternative").src = "images/" + imagename + "_section.png";
+  document.getElementById("fourthalternativename").textContent = imagename;
+  document.getElementById("fourthalternativematch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
+  document.getElementById("fourthalternativeprice").textContent = "€" + bedprices[imagescore] + ",-";
 }
 
 function calcScore() {
@@ -78,6 +104,7 @@ function calcScore() {
   for (var i = 0; i < sessionStorage.length; i++){
     var key = sessionStorage.key(i);
     var item = sessionStorage.getItem(key);
+
     document.getElementById(key+"tag").innerHTML = item.replaceAll("_"," ");
 
     if(key == "weightslider")
@@ -125,6 +152,7 @@ function calcScore() {
       for (var j = 0; j < score.length; j++) {
         score[j] = score[j] + currentscore[j];
       }
+      wlcounter = -1;
     }
   }
 }
@@ -139,8 +167,13 @@ function showthisdiv(thisid){
   var bluebeam = document.getElementById("bestbluebeam");
   bluebeam.textContent = thisElement.textContent;
   var imageElement = thisid.split("beam")[0];
+  var bedname = document.getElementById(imageElement + "name").textContent;
+  var indexbed = names.indexOf(bedname);
   document.getElementById("bestbed").src = document.getElementById(imageElement).src;
-
+  document.getElementById("bestbedname").textContent = bedname;
+  document.getElementById("bestbedmatch").textContent = score[indexbed] + "/" + sessionStorage.length;
+  document.getElementById("bestbedprice").textContent = "€" + bedprices[indexbed] + ",-";
+  document.getElementById("info").src = "images/" + bedname + "_info.jpg";
   if(thisid == "bestalternativebeam"){
     bluebeam.style.background = "#0058AB";
     bluebeam.style.color = "white";
@@ -159,8 +192,6 @@ function showthisdiv(thisid){
 
 function calcTags(bedname){
   var indexbed = names.indexOf(bedname);
-  alert(score[indexbed]);
-  alert(indexbed);
   var wlcounter = -2;
   for (var i = 0; i < sessionStorage.length; i++){
     var key = sessionStorage.key(i);
@@ -219,6 +250,13 @@ function calcTags(bedname){
       else {
         document.getElementById(key+"tag").className = "taglayout";
       }
+      wlcounter = -1;
     }
   }
+}
+
+function checkOut(){
+  localStorage.setItem("name", document.getElementById("bestbedname").textContent);
+  localStorage.setItem("price", document.getElementById("bestbedprice").textContent);
+  localStorage.setItem("tags", document.getElementById("bestbedmatch").textContent);
 }

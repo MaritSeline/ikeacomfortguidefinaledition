@@ -75,6 +75,52 @@
   right: 70px;
 }
 
+.namealternative{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  font-style: normal;
+  text-align: left;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  float: left;
+  display: inline;
+  margin-top: 5%;
+}
+
+.matchalternative{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  text-align: center;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: #0058AB;
+  float: left;
+  margin-top: 28px;
+  margin-left: -57px;
+}
+
+.pricealternative{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  font-style: normal;
+  text-align: left;
+  float: right;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+.reqalternative{
+  float: right;
+  display: inline;
+  margin-top: -37px;
+}
+
 .matchedreq{
   position: absolute;
   top: 179px;
@@ -171,13 +217,13 @@
   width: fit-content;
   border-radius: 13.5%/50%;
   text-align: center;
-  padding-left: 4.5%;
-  padding-right: 4.5%;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   background-color:#F5F5F5;
   font-family: futura-pt, sans-serif;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .tagcrossed{
@@ -187,15 +233,15 @@
   width: fit-content;
   border-radius: 13.5%/50%;
   text-align: center;
-  padding-left: 4.5%;
-  padding-right: 4.5%;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   background-color:#F9F9F9;
   color:#828282;
   font-family: futura-pt, sans-serif;
   text-decoration: line-through;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .startalternative{
@@ -204,7 +250,7 @@
   width: 100%;
 }
 .alternativemattress{
-  height: 45%;
+  height: 42.5%;
   text-align: center;
 }
 
@@ -294,4 +340,6 @@
   position: absolute;
   width: 40%;
   display: inline;
+  bottom: 25px;
+  left: 337px;
 }
