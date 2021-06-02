@@ -126,7 +126,7 @@
 }
 
 .slideralign{
-  margin-left: 13%;
+  margin-left: 15%;
 }
 
 button {
@@ -153,20 +153,21 @@ div#divloftbed {
 #flush-collapseOne {}
 
 .divtext1 {
-  width: 55%;
+  width: 60%;
   text-align: center;
-  margin-left: 22.5%;
+  margin-left: 20%;
 }
 
 .divtext {
-  width: 55%;
-  margin-left: 22.5%;
+  width: 60%;
+  margin-left: 20%;
 }
 
 .p1 {
   font-family: futura-pt, sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
+  padding-top: 5px;
   font-style: normal;
   text-align: center;
 }
@@ -174,7 +175,7 @@ div#divloftbed {
 .p2 {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   text-align: center;
   padding: 0;
@@ -183,7 +184,7 @@ div#divloftbed {
 .p3 {
   font-family: futura-pt, sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   text-align: center;
   overflow: hidden;
@@ -196,7 +197,7 @@ div#divloftbed {
 .pslider{
   font-family: futura-pt, sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   text-align: center;
   margin-left: 0;
@@ -205,7 +206,7 @@ div#divloftbed {
 .pbed {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   text-align: center;
   padding: 0;
@@ -215,7 +216,7 @@ div#divloftbed {
 .psize {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   text-align: center;
   padding: 0;
@@ -225,7 +226,7 @@ div#divloftbed {
 .pweight {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   text-align: center;
   padding: 0;
@@ -235,7 +236,7 @@ div#divloftbed {
 .pbody {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   text-align: center;
   padding: 0;
@@ -245,7 +246,7 @@ div#divloftbed {
 .pposition {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   text-align: center;
   padding: 0;
@@ -255,7 +256,7 @@ div#divloftbed {
 .pposition {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   text-align: center;
   padding: 0;
@@ -265,7 +266,7 @@ div#divloftbed {
 .ppain {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   text-align: center;
   padding: 0;
@@ -275,7 +276,7 @@ div#divloftbed {
 .ptemp {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   text-align: center;
   padding: 0;
@@ -285,7 +286,7 @@ div#divloftbed {
 .pimportant {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   text-align: center;
   padding: 0;
@@ -295,7 +296,7 @@ div#divloftbed {
 .pprice {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   text-align: center;
   padding: 0;
@@ -339,7 +340,8 @@ div#divloftbed {
   background: transparant;
   float: left;
   padding: 0;
-  margin-left: 34%;
+  margin-left: 31%;
+  margin-right:5%;
   text-align: center;
 }
 
@@ -358,7 +360,7 @@ div#divloftbed {
   background: transparant;
   float: left;
   padding-top: 2%;
-  margin-left: 26%;
+  margin-left: 20%;
   text-align: center;
 }
 
@@ -368,7 +370,8 @@ div#divloftbed {
   background: transparant;
   float: left;
   padding: 0;
-  margin-left: 26%;
+  margin-left: 20%;
+  margin-right: 6%;
   text-align: center;
 }
 
@@ -379,6 +382,7 @@ div#divloftbed {
   float: left;
   padding: 0;
   margin: 0;
+  margin-right: 6%;
   text-align: center;
 }
 
@@ -398,7 +402,7 @@ div#divloftbed {
   margin-top: 200px;
   background: transparant;
   text-align: center;
-  margin-left: 270px;
+  margin-left: 260px;
 }
 
 .divskip {
@@ -407,7 +411,7 @@ div#divloftbed {
   margin-top: 50px;
   background: transparant;
   text-align: center;
-  margin-left: 270px;
+  margin-left: 240px;
 }
 
 
