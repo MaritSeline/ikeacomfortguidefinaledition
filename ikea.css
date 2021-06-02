@@ -126,7 +126,17 @@
 }
 
 .slideralign{
-  margin-left: 15%;
+  margin-left: 13%;
+}
+
+
+.slideraligntext1{
+  margin-left: 2%;
+}
+
+.slideraligntext2{
+  margin-left: 2%;
+  padding-top:5%;
 }
 
 button {
@@ -429,6 +439,16 @@ div#divloftbed {
   background: transparant;
   float: left;
   padding-top: 15px;
+  margin-left: 10%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.rangeslid {
+  height: 100%;
+  background: transparant;
+  float: left;
+  padding-top: 3px;
   margin-left: 10%;
   margin-right: 5%;
   text-align: center;
