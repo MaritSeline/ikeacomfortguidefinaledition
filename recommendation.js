@@ -172,7 +172,7 @@ function calcScore() {
 
 function showthisdiv(thisid) {
   var allAlternative = document.getElementsByClassName("alternativemattress");
-  for (var i = allAlternative.length; i--;) {
+  for (var i = 0; i < allAlternative.length; i++) {
     allAlternative[i].style.display = "block";
   }
   var thisElement = document.getElementById(thisid);
@@ -280,6 +280,14 @@ function alternativeTitle(thisbed, thisid) {
     }
   }
 }
+
+function showButtons(bedname){
+  var allButtons = document.getElementsByClassName(bedname);
+  for (var i = 0; i < allButtons.length; i++) {
+    allButtons[i].style.display = "block";
+  }
+}
+
 
 function checkOut() {
   localStorage.setItem("name", document.getElementById("bestbedname").textContent);
