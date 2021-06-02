@@ -183,7 +183,6 @@ function calcScore() {
 }
 
 function showthisdiv(thisid) {
-  hideButtons();
   var allAlternative = document.getElementsByClassName("alternativemattress");
   for (var i = 0; i < allAlternative.length; i++) {
     allAlternative[i].style.display = "block";
@@ -297,10 +296,14 @@ function alternativeTitle(thisbed, thisid) {
 }
 
 function hideButtons() {
-  document.getElementsByClassName("allButtons")[0].style.display = "none";
+  var allButtons = document.querySelectorAll(".open-button");
+  for (var i = 0; i < allButtons.length; i++) {
+    allButtons[i].style.display = "none";
+  }
 }
 
 function showButtons(bedname) {
+  hideButtons();
   var allButtons = document.querySelectorAll("." + bedname);
   for (var i = 0; i < allButtons.length; i++) {
     allButtons[i].style.display = "block";
