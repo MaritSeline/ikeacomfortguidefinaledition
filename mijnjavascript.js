@@ -22,7 +22,13 @@ function nextQuestion(clicked_id) {
     storage= "Fit for " + storage + " sleeping";
   }
   if (classnamen[0]=="physicalpain") {
-    storage= "Supports " + storage + " pain";
+    if(storage == "no pain")
+    {
+      storage= "Experiences " + storage;
+    }
+    else {
+      storage= "Supports " + storage + " pain";
+    }
   }
   if (classnamen[0]=="temperature") {
     storage=storage;
@@ -37,12 +43,12 @@ function nextQuestion(clicked_id) {
   document.getElementById(classnamen[0] + "tag").innerHTML = storage;
   document.getElementById(classnamen[0] + "tag").style.display = "inline-block";
   savedtag = storage;
-  document.getElementById("imageresult").innerHTML = "<img src='images/mattress.png' alt='' class='' id='defaultimage' width='100%'>";
+  document.getElementById("defaultimage").src = "images/mattress.png";
   if (classnamen[1] == "chapter1") {
     document.getElementById("left").style.width = "70%";
     document.getElementById("right").style.display = "block";
     document.getElementById("progressbar").style.width = "70%";
-    document.getElementById("imageresult").innerHTML = "<img src='images/mattress_shadow.png' alt='' class='' id='defaultimage' width='100%'>";
+    document.getElementById("defaultimage").src = "images/mattress_shadow.png";
     document.getElementById("div11").className = "div41";
     document.getElementById("div12").className = "div42";
     document.getElementById("div13").className = "div43";
@@ -69,10 +75,11 @@ function sliderFunction(clicked_id) {
       //add text to tags
       if (classnamen[0] == "weightslider") {
         document.getElementById(classnamen[0] + "tag").innerHTML = range.value + " kg";
-
+        document.getElementById("defaultimage").src = "images/mattress_" + range.value + "kg.png";
       }
       else if (classnamen[0] == "lengthslider") {
         document.getElementById(classnamen[0] + "tag").innerHTML = range.value + " cm";
+        document.getElementById("defaultimage").src = "images/mattress_" + range.value + "cm.png";
       }
       else if (classnamen[0] == "priceslider") {
         document.getElementById(classnamen[0] + "tag").innerHTML = "€" + range.value;
@@ -91,7 +98,7 @@ function sliderFunction(clicked_id) {
 function otherChapter(clickedbutton) {
   var sChapter = parseInt(selectedChapter.split("chapter")[1]);
   if (sChapter != 1) {
-    document.getElementById("imageresult").innerHTML = "<img src='images/mattress.png' alt='' class='' id='defaultimage' width='100%'>";
+    document.getElementById("defaultimage").src = "images/mattress.png";
   }
   if (clickedbutton == "leftbutton") {
     if (sChapter == 1) {} else if (sChapter > 1 && sChapter <= 8) {
@@ -128,7 +135,7 @@ function loadonclickimage(thisbutton) {
   var sChapter = cid.split("chapter")[1];
   selectedChapter = "chapter" + sChapter;
   if (sChapter == "1") {
-    document.getElementById("imageresult").innerHTML = "<img src='images/mattress.png' alt='' class='' id='defaultimage' width='100%'>";
+    document.getElementById("defaultimage").src = "images/mattress.png";
   }
 }
 
@@ -151,7 +158,13 @@ function tagmouseover(this_id) {
       thisid= "Fit for " + thisid + " sleeping";
     }
   if (elementnaam=="physicalpain") {
-      thisid= "Supports " + thisid + " pain";
+      if(thisid == "no pain")
+      {
+        thisid = "Experiences " + thisid;
+      }
+      else{
+        thisid= "Supports " + thisid + " pain";
+      }
     }
   if (elementnaam=="temperature") {
       thisid=thisid;
@@ -169,7 +182,7 @@ function tagmouseover(this_id) {
   document.getElementById(elementnaam + "tag").style.borderRadius = "13.5%/50%";
 
   if (elementnaam != "typesize") {
-    document.getElementById("imageresult").innerHTML = "<img src='images/mattress_" + this_id + ".png' alt='' class='' id='defaultimage' width='100%'>";
+    document.getElementById("defaultimage").src = "images/mattress_"+this_id +".png";
   }
 }
 
@@ -180,7 +193,7 @@ function tagmouseout(this_id) {
   document.getElementById(elementnaam + "tag").innerHTML = savedtag;
   document.getElementById(elementnaam + "tag").style.border = "3px none #0058AB";
   if (elementnaam != "typesize") {
-    document.getElementById("imageresult").innerHTML = "<img src='images/mattress.png' alt='' class='' id='defaultimage' width='100%'>";
+    document.getElementById("defaultimage").src = "images/mattress.png";
 
   }
 }
