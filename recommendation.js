@@ -30,6 +30,8 @@ let no_pain =                     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let no_additional_requirements =  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let no_specific_price =           [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let rangeprice =                  [100,100,300,175,200,100,200,400,150,300,50,475];
+let bedprices =                   [80,100,299,159,199,100,199,399,139,299,49,459];
+
 
 let names = ["HAFSLO", "HAMARVIK", "HOKKASEN", "HOVAG", "HYLLESTAD", "MALVIK", "MATRAND", "MAUSUND", "MORGEDAL", "MYRBACKA", "VADSO", "VATNESTROM"];
 
@@ -47,27 +49,50 @@ window.onload = function() {
   calcTags(imagename);
 
   document.getElementById("bestbed").src = "images/" + imagename + "_section.png";
+  document.getElementById("bestbedname").textContent = imagename;
+  document.getElementById("bestbedmatch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
+  document.getElementById("bestbedprice").textContent = "€" + bedprices[imagescore] + ",-";
+
   document.getElementById("bestalternative").src = "images/" + imagename + "_section.png";
+  document.getElementById("bestalternativename").textContent = imagename;
+  document.getElementById("bestalternativematch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
+  document.getElementById("bestalternativeprice").textContent = "€" + bedprices[imagescore] + ",-";
+
   uscore.splice(imagescore, 1, 0);
   maxScore = Math.max(...uscore);
   imagescore = uscore.indexOf(maxScore);
   imagename = names[imagescore];
   document.getElementById("firstalternative").src = "images/" + imagename + "_section.png";
+  document.getElementById("firstalternativename").textContent = imagename;
+  document.getElementById("firstalternativematch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
+  document.getElementById("firstalternativeprice").textContent = "€" + bedprices[imagescore] + ",-";
+
   uscore.splice(imagescore, 1, 0);
   maxScore = Math.max(...uscore);
   imagescore = uscore.indexOf(maxScore);
   imagename = names[imagescore];
   document.getElementById("secondalternative").src = "images/" + imagename + "_section.png";
+  document.getElementById("secondalternativename").textContent = imagename;
+  document.getElementById("secondalternativematch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
+  document.getElementById("secondalternativeprice").textContent = "€" + bedprices[imagescore] + ",-";
+
   uscore.splice(imagescore, 1, 0);
   maxScore = Math.max(...uscore);
   imagescore = uscore.indexOf(maxScore);
   imagename = names[imagescore];
   document.getElementById("thirdalternative").src = "images/" + imagename + "_section.png";
+  document.getElementById("thirdalternativename").textContent = imagename;
+  document.getElementById("thirdalternativematch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
+  document.getElementById("thirdalternativeprice").textContent = "€" + bedprices[imagescore] + ",-";
+
   uscore.splice(imagescore, 1, 0);
   maxScore = Math.max(...uscore);
   imagescore = uscore.indexOf(maxScore);
   imagename = names[imagescore];
   document.getElementById("fourthalternative").src = "images/" + imagename + "_section.png";
+  document.getElementById("fourthalternativename").textContent = imagename;
+  document.getElementById("fourthalternativematch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
+  document.getElementById("fourthalternativeprice").textContent = "€" + bedprices[imagescore] + ",-";
 }
 
 function calcScore() {
@@ -141,8 +166,12 @@ function showthisdiv(thisid){
   var bluebeam = document.getElementById("bestbluebeam");
   bluebeam.textContent = thisElement.textContent;
   var imageElement = thisid.split("beam")[0];
+  var bedname = document.getElementById(imageElement + "name").textContent;
+  var indexbed = names.indexOf(bedname);
   document.getElementById("bestbed").src = document.getElementById(imageElement).src;
-  document.getElementById("bestbedname").src = document.getElementById(imageElement).src.toUpperCase();
+  document.getElementById("bestbedname").src = bedname;
+  document.getElementById("bestbedmatch").textContent = score[indexbed] + "/" + sessionStorage.length;
+  document.getElementById("bestbedprice").textContent = "€" + bedprices[indexbed] + ",-";
 
   if(thisid == "bestalternativebeam"){
     bluebeam.style.background = "#0058AB";
