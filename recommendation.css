@@ -12,6 +12,8 @@
   background: white;
   float: left;
   overflow:auto;
+  border-left: solid;
+  border-color: #F5F5F5;
 }
 
 .divback{
