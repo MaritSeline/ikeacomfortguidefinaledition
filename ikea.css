@@ -32,7 +32,8 @@
 
 .mattressimg {
   text-align: center;
-  padding-top: 5%;
+  margin-top: 70px;
+  position: absolute;
 }
 .tags{
   margin-right:3%;
@@ -41,9 +42,9 @@
   border-radius: 13.5%/50%;
   text-align: left;
   padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 2.5px;
-  padding-bottom: 2.5px;
+  padding-right: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   background-color:white;
   font-family: futura-pt, sans-serif;
   font-size: 15px;
@@ -70,6 +71,7 @@
   float: left;
   text-align: left;
   width: 100%;
+  margin-top: 220px;
 }
 
 .personaltags {
