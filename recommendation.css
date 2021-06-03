@@ -101,6 +101,7 @@
   float: left;
   margin-top: 28px;
   margin-left: -80px;
+  position: absolute;
 }
 
 .pricealternative{

@@ -114,7 +114,8 @@
   color: #0058AB;
   float: left;
   margin-top: 32px;
-  margin-left:-75px;
+  margin-left:-72px;
+  position: absolute;
 }
 
 .price{

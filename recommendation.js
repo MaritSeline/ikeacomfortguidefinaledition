@@ -51,13 +51,13 @@ window.onload = function() {
   document.getElementById("bestbed").src = "images/" + imagename + "_section.png";
   document.getElementById("bestbedname").textContent = imagename;
   document.getElementById("bestbedmatch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
-  document.getElementById("bestbedprice").textContent = "€" + bedprices[imagescore] + ",-";
+  document.getElementById("bestbedprice").textContent = "€" + bedprices[imagescore];
   document.getElementById("info").src = "images/" + imagename + "_info.jpg";
 
   document.getElementById("bestalternative").src = "images/" + imagename + "_section.png";
   document.getElementById("bestalternativename").textContent = imagename;
   document.getElementById("bestalternativematch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
-  document.getElementById("bestalternativeprice").textContent = "€" + bedprices[imagescore] + ",-";
+  document.getElementById("bestalternativeprice").textContent = "€" + bedprices[imagescore];
   uscore.splice(imagescore, 1, 0);
   maxScore = Math.max(...uscore);
   imagescore = uscore.indexOf(maxScore);
@@ -66,7 +66,7 @@ window.onload = function() {
   document.getElementById("firstalternative").src = "images/" + imagename + "_section.png";
   document.getElementById("firstalternativename").textContent = imagename;
   document.getElementById("firstalternativematch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
-  document.getElementById("firstalternativeprice").textContent = "€" + bedprices[imagescore] + ",-";
+  document.getElementById("firstalternativeprice").textContent = "€" + bedprices[imagescore];
   alternativeTitle(imagename, "firstalternativebeam");
 
   uscore.splice(imagescore, 1, 0);
@@ -76,7 +76,7 @@ window.onload = function() {
   document.getElementById("secondalternative").src = "images/" + imagename + "_section.png";
   document.getElementById("secondalternativename").textContent = imagename;
   document.getElementById("secondalternativematch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
-  document.getElementById("secondalternativeprice").textContent = "€" + bedprices[imagescore] + ",-";
+  document.getElementById("secondalternativeprice").textContent = "€" + bedprices[imagescore];
   alternativeTitle(imagename, "secondalternativebeam");
 
   uscore.splice(imagescore, 1, 0);
@@ -86,7 +86,7 @@ window.onload = function() {
   document.getElementById("thirdalternative").src = "images/" + imagename + "_section.png";
   document.getElementById("thirdalternativename").textContent = imagename;
   document.getElementById("thirdalternativematch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
-  document.getElementById("thirdalternativeprice").textContent = "€" + bedprices[imagescore] + ",-";
+  document.getElementById("thirdalternativeprice").textContent = "€" + bedprices[imagescore];
   alternativeTitle(imagename, "thirdalternativebeam");
 
   uscore.splice(imagescore, 1, 0);
@@ -96,7 +96,7 @@ window.onload = function() {
   document.getElementById("fourthalternative").src = "images/" + imagename + "_section.png";
   document.getElementById("fourthalternativename").textContent = imagename;
   document.getElementById("fourthalternativematch").textContent = uscore[imagescore] + "/" + sessionStorage.length;
-  document.getElementById("fourthalternativeprice").textContent = "€" + bedprices[imagescore] + ",-";
+  document.getElementById("fourthalternativeprice").textContent = "€" + bedprices[imagescore];
   alternativeTitle(imagename, "fourthalternativebeam");
 }
 
@@ -204,7 +204,7 @@ function showthisdiv(thisid) {
   document.getElementById("bestbed").src = document.getElementById(imageElement).src;
   document.getElementById("bestbedname").textContent = bedname;
   document.getElementById("bestbedmatch").textContent = score[indexbed] + "/" + sessionStorage.length;
-  document.getElementById("bestbedprice").textContent = "€" + bedprices[indexbed] + ",-";
+  document.getElementById("bestbedprice").textContent = "€" + bedprices[indexbed];
   document.getElementById("info").src = "images/" + bedname + "_info.jpg";
   if (this_id == "bestalternativebeam") {
     bluebeam.style.background = "#0058AB";
