@@ -109,13 +109,12 @@
   font-size: 30px;
   font-style: normal;
   text-align: center;
-  margin-left: 0;
   margin-bottom: 0;
   padding-bottom: 0;
   color: #0058AB;
   float: left;
   margin-top: 32px;
-  margin-left: -70px;
+  margin-left:-42px;
 }
 
 .price{

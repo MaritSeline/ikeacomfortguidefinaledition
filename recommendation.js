@@ -152,7 +152,7 @@ function calcScore() {
       }
     }
     if (wlcounter == 0) {
-      var bmi = weight / (length * length);
+      var bmi = (weight / (length * length)) * 10000;
       var currentscore;
       if (bmi < 18.5) {
         currentscore = eval("ondergewicht");
@@ -274,7 +274,7 @@ function calcTags(bedname) {
       }
     }
     if (wlcounter == 0) {
-      var bmi = weight / (length * length);
+      var bmi = (weight / (length * length)) * 10000;
       var checkscore;
       if (bmi < 18.5) {
         checkscore = eval("ondergewicht");
