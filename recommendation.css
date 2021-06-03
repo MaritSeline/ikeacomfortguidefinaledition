@@ -1,35 +1,292 @@
-.fixed {
-  margin-left: 2%;
-  margin-right: 2%;
-  width:96%;
-  padding-bottom: 2%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-}
-
 .bigrec{
   width: 70%;
-  background:white;
-  margin-left: 0%;
+  height: 100%;
+  background: white;
+  float: left;
+  position: sticky;
 }
 
 .alternative{
   width: 30%;
-  margin-left: 70%;
-  background: white;
-}
-.left {
-  width: 20%;
   height: 100%;
   background: white;
   float: left;
-  padding: 2%;
-  margin-top: 7.5%;
-  position: fixed;
+  overflow:auto;
 }
 
-/* The Modal (background) */
+.divback{
+  margin-top: 6.15%;
+  width: 8.75%;
+  margin-left: 0;
+  height: 100%;
+  float: left;
+}
+
+.divrec{
+  margin-top: 5%;
+  width: 82.5%;
+  height: 100%;
+  float: left;
+}
+
+.divright{
+  margin-top: 5%;
+  width: 8.5%;
+  height: 100%;
+  float: left;
+}
+.text{
+  height: 10%;
+}
+
+.divimgtext{
+  position: absolute;
+  top: 140px;
+  left: 60px;
+}
+
+.name{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  text-align: left;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.match{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  text-align: left;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: #0058AB;
+  margin-top: -15px;
+}
+
+.price{
+  position: absolute;
+  bottom: 190px;
+  right: 70px;
+}
+
+.namealternative{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  font-style: normal;
+  text-align: left;
+  margin-left: 7px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  float: left;
+  display: inline;
+  margin-top: 5%;
+}
+
+.matchalternative{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: #0058AB;
+  float: left;
+  margin-top: 28px;
+  margin-left: -80px;
+}
+
+.pricealternative{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  font-style: normal;
+  text-align: left;
+  float: right;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+.reqalternative{
+  float: right;
+  display: inline;
+  margin-top: -37px;
+  margin-left: -45px;
+}
+
+.matchedreq{
+  position: absolute;
+  top: 179px;
+  left: -340px;
+}
+
+.mattressprice{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  text-align: left;
+}
+
+.img{
+  margin-top: 10%;
+}
+
+.tags{
+  text-align: left;
+}
+
+.back{
+  margin-right: 0;
+  text-align: center;
+}
+
+.recomtext{
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  text-align: left;
+  margin-left: 0;
+  margin-bottom: -5px;
+  padding-bottom: 0;
+}
+
+.underrecom{
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  font-style: normal;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-left: -130px;
+}
+
+.bigmattress{
+  width: 100%;
+}
+
+.bluebeam{
+  width: 100%;
+  background: #0058AB;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  font-style: normal;
+  vertical-align: middle;
+  margin-top: 7.5px;
+}
+
+.recomimg{
+  text-align: center;
+  margin-top: 7.5%;
+  z-index: -1;
+  margin-left: -5%;
+  margin-bottom: 5%;
+}
+
+.requirement{
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  text-align: left;
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 98%;
+  border-style: none none solid none;
+  border-width: thin;
+  margin-top: -10px;
+}
+
+.taglayout{
+  display: none;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  width: fit-content;
+  border-radius: 13.5%/50%;
+  text-align: center;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color:#F5F5F5;
+  font-family: futura-pt, sans-serif;
+  font-size: 12px;
+}
+
+.tagcrossed{
+  display: inline-block;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  width: fit-content;
+  border-radius: 13.5%/50%;
+  text-align: center;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color:#F9F9F9;
+  color:#828282;
+  font-family: futura-pt, sans-serif;
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+.startalternative{
+  text-align: center;
+  margin-top: 36%;
+  width: 100%;
+}
+.alternativemattress{
+  height: 42.5%;
+  text-align: center;
+}
+
+.alternativebeam{
+  width: 82.5%;
+  background: #F5F5F5;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
+  color: black;
+  margin-left: 10%;
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-style: normal;
+  vertical-align: middle;
+}
+#bestalternativebeam{
+  background: #0058AB;
+  color: white;
+}
+
+
+.alternativeimg{
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 7.5%;
+  z-index: -1;
+}
+
+#nonshow{
+  display: none;
+}
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -41,7 +298,7 @@
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
+  padding-top: 1%;
 }
 
 /* Modal Content/Box */
@@ -49,176 +306,41 @@
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-.backikea{
-  margin-left: 11.25%;
-  text-align: left;
-  margin-top: 0;
+  width: 60%; /* Could be more or less, depending on screen size */
 }
 
 .detailbutton{
   border: none;
   background-color: transparent;
-}
+  position: absolute;
+  left: 57px;
+  margin-top: 0.5%;
 
-.recomimg{
-  text-align: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 7.5%;
-  position: fixed;
-}
-
-.buttoncheck{
-  text-align: right;
-  margin-top: 45%;
-  right: 1.5%;
-  bottom:10%;
-  position: fixed;
-}
-
-.cardtitle{
-  text-align: left;
-  font-family: futura-pt, sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  font-style: normal;
-padding-left: 5%;
-padding-right: 5%;
-padding-top:5%;
-}
-
-.cardtext{
-  text-align: left;
-  font-family: futura-pt, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  font-style: normal;
-padding-left: 5%;
-padding-right: 5%;
-}
-
-
-#openbutton1:hover+div.form-popup#myForm1{
-  display: block;
-}
-#openbutton2:hover+div.form-popup#myForm2{
-  display: block;
-}
-#openbutton3:hover+div.form-popup#myForm3{
-  display: block;
-}
-#openbutton4:hover+div.form-popup#myForm4{
-  display: block;
-}
-div.form-popup:hover{
-  display: block;
-}
-
-#openbutton1 {
-  position: fixed;
-  bottom: 27.5%;
-  right: 70%;
-}
-#openbutton2 {
-  position: fixed;
-  bottom: 25%;
-  right: 48%;
-}
-#openbutton3 {
-  position: fixed;
-  bottom: 55%;
-  right: 45%;
-}
-#openbutton4 {
-  position: fixed;
-  bottom: 37.5%;
-  right: 55%;
-}
-
-
-
-/* The popup form - hidden by default */
-#myForm1 {
-  display: none;
-  position: fixed;
-  width: 220px;
-  height:160px;
-  right: 70%;
-  bottom: 27.5%;
-  border: 0px;
-  z-index: 1;
-}
-#myForm2 {
-  display: none;
-  position: fixed;
-  width: 220px;
-  height:160px;
-  right: 48%;
-  bottom: 25%;
-  border: 0px;
-  z-index: 1;
-}
-#myForm3 {
-  display: none;
-  position: fixed;
-  width: 220px;
-  height:160px;
-  right: 45%;
-  bottom: 55%;
-  border: 0px;
-  z-index: 1;
-}
-#myForm4 {
-  display: none;
-  position: fixed;
-  width: 220px;
-  height:160px;
-  right: 55%;
-  bottom: 37.5%;
-  border: 0px;
-  z-index: 1;
-}
-
-/* Add styles to the form container */
-.form-container {
-  width: 220px;
-  height: 160px;
-  background-color: transparent;
-  background-image: url('images/card.svg');
-}
-
-
-.recomtext{
-  font-family: futura-pt, sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  font-style: normal;
-  text-align: center;
-  margin: 0;
-  padding-top: 2.5%;
-}
-
-.underrecom{
-  font-family: futura-pt, sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  font-style: normal;
-  text-align: center;
-  margin:0;
-  padding: 0;
 }
 
 .detailtext{
   font-family: futura-pt, sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 10px;
   font-style: normal;
   text-align: center;
   padding-top: 5%;
   color: #0058AB;
   text-decoration: underline;
   text-decoration-color: #0058AB;
+}
+
+.close{
+  position: absolute;
+  right: 128px;
+  top: 6px;
+}
+
+.donebutton {
+  text-align: right;
+  position: absolute;
+  width: 40%;
+  display: inline;
+  bottom: 40px;
+  left: 335px;
 }

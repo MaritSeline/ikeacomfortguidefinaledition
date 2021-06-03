@@ -1,3 +1,4 @@
+</<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -6,90 +7,403 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="frame.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.typekit.net/ovi6xjx.css">
   <script type="text/javascript" src="recommendation.js"></script>
   <link rel="stylesheet" href="recommendation.css">
+  <link rel="stylesheet" href="recommendationbutton.css">
+  <link rel="stylesheet" href="frame.css">
+
 </head>
 
-<body>
-  <div id="results">
-
-  </div>
-  <div class="left">
-    <div class="backikea">
-      <a href="ikea.html">
-        <img src="images/back.jpg" width="30%" />
-      </a>
-    </div>
-  </div>
-  <div class="bigrec">
-    <div class="recomimg">
-      <h1 class="recomtext">OUR RECOMMENDATION </h1>
-      <p1 class="underrecom"> The pocket springs independently follow the contours and movements of your body. Additionally, the added thick layer of soft padding provides even more luxury and comfort. </p1>
-      <br>
-      <button class="detailbutton" onclick="document.getElementById('id01').style.display='block'">
-        <p1 class="detailtext"> View more product details</p1>
-      </button>
-      <div id="id01" class="modal">
-
-        <div class="modal-content animate">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="images/details.jpg" width="70%">
+<body style="background-color:#BABABA;">
+  <div id="layout">
+    <div class="bigrec">
+      <div class="divback">
+        <div class="back">
+          <a href="ikea.html">
+            <img src="images/goback.jpg" width="35%" />
+          </a>
+        </div>
+      </div>
+      <div class="divrec">
+        <div class="text">
+          <h1 class="recomtext">OUR RECOMMENDATION </h1>
+          <p1 class="underrecom"> According to our calculations these are the best comfortable mattresses based on your needs.</p1>
+        </div>
+        <div class="bigmattress">
+          <p class="bluebeam" id="bestbluebeam">Best match</p>
+          <div class="img">
+            <div class="recomimg" id="bestbeddiv">
+              <img id="bestbed" src="images/white_image.png" width="110%" />
+              <div class="divimgtext">
+                <p class="name" id="bestbedname">
+                  HOVAG
+                </p>
+                <p class="match" id="bestbedmatch">
+                  10/10
+                </p>
+              </div>
+              <div class="matchedreq">
+                <img src="images/matched_requirements.jpg" width="6%" />
+              </div>
+              <div class="price">
+                <p class="mattressprice" id="bestbedprice">
+                  €239
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- All the buttons -->
+        <div class="allButtons">
+          <!-- HAFSLO -->
+          <img src="images/rondje.png" class="open-button HAFSLO" id="openbutton1" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm1">
+            <div class="form-container">
+              <img src="images/HAFSLO_sleepingposition.png" class="HAFSLO imgbutton openbutton1" id="HAFSLO_sleepingposition" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button HAFSLO" id="openbutton2" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm2">
+            <div class="form-container">
+              <img src="images/HAFSLO_weightslider_lengthslider.png" class="HAFSLO imgbutton openbutton2" id="HAFSLO_weightslider_lengthslider" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <!-- HAMARVIK -->
+          <img src="images/rondje.png" class="open-button HAMARVIK" id="openbutton3" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm3">
+            <div class="form-container">
+              <img src="images/HAMARVIK_sleepingposition.png" class="HAMARVIK imgbutton openbutton3" id="HAMARVIK_sleepingposition" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button HAMARVIK" id="openbutton4" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm4">
+            <div class="form-container">
+              <img src="images/HAMARVIK_sleepingposition_physicalpain.png" class="HAMARVIK imgbutton openbutton4" id="HAMARVIK_sleepingposition_physicalpain" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <!-- HOKKASEN -->
+          <img src="images/rondje.png" class="open-button HOKKASEN" id="openbutton5" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm5">
+            <div class="form-container">
+              <img src="images/HOKKASEN_physicalpain.png" class="HOKKASEN imgbutton openbutton5" id="HOKKASEN_physicalpain" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button HOKKASEN" id="openbutton6" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm6">
+            <div class="form-container">
+              <img src="images/HOKKASEN_sleepingposition.png" class="HOKKASEN imgbutton openbutton6" id="HOKKASEN_sleepingposition" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button HOKKASEN" id="openbutton7" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm7">
+            <div class="form-container">
+              <img src="images/HOKKASEN_weightslider_lengthslider.png" class="HOKKASEN imgbutton openbutton7" id="HOKKASEN_weightslider_lengthslider" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <!-- HOVAG -->
+          <img src="images/rondje.png" class="open-button HOVAG" id="openbutton8" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm8">
+            <div class="form-container">
+              <img src="images/HOVAG_physicalpain_sleepingposition.png" class="HOVAG imgbutton openbutton8" id="HOVAG_physicalpain_sleepingposition" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button HOVAG" id="openbutton9" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm9">
+            <div class="form-container">
+              <img src="images/HOVAG_sleepingposition_weightslider_lengthslider.png" class="HOVAG imgbutton openbutton9" id="HOVAG_sleepingposition_weightslider_lengthslider" alt="" width="150px" onmouseover="borderTags(this.id)"
+                onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <!-- HYLLESTAD -->
+          <img src="images/rondje.png" class="open-button HYLLESTAD" id="openbutton10" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm10">
+            <div class="form-container">
+              <img src="images/HYLLESTAD_sleepingposition.png" class="HYLLESTAD imgbutton openbutton10" id="HYLLESTAD_sleepingposition" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button HYLLESTAD" id="openbutton11" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm11">
+            <div class="form-container">
+              <img src="images/HYLLESTAD_physicalpain_weightslider_lengthslider.png" class="HYLLESTAD imgbutton openbutton11" id="HYLLESTAD_physicalpain_weightslider_lengthslider" alt="" width="150px" onmouseover="borderTags(this.id)"
+                onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <!-- MALVIK -->
+          <img src="images/rondje.png" class="open-button MALVIK" id="openbutton12" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm12">
+            <div class="form-container">
+              <img src="images/MALVIK_sleepingposition.png" class="MALVIK imgbutton openbutton12" id="MALVIK_sleepingposition" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button MALVIK" id="openbutton13" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm13">
+            <div class="form-container">
+              <img src="images/MALVIK_weightslider_lengthslider.png" class="MALVIK imgbutton openbutton13" id="MALVIK_weightslider_lengthslider" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <!-- MATRAND -->
+          <img src="images/rondje.png" class="open-button MATRAND" id="openbutton14" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm14">
+            <div class="form-container">
+              <img src="images/MATRAND_physicalpain_weightslider_lengthslider.png" class="MATRAND imgbutton openbutton14" id="MATRAND_physicalpain_weightslider_lengthslider" alt="" width="150px" onmouseover="borderTags(this.id)"
+                onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button MATRAND" id="openbutton15" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm15">
+            <div class="form-container">
+              <img src="images/MATRAND_weightslider_lengthslider.png" class="MATRAND imgbutton openbutton15" id="MATRAND_weightslider_lengthslider" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <!-- MAUSUND -->
+          <img src="images/rondje.png" class="open-button MAUSUND" id="openbutton16" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm16">
+            <div class="form-container">
+              <img src="images/MAUSUND_physicalpain.png" class="MAUSUND imgbutton openbutton16" id="MAUSUND_physicalpain" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button MAUSUND" id="openbutton17" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm17">
+            <div class="form-container">
+              <img src="images/MAUSUND_sleepingposition.png" class="MAUSUND imgbutton openbutton17" id="MAUSUND_sleepingposition" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button MAUSUND" id="openbutton18" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm18">
+            <div class="form-container">
+              <img src="images/MAUSUND_temperature_important.png" class="MAUSUND imgbutton openbutton18" id="MAUSUND_temperature_important" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button MAUSUND" id="openbutton19" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm19">
+            <div class="form-container">
+              <img src="images/MAUSUND_weightslider_lengthslider_physicalpain.png" class="MAUSUND imgbutton openbutton19" id="MAUSUND_weightslider_lengthslider_physicalpain" alt="" width="150px" onmouseover="borderTags(this.id)"
+                onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <!-- MORGEDAL -->
+          <img src="images/rondje.png" class="open-button MORGEDAL" id="openbutton20" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm20">
+            <div class="form-container">
+              <img src="images/MORGEDAL_physicalpain.png" class="MORGEDAL imgbutton openbutton20" id="MORGEDAL_physicalpain" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button MORGEDAL" id="openbutton21" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm21">
+            <div class="form-container">
+              <img src="images/MORGEDAL_sleepingposition.png" class="MORGEDAL imgbutton openbutton21" id="MORGEDAL_sleepingposition" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button MORGEDAL" id="openbutton22" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm22">
+            <div class="form-container">
+              <img src="images/MORGEDAL_weightslider_lengthslider.png" class="MORGEDAL imgbutton openbutton22" id="MORGEDAL_weightslider_lengthslider" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <!-- MYRBACKA -->
+          <img src="images/rondje.png" class="open-button MYRBACKA" id="openbutton23" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm23">
+            <div class="form-container">
+              <img src="images/MYRBACKA_important_temperature.png" class="MYRBACKA imgbutton openbutton23" id="MYRBACKA_important_temperature" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button MYRBACKA" id="openbutton24" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm24">
+            <div class="form-container">
+              <img src="images/MYRBACKA_physicalpain_weightslider_lengthslider.png" class="MYRBACKA imgbutton openbutton24" id="MYRBACKA_physicalpain_weightslider_lengthslider" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button MYRBACKA" id="openbutton25" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm25">
+            <div class="form-container">
+              <img src="images/MYRBACKA_sleepingposition_physicalpain.png" class="MYRBACKA imgbutton openbutton25" id="MYRBACKA_sleepingposition_physicalpain" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <!-- VADSO -->
+          <img src="images/rondje.png" class="open-button VADSO" id="openbutton26" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm26">
+            <div class="form-container">
+              <img src="images/VADSO_important.png" class="VADSO imgbutton openbutton26" id="VADSO_important" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button VADSO" id="openbutton27" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm27">
+            <div class="form-container">
+              <img src="images/VADSO_weightslider_lengthslider.png" class="VADSO imgbutton openbutton27" id="VADSO_weightslider_lengthslider" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <!-- VATNESTROM -->
+          <img src="images/rondje.png" class="open-button VATNESTROM" id="openbutton28" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm28">
+            <div class="form-container">
+              <img src="images/VATNESTROM_physicalpain_sleepingposition.png" class="VATNESTROM imgbutton openbutton28" id="VATNESTROM_physicalpain_sleepingposition" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
+          </div>
+          <img src="images/rondje.png" class="open-button VATNESTROM" id="openbutton29" width="4%" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+          <div class="form-popup" id="myForm29">
+            <div class="form-container">
+              <img src="images/VATNESTROM_temperature_important.png" class="VATNESTROM imgbutton openbutton29" id="VATNESTROM_temperature_important" alt="" width="150px" onmouseover="borderTags(this.id)" onmouseout="noBorderTags(this.id)">
+            </div>
           </div>
 
-          <div class="container">
+        </div>
 
-            <div class="modal-content animate">
+        <!-- End of buttons -->
+        <div class="tags">
+          <p class="requirement">Requirements</p>
+          <div id="results" class="">
+            <p id="typesizetag" class="taglayout"></p>
+            <p id="bedsizestag" class="taglayout"></p>
+            <p id="weightslidertag" class="taglayout"></p>
+            <p id="lengthslidertag" class="taglayout"></p>
+            <p id="sleepingpositiontag" class="taglayout"></p>
+            <p id="physicalpaintag" class="taglayout"></p>
+            <p id="temperaturetag" class="taglayout"></p>
+            <p id="importanttag" class="taglayout"></p>
+            <p id="priceslidertag" class="taglayout"></p>
+          </div>
+        </div>
+        <div class="donebutton" id="donebutton">
+          <a href="checkout.html" onclick="checkOut()">
+          <img src="images/choose.png" width="50%" />
+          </a>
+        </div>
+        <button class="detailbutton" onclick="document.getElementById('id01').style.display='block'">
+          <p1 class="detailtext"> View more product information</p1>
+        </button>
+        <div id="id01" class="modal">
+
+          <div class="modal-content animate">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" width="150%" title="Close Modal">&times;</span>
+              <img id="info" src="images/HOVAG_info.jpg" width="70%">
             </div>
 
+            <div class="container">
+
+              <div class="modal-content animate">
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
-      <img src="images/recommendation.jpg" width="100%" />
-    </div>
-    <br>
-    <img src="images/rondje.png" class="open-button" id="openbutton1" width="4%"></img>
-    <div class="form-popup" id="myForm1">
-      <div class="form-container">
-        <div class="cardtitle">VENTILATING</div>
-        <div class="cardtext">The top layer of the mattress is<br>made of cotton, protecting you <br>from sweating and providing a cooler mattress. </div>
-
+      <div class="divright">
       </div>
     </div>
-    <img src="images/rondje.png" class="open-button" id="openbutton2" width="4%"></img>
-    <div class="form-popup" id="myForm2">
-      <div class="form-container">
-        <div class="cardtitle">SPRINGS</div>
-        <div class="cardtext">These springs are a well considered choice perfectly supporting your body type.</div>
-
+    <div class="alternative">
+      <div class="startalternative">
+        <div class="alternativemattress" id="nonshow">
+          <p class="alternativebeam" id="bestalternativebeam" onclick="showthisdiv(this.id);">Best match</p>
+          <div class="alternativeimg" id="bestalternativesection">
+            <img id="bestalternative" src="images/white_image.png" width="100%" onclick="showthisdiv(this.id);"/>
+            <br>
+            <p class="namealternative" id="bestalternativename">
+              HOVAG
+            </p>
+            <p class="pricealternative" id="bestalternativeprice">
+              €239
+            </p>
+            <div>
+              <p class="matchalternative" id="bestalternativematch">
+                10/10
+              </p>
+              <div class="reqalternative">
+                <img src="images/matched_requirements.jpg" width="22%" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="alternativemattress">
+          <p class="alternativebeam" id="firstalternativebeam" onclick="showthisdiv(this.id);">first alternative</p>
+          <div class="alternativeimg" id="firstalternativesection">
+            <img id="firstalternative" src="images/MYRBACKA_section.png" width="100%" onclick="showthisdiv(this.id);"/>
+            <br>
+            <p class="namealternative" id="firstalternativename">
+              HOVAG
+            </p>
+            <p class="pricealternative" id="firstalternativeprice">
+              €239
+            </p>
+            <div>
+              <p class="matchalternative" id="firstalternativematch">
+                10/10
+              </p>
+              <div class="reqalternative">
+                <img src="images/matched_requirements.jpg" width="22%" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="alternativemattress">
+          <p class="alternativebeam" id="secondalternativebeam" onclick="showthisdiv(this.id);">second alternative</p>
+          <div class="alternativeimg" id="secondalternativesection">
+            <img id="secondalternative" src="images/MYRBACKA_section.png" width="100%" onclick="showthisdiv(this.id);" />
+            <br>
+            <p class="namealternative" id="secondalternativename">
+              HOVAG
+            </p>
+            <p class="pricealternative" id="secondalternativeprice">
+              €239
+            </p>
+            <div>
+              <p class="matchalternative" id="secondalternativematch">
+                10/10
+              </p>
+              <div class="reqalternative">
+                <img src="images/matched_requirements.jpg" width="22%" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="alternativemattress">
+          <p class="alternativebeam" id="thirdalternativebeam" onclick="showthisdiv(this.id);">third alternative</p>
+          <div class="alternativeimg" id="thirdalternativesection">
+            <img id="thirdalternative" src="images/MYRBACKA_section.png" width="100%" onclick="showthisdiv(this.id);"/>
+            <br>
+            <p class="namealternative" id="thirdalternativename">
+              HOVAG
+            </p>
+            <p class="pricealternative" id="thirdalternativeprice">
+              €239
+            </p>
+            <div>
+              <p class="matchalternative" id="thirdalternativematch">
+                10/10
+              </p>
+              <div class="reqalternative">
+                <img src="images/matched_requirements.jpg" width="22%" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="alternativemattress">
+          <p class="alternativebeam" id="fourthalternativebeam" onclick="showthisdiv(this.id);">fourth alternative</p>
+          <div class="alternativeimg" id="fourthalternativesection">
+            <img id="fourthalternative" src="images/MYRBACKA_section.png" width="100%" onclick="showthisdiv(this.id);" />
+            <br>
+            <p class="namealternative" id="fourthalternativename">
+              HOVAG
+            </p>
+            <p class="pricealternative" id="fourthalternativeprice">
+              €239
+            </p>
+            <div>
+              <p class="matchalternative" id="fourthalternativematch">
+                10/10
+              </p>
+              <div class="reqalternative">
+                <img src="images/matched_requirements.jpg" width="22%" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <img src="images/rondje.png" class="open-button" id="openbutton3" width="4%"></img>
-    <div class="form-popup" id="myForm3">
-      <div class="form-container">
-        <div class="cardtitle">NATURAL MATERIALS</div>
-        <div class="cardtext">Natural materials like natural latex, coconut fiber, cotton and wool enhances the comfort and provides a pleasant sleeping environment</div>
-
-      </div>
-    </div>
-    <img src="images/rondje.png" class="open-button" id="openbutton4" width="4%"></img>
-    <div class="form-popup" id="myForm4">
-      <div class="form-container">
-        <div class="cardtitle">FOAM</div>
-        <div class="cardtext">The mattress supports the shoulders well due to the layer of foam which forms to your shoulders, this can help to recover your physical <br> pain at night. </div>
-
-      </div>
-    </div>
-
-    <div class="buttoncheck">
-      <a href="checkout.html">
-        <img src="images/donebutton.jpg" width="10%" />
-      </a>
-    </div>
-  </div>
-  <div class="alternative">
   </div>
 </body>
+
 </html>
