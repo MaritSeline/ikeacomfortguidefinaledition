@@ -283,8 +283,8 @@ function calcTags(bedname) {
         document.getElementById("weightslidertag").className = "tagcrossed";
         document.getElementById("lengthslidertag").className = "tagcrossed";
       } else {
-        document.getElementById(key + "tag").className = "taglayout";
-      }
+        document.getElementById("weightslidertag").className = "taglayout";
+        document.getElementById("lengthslidertag").className = "taglayout";      }
       wlcounter = -1;
     }
   }
