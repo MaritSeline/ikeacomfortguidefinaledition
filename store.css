@@ -65,7 +65,7 @@
   font-style: normal;
   text-align: left;
   padding: 10%;
-  margin-top: 7.5%;
+  margin-top: -40px;
   line-height: 37.5px;
 }
 
@@ -79,11 +79,21 @@
   padding: 0;
 }
 
+.storeimg{
+  margin-top: 112px;
+  margin-left: 90px;
+  text-align: left;
+}
+
+.appointment{
+  margin-top: 30px;
+}
+
 .codeimg{
   text-align: center;
   margin: 0;
   padding: 2.5%;
-  margin-top: -50px;
+  margin-top: -75px;
 }
 
 .name{
@@ -141,4 +151,10 @@
   padding-left: 27px;
   padding-right: 27px;
   display: none;
+}
+
+.explore{
+  bottom:25px;
+  position: absolute;
+  text-align: center;
 }

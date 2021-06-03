@@ -36,6 +36,12 @@
   background-color: #0058AB;
 }
 
+.storeimg{
+  margin-top: 112px;
+  margin-left: 90px;
+  text-align: left;
+}
+
 .divshop{
   width:40%;
   margin-left: 10%;
@@ -85,7 +91,7 @@
   font-style: normal;
   text-align: left;
   padding: 10%;
-  margin-top: 7.5%;
+  margin-top: -40px;
   line-height: 37.5px;
 }
 
@@ -99,6 +105,15 @@
   padding: 0;
 }
 
+.appointment{
+  margin-top: 35px;
+}
+
+.explore{
+  bottom:25px;
+  position: absolute;
+  text-align: center;
+}
 
 .name{
   font-family: futura-pt, sans-serif;

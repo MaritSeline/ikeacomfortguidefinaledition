@@ -242,6 +242,12 @@ function calcTags(bedname) {
       }
     } else if (key == "sleepingposition") {
       document.getElementById(key + "tag").innerHTML = "Fit for " + item.replaceAll("_", " ") + " sleeping";
+    } else if (key == "priceslider") {
+      if (item == "No_specific_price") {
+        document.getElementById(key + "tag").innerHTML = item.replaceAll("_", " ");
+      } else {
+        document.getElementById(key + "tag").innerHTML = "€" + item.replaceAll("_", " ");
+      }
     } else {
       document.getElementById(key + "tag").innerHTML = item.replaceAll("_", " ");
     }
@@ -332,7 +338,7 @@ function borderTags(thisid) {
     var arrayBorders = allBorders.split("_");
     for (var i = 1; i < arrayBorders.length; i++) {
       if(!document.getElementById(arrayBorders[i] + "tag").className.includes("tagcrossed"))
-      {document.getElementById(arrayBorders[i] + "tag").style.border = "3px solid #0058AB";
+      {document.getElementById(arrayBorders[i] + "tag").style.border = "2px solid #0058AB";
       document.getElementById(arrayBorders[i] + "tag").style.borderRadius = "13.5%/50%";}
     }
   }
